@@ -1,0 +1,541 @@
+Command: /home/dylan/.espressif/python_env/idf5.5_py3.12_env/bin/python /home/dylan/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB1 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/dylan/esp/esp_proj/Lab5/master2/build/master2.elf /home/dylan/esp/esp_proj/Lab5/master2/build/bootloader/bootloader.elf -m '/home/dylan/.espressif/python_env/idf5.5_py3.12_env/bin/python' '/home/dylan/esp/esp-idf/tools/idf.py' '-p' '/dev/ttyUSB1'
+h ( 97580) map
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15904
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5-dev-3568-g565cca2fee 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jul 17 2025 16:18:56[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bcd0h ( 48336) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001bcf8 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001bd1c vaddr=3ffb0000 size=0239ch (  9116) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=0001e0c0 vaddr=40080000 size=01f58h (  8024) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=17d2ch ( 97580) map[0m
+[0;32mI (158) esp_image: segment 5: paddr=00037d54 vaddr=40081f58 size=0bc78h ( 48248) load[0m
+[0;32mI (184) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (184) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     master2[0m
+[0;32mI (207) app_init: App version:      1[0m
+[0;32mI (211) app_init: Compile time:     Jul 17 2025 16:18:52[0m
+[0;32mI (216) app_init: ELF file SHA256:  3adfd285d...[0m
+[0;32mI (220) app_init: ESP-IDF:          v5.5-dev-3568-g565cca2fee[0m
+[0;32mI (225) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (229) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (233) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (237) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (243) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (248) heap_init: At 3FFB2E30 len 0002D1D0 (180 KiB): DRAM[0m
+[0;32mI (254) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (259) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (265) heap_init: At 4008DBD0 len 00012430 (73 KiB): IRAM[0m
+[0;32mI (271) spi_flash: detected chip: generic[0m
+[0;32mI (273) spi_flash: flash io: dio[0m
+[0;33mW (276) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (289) main_task: Started on CPU0[0m
+[0;32mI (299) main_task: Calling app_main()[0m
+[0;32mI (299) I2C_MASTER: Initializing I2C master...[0m
+[0;32mI (299) PWM_OUT: PWM output started on GPIO 26[0m
+[0;32mI (299) main_task: Returned from app_main()[0m
+[1;31mE (409) i2c.master: I2C software timeout[0m
+[1;31mE (409) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (409) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (409) I2C_MASTER: I2C receive failed[0m
+[1;31mE (509) i2c.master: I2C software timeout[0m
+[1;31mE (509) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (509) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (509) I2C_MASTER: I2C receive failed[0m
+[1;31mE (609) i2c.master: I2C software timeout[0m
+[1;31mE (609) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (609) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (609) I2C_MASTER: I2C receive failed[0m
+[1;31mE (709) i2c.master: I2C software timeout[0m
+[1;31mE (709) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (709) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (709) I2C_MASTER: I2C receive failed[0m
+[1;31mE (809) i2c.master: I2C software timeout[0m
+[1;31mE (809) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (809) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (809) I2C_MASTER: I2C receive failed[0m
+[1;31mE (909) i2c.master: I2C software timeout[0m
+[1;31mE (909) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (909) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (909) I2C_MASTER: I2C receive failed[0m
+[1;31mE (1009) i2c.master: I2C software timeout[0m
+[1;31mE (1009) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1009) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1009) I2C_MASTER: I2C receive failed[0m
+[1;31mE (1109) i2c.master: I2C software timeout[0m
+[1;31mE (1109) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1109) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1109) I2C_MASTER: I2C receive failed[0m
+[1;31mE (1209) i2c.master: I2C software timeout[0m
+[1;31mE (1209) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1209) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1209) I2C_MASTER: I2C receive failed[0m
+[1;31mE (1309) i2c.master: I2C software timeout[0m
+[1;31mE (1309) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1309) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1309) I2C_MASTER: I2C receive failed[0m
+[1;31mE (1409) i2c.master: I2C software timeout[0m
+[1;31mE (1409) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1409) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1409) I2C_MASTER: I2C receive failed[0m
+[1;31mE (1509) i2c.master: I2C software timeout[0m
+[1;31mE (1509) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1509) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1509) I2C_MASTER: I2C receive failed[0m
+[1;31mE (1609) i2c.master: I2C software timeout[0m
+[1;31mE (1609) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1609) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1609) I2C_MASTER: I2C receive failed[0m
+[1;31mE (1709) i2c.master: I2C software timeout[0m
+[1;31mE (1709) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1709) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1709) I2C_MASTER: I2C receive failed[0m
+[1;31mE (1809) i2c.master: I2C software timeout[0m
+[1;31mE (1809) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1809) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1809) I2C_MASTER: I2C receive failed[0m
+[1;31mE (1909) i2c.master: I2C software timeout[0m
+[1;31mE (1909) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1909) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1909) I2C_MASTER: I2C receive failed[0m
+[1;31mE (2009) i2c.master: I2C software timeout[0m
+[1;31mE (2009) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2009) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2009) I2C_MASTER: I2C receive failed[0m
+[1;31mE (2109) i2c.master: I2C software timeout[0m
+[1;31mE (2109) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2109) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2109) I2C_MASTER: I2C receive failed[0m
+[1;31mE (2209) i2c.master: I2C software timeout[0m
+[1;31mE (2209) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2209) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2209) I2C_MASTER: I2C receive failed[0m
+[1;31mE (2309) i2c.master: I2C software timeout[0m
+[1;31mE (2309) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2309) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2309) I2C_MASTER: I2C receive failed[0m
+[1;31mE (2409) i2c.master: I2C software timeout[0m
+[1;31mE (2409) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2409) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2409) I2C_MASTER: I2C receive failed[0m
+[1;31mE (2509) i2c.master: I2C software timeout[0m
+[1;31mE (2509) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2509) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2509) I2C_MASTER: I2C receive failed[0m
+[1;31mE (2609) i2c.master: I2C software timeout[0m
+[1;31mE (2609) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2609) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2609) I2C_MASTER: I2C receive failed[0m
+[1;31mE (2709) i2c.master: I2C software timeout[0m
+[1;31mE (2709) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2709) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2709) I2C_MASTER: I2C receive failed[0m
+[1;31mE (2809) i2c.master: I2C software timeout[0m
+[1;31mE (2809) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2809) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2809) I2C_MASTER: I2C receive failed[0m
+[1;31mE (2909) i2c.master: I2C software timeout[0m
+[1;31mE (2909) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2909) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2909) I2C_MASTER: I2C receive failed[0m
+[1;31mE (3009) i2c.master: I2C software timeout[0m
+[1;31mE (3009) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3009) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3009) I2C_MASTER: I2C receive failed[0m
+[1;31mE (3109) i2c.master: I2C software timeout[0m
+[1;31mE (3109) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3109) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3109) I2C_MASTER: I2C receive failed[0m
+[1;31mE (3209) i2c.master: I2C software timeout[0m
+[1;31mE (3209) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3209) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3209) I2C_MASTER: I2C receive failed[0m
+[1;31mE (3309) i2c.master: I2C software timeout[0m
+[1;31mE (3309) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3309) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3309) I2C_MASTER: I2C receive failed[0m
+[1;31mE (3409) i2c.master: I2C software timeout[0m
+[1;31mE (3409) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3409) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3409) I2C_MASTER: I2C receive failed[0m
+[1;31mE (3509) i2c.master: I2C software timeout[0m
+[1;31mE (3509) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3509) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3509) I2C_MASTER: I2C receive failed[0m
+[1;31mE (3609) i2c.master: I2C software timeout[0m
+[1;31mE (3609) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3609) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3609) I2C_MASTER: I2C receive failed[0m
+[1;31mE (3709) i2c.master: I2C software timeout[0m
+[1;31mE (3709) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3709) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3709) I2C_MASTER: I2C receive failed[0m
+[1;31mE (3809) i2c.master: I2C software timeout[0m
+[1;31mE (3809) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3809) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3809) I2C_MASTER: I2C receive failed[0m
+[1;31mE (3909) i2c.master: I2C software timeout[0m
+[1;31mE (3909) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3909) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3909) I2C_MASTER: I2C receive failed[0m
+[1;31mE (4009) i2c.master: I2C software timeout[0m
+[1;31mE (4009) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (4009) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (4009) I2C_MASTER: I2C receive failed[0m
+[1;31mE (4109) i2c.master: I2C software timeout[0m
+[1;31mE (4109) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (4109) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (4109) I2C_MASTER: I2C receive failed[0m
+[1;31mE (4209) i2c.master: I2C software timeout[0m
+[1;31mE (4209) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (4209) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (4209) I2C_MASTER: I2C receive failed[0m
+[1;31mE (4309) i2c.master: I2C software timeout[0m
+[1;31mE (4309) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (4309) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (4309) I2C_MASTER: I2C receive failed[0m
+[1;31mE (4409) i2c.master: I2C software timeout[0m
+[1;31mE (4409) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (4409) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (4409) I2C_MASTER: I2C receive failed[0m
+[1;31mE (4509) i2c.master: I2C software timeout[0m
+[1;31mE (4509) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (4509) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (4509) I2C_MASTER: I2C receive failed[0m
+[1;31mE (4609) i2c.master: I2C software timeout[0m
+[1;31mE (4609) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (4609) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (4609) I2C_MASTER: I2C receive failed[0m
+[1;31mE (4709) i2c.master: I2C software timeout[0m
+[1;31mE (4709) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (4709) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (4709) I2C_MASTER: I2C receive failed[0m
+[1;31mE (4809) i2c.master: I2C software timeout[0m
+[1;31mE (4809) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (4809) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (4809) I2C_MASTER: I2C receive failed[0m
+[1;31mE (4909) i2c.master: I2C software timeout[0m
+[1;31mE (4909) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (4909) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (4909) I2C_MASTER: I2C receive failed[0m
+[1;31mE (5009) i2c.master: I2C software timeout[0m
+[1;31mE (5009) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (5009) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (5009) I2C_MASTER: I2C receive failed[0m
+[1;31mE (5109) i2c.master: I2C software timeout[0m
+[1;31mE (5109) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (5109) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (5109) I2C_MASTER: I2C receive failed[0m
+[1;31mE (5209) i2c.master: I2C software timeout[0m
+[1;31mE (5209) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (5209) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (5209) I2C_MASTER: I2C receive failed[0m
+[1;31mE (5309) i2c.master: I2C software timeout[0m
+[1;31mE (5309) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (5309) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (5309) I2C_MASTER: I2C receive failed[0m
+[1;31mE (5409) i2c.master: I2C software timeout[0m
+[1;31mE (5409) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (5409) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (5409) I2C_MASTER: I2C receive failed[0m
+[1;31mE (5509) i2c.master: I2C software timeout[0m
+[1;31mE (5509) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (5509) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (5509) I2C_MASTER: I2C receive failed[0m
+[1;31mE (5609) i2c.master: I2C software timeout[0m
+[1;31mE (5609) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (5609) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (5609) I2C_MASTER: I2C receive failed[0m
+[1;31mE (5709) i2c.master: I2C software timeout[0m
+[1;31mE (5709) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (5709) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (5709) I2C_MASTER: I2C receive failed[0m
+[1;31mE (5809) i2c.master: I2C software timeout[0m
+[1;31mE (5809) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (5809) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (5809) I2C_MASTER: I2C receive failed[0m
+[1;31mE (5909) i2c.master: I2C software timeout[0m
+[1;31mE (5909) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (5909) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (5909) I2C_MASTER: I2C receive failed[0m
+[1;31mE (6009) i2c.master: I2C software timeout[0m
+[1;31mE (6009) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (6009) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (6009) I2C_MASTER: I2C receive failed[0m
+[1;31mE (6109) i2c.master: I2C software timeout[0m
+[1;31mE (6109) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (6109) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (6109) I2C_MASTER: I2C receive failed[0m
+[1;31mE (6209) i2c.master: I2C software timeout[0m
+[1;31mE (6209) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (6209) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (6209) I2C_MASTER: I2C receive failed[0m
+[1;31mE (6309) i2c.master: I2C software timeout[0m
+[1;31mE (6309) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (6309) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (6309) I2C_MASTER: I2C receive failed[0m
+[1;31mE (6409) i2c.master: I2C software timeout[0m
+[1;31mE (6409) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (6409) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (6409) I2C_MASTER: I2C receive failed[0m
+[1;31mE (6509) i2c.master: I2C software timeout[0m
+[1;31mE (6509) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (6509) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (6509) I2C_MASTER: I2C receive failed[0m
+[1;31mE (6609) i2c.master: I2C software timeout[0m
+[1;31mE (6609) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (6609) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (6609) I2C_MASTER: I2C receive failed[0m
+[1;31mE (6709) i2c.master: I2C software timeout[0m
+[1;31mE (6709) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (6709) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (6709) I2C_MASTER: I2C receive failed[0m
+[1;31mE (6809) i2c.master: I2C software timeout[0m
+[1;31mE (6809) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (6809) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (6809) I2C_MASTER: I2C receive failed[0m
+[1;31mE (6909) i2c.master: I2C software timeout[0m
+[1;31mE (6909) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (6909) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (6909) I2C_MASTER: I2C receive failed[0m
+[1;31mE (7009) i2c.master: I2C software timeout[0m
+[1;31mE (7009) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (7009) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (7009) I2C_MASTER: I2C receive failed[0m
+[1;31mE (7109) i2c.master: I2C software timeout[0m
+[1;31mE (7109) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (7109) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (7109) I2C_MASTER: I2C receive failed[0m
+[1;31mE (7209) i2c.master: I2C software timeout[0m
+[1;31mE (7209) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (7209) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (7209) I2C_MASTER: I2C receive failed[0m
+[1;31mE (7309) i2c.master: I2C software timeout[0m
+[1;31mE (7309) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (7309) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (7309) I2C_MASTER: I2C receive failed[0m
+[1;31mE (7409) i2c.master: I2C software timeout[0m
+[1;31mE (7409) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (7409) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (7409) I2C_MASTER: I2C receive failed[0m
+[1;31mE (7509) i2c.master: I2C software timeout[0m
+[1;31mE (7509) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (7509) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (7509) I2C_MASTER: I2C receive failed[0m
+[1;31mE (7609) i2c.master: I2C software timeout[0m
+[1;31mE (7609) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (7609) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (7609) I2C_MASTER: I2C receive failed[0m
+[1;31mE (7709) i2c.master: I2C software timeout[0m
+[1;31mE (7709) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (7709) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (7709) I2C_MASTER: I2C receive failed[0m
+[1;31mE (7809) i2c.master: I2C software timeout[0m
+[1;31mE (7809) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (7809) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (7809) I2C_MASTER: I2C receive failed[0m
+[1;31mE (7909) i2c.master: I2C software timeout[0m
+[1;31mE (7909) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (7909) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (7909) I2C_MASTER: I2C receive failed[0m
+[1;31mE (8009) i2c.master: I2C software timeout[0m
+[1;31mE (8009) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (8009) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (8009) I2C_MASTER: I2C receive failed[0m
+[1;31mE (8109) i2c.master: I2C software timeout[0m
+[1;31mE (8109) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (8109) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (8109) I2C_MASTER: I2C receive failed[0m
+[1;31mE (8209) i2c.master: I2C software timeout[0m
+[1;31mE (8209) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (8209) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (8209) I2C_MASTER: I2C receive failed[0m
+[1;31mE (8309) i2c.master: I2C software timeout[0m
+[1;31mE (8309) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (8309) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (8309) I2C_MASTER: I2C receive failed[0m
+[1;31mE (8409) i2c.master: I2C software timeout[0m
+[1;31mE (8409) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (8409) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (8409) I2C_MASTER: I2C receive failed[0m
+[1;31mE (8509) i2c.master: I2C software timeout[0m
+[1;31mE (8509) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (8509) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (8509) I2C_MASTER: I2C receive failed[0m
+[1;31mE (8609) i2c.master: I2C software timeout[0m
+[1;31mE (8609) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (8609) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (8609) I2C_MASTER: I2C receive failed[0m
+[1;31mE (8709) i2c.master: I2C software timeout[0m
+[1;31mE (8709) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (8709) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (8709) I2C_MASTER: I2C receive failed[0m
+[1;31mE (8809) i2c.master: I2C software timeout[0m
+[1;31mE (8809) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (8809) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (8809) I2C_MASTER: I2C receive failed[0m
+[1;31mE (8909) i2c.master: I2C software timeout[0m
+[1;31mE (8909) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (8909) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (8909) I2C_MASTER: I2C receive failed[0m
+[1;31mE (9009) i2c.master: I2C software timeout[0m
+[1;31mE (9009) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (9009) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (9009) I2C_MASTER: I2C receive failed[0m
+[1;31mE (9109) i2c.master: I2C software timeout[0m
+[1;31mE (9109) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (9109) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (9109) I2C_MASTER: I2C receive failed[0m
+[1;31mE (9209) i2c.master: I2C software timeout[0m
+[1;31mE (9209) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (9209) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (9209) I2C_MASTER: I2C receive failed[0m
+[1;31mE (9309) i2c.master: I2C software timeout[0m
+[1;31mE (9309) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (9309) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (9309) I2C_MASTER: I2C receive failed[0m
+[1;31mE (9409) i2c.master: I2C software timeout[0m
+[1;31mE (9409) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (9409) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (9409) I2C_MASTER: I2C receive failed[0m
+[1;31mE (9509) i2c.master: I2C software timeout[0m
+[1;31mE (9509) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (9509) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (9509) I2C_MASTER: I2C receive failed[0m
+[1;31mE (9609) i2c.master: I2C software timeout[0m
+[1;31mE (9609) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (9609) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (9609) I2C_MASTER: I2C receive failed[0m
+[1;31mE (9709) i2c.master: I2C software timeout[0m
+[1;31mE (9709) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (9709) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (9709) I2C_MASTER: I2C receive failed[0m
+[1;31mE (9809) i2c.master: I2C software timeout[0m
+[1;31mE (9809) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (9809) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (9809) I2C_MASTER: I2C receive failed[0m
+[1;31mE (9909) i2c.master: I2C software timeout[0m
+[1;31mE (9909) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (9909) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (9909) I2C_MASTER: I2C receive failed[0m
+[1;31mE (10009) i2c.master: I2C software timeout[0m
+[1;31mE (10009) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (10009) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (10009) I2C_MASTER: I2C receive failed[0m
+[1;31mE (10109) i2c.master: I2C software timeout[0m
+[1;31mE (10109) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (10109) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (10109) I2C_MASTER: I2C receive failed[0m
+[1;31mE (10209) i2c.master: I2C software timeout[0m
+[1;31mE (10209) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (10209) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (10209) I2C_MASTER: I2C receive failed[0m
+[1;31mE (10309) i2c.master: I2C software timeout[0m
+[1;31mE (10309) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (10309) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (10309) I2C_MASTER: I2C receive failed[0m
+[1;31mE (10409) i2c.master: I2C software timeout[0m
+[1;31mE (10409) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (10409) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (10409) I2C_MASTER: I2C receive failed[0m
+[1;31mE (10509) i2c.master: I2C software timeout[0m
+[1;31mE (10509) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (10509) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (10509) I2C_MASTER: I2C receive failed[0m
+[1;31mE (10609) i2c.master: I2C software timeout[0m
+[1;31mE (10609) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (10609) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (10609) I2C_MASTER: I2C receive failed[0m
+[1;31mE (10709) i2c.master: I2C software timeout[0m
+[1;31mE (10709) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (10709) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (10709) I2C_MASTER: I2C receive failed[0m
+[1;31mE (10809) i2c.master: I2C software timeout[0m
+[1;31mE (10809) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (10809) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (10809) I2C_MASTER: I2C receive failed[0m
+[1;31mE (10909) i2c.master: I2C software timeout[0m
+[1;31mE (10909) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (10909) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (10909) I2C_MASTER: I2C receive failed[0m
+[1;31mE (11009) i2c.master: I2C software timeout[0m
+[1;31mE (11009) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (11009) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (11009) I2C_MASTER: I2C receive failed[0m
+[1;31mE (11109) i2c.master: I2C software timeout[0m
+[1;31mE (11109) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (11109) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (11109) I2C_MASTER: I2C receive failed[0m
+[1;31mE (11209) i2c.master: I2C software timeout[0m
+[1;31mE (11209) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (11209) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (11209) I2C_MASTER: I2C receive failed[0m
+[1;31mE (11309) i2c.master: I2C software timeout[0m
+[1;31mE (11309) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (11309) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (11309) I2C_MASTER: I2C receive failed[0m
+[1;31mE (11409) i2c.master: I2C software timeout[0m
+[1;31mE (11409) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (11409) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (11409) I2C_MASTER: I2C receive failed[0m
+[1;31mE (11509) i2c.master: I2C software timeout[0m
+[1;31mE (11509) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (11509) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (11509) I2C_MASTER: I2C receive failed[0m
+[1;31mE (11609) i2c.master: I2C software timeout[0m
+[1;31mE (11609) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (11609) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (11609) I2C_MASTER: I2C receive failed[0m
+[1;31mE (11709) i2c.master: I2C software timeout[0m
+[1;31mE (11709) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (11709) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (11709) I2C_MASTER: I2C receive failed[0m
+[1;31mE (11809) i2c.master: I2C software timeout[0m
+[1;31mE (11809) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (11809) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (11809) I2C_MASTER: I2C receive failed[0m
+[1;31mE (11909) i2c.master: I2C software timeout[0m
+[1;31mE (11909) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (11909) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (11909) I2C_MASTER: I2C receive failed[0m
+[1;31mE (12009) i2c.master: I2C software timeout[0m
+[1;31mE (12009) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (12009) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (12009) I2C_MASTER: I2C receive failed[0m
+[1;31mE (12109) i2c.master: I2C software timeout[0m
+[1;31mE (12109) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (12109) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (12109) I2C_MASTER: I2C receive failed[0m
+[1;31mE (12209) i2c.master: I2C software timeout[0m
+[1;31mE (12209) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (12209) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (12209) I2C_MASTER: I2C receive failed[0m
+[1;31mE (12309) i2c.master: I2C software timeout[0m
+[1;31mE (12309) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (12309) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (12309) I2C_MASTER: I2C receive failed[0m
