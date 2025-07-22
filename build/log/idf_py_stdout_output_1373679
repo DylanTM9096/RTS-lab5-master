@@ -1,0 +1,904 @@
+Command: /home/dylan/.espressif/python_env/idf5.5_py3.12_env/bin/python /home/dylan/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/dylan/esp/esp_proj/Lab5/RTS-lab5-master/build/master2.elf /home/dylan/esp/esp_proj/Lab5/RTS-lab5-master/build/bootloader/bootloader.elf -m '/home/dylan/.espressif/python_env/idf5.5_py3.12_env/bin/python' '/home/dylan/esp/esp-idf/tools/idf.py' '-p' '/dev/ttyUSB0'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15904
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5-dev-3568-g565cca2fee 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jul 21 2025 18:53:46[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bd08h ( 48392) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001bd30 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001bd54 vaddr=3ffb0000 size=0239ch (  9116) load[0m
+[0;32mI (114) esp_image: segment 3: paddr=0001e0f8 vaddr=40080000 size=01f20h (  7968) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=17dd8h ( 97752) map[0m
+[0;32mI (159) esp_image: segment 5: paddr=00037e00 vaddr=40081f20 size=0bcb4h ( 48308) load[0m
+[0;32mI (184) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (184) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     master2[0m
+[0;32mI (207) app_init: App version:      3fd932d-dirty[0m
+[0;32mI (212) app_init: Compile time:     Jul 21 2025 18:53:34[0m
+[0;32mI (217) app_init: ELF file SHA256:  89c0c613d...[0m
+[0;32mI (221) app_init: ESP-IDF:          v5.5-dev-3568-g565cca2fee[0m
+[0;32mI (226) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (230) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (234) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (238) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (245) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (249) heap_init: At 3FFB2E38 len 0002D1C8 (180 KiB): DRAM[0m
+[0;32mI (255) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (260) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (266) heap_init: At 4008DBD4 len 0001242C (73 KiB): IRAM[0m
+[0;32mI (272) spi_flash: detected chip: generic[0m
+[0;32mI (275) spi_flash: flash io: dio[0m
+[0;33mW (278) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (291) main_task: Started on CPU0[0m
+[0;32mI (301) main_task: Calling app_main()[0m
+[0;32mI (301) I2C_MASTER: Initializing I2C master...[0m
+[0;32mI (301) PWM_OUT: PWM output started on GPIO 26[0m
+[0;32mI (301) main_task: Returned from app_main()[0m
+[0;32mI (401) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (501) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (501) PWM_OUT: duty: 0 [0m
+[0;32mI (501) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (601) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (601) PWM_OUT: duty: 0 [0m
+[0;32mI (601) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (701) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (701) PWM_OUT: duty: 0 [0m
+[0;32mI (701) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (801) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (801) PWM_OUT: duty: 0 [0m
+[0;32mI (801) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (901) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (901) PWM_OUT: duty: 0 [0m
+[0;32mI (901) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (1001) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (1001) PWM_OUT: duty: 0 [0m
+[0;32mI (1001) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (1101) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (1101) PWM_OUT: duty: 0 [0m
+[0;32mI (1101) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (1201) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (1201) PWM_OUT: duty: 0 [0m
+[0;32mI (1201) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (1301) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (1301) PWM_OUT: duty: 0 [0m
+[0;32mI (1301) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (1401) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (1401) PWM_OUT: duty: 0 [0m
+[0;32mI (1401) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (1501) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (1501) PWM_OUT: duty: 0 [0m
+[0;32mI (1501) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (1601) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (1601) PWM_OUT: duty: 0 [0m
+[0;32mI (1601) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (1701) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (1701) PWM_OUT: duty: 0 [0m
+[0;32mI (1701) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (1801) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (1801) PWM_OUT: duty: 0 [0m
+[0;32mI (1801) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (1901) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (1901) PWM_OUT: duty: 0 [0m
+[0;32mI (1901) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (2001) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (2001) PWM_OUT: duty: 0 [0m
+[0;32mI (2001) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (2101) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (2101) PWM_OUT: duty: 0 [0m
+[0;32mI (2101) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (2201) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (2201) PWM_OUT: duty: 0 [0m
+[0;32mI (2201) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (2301) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (2301) PWM_OUT: duty: 0 [0m
+[0;32mI (2301) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (2401) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (2401) PWM_OUT: duty: 0 [0m
+[0;32mI (2401) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (2501) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (2501) PWM_OUT: duty: 0 [0m
+[0;32mI (2501) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (2601) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (2601) PWM_OUT: duty: 0 [0m
+[0;32mI (2601) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (2701) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (2701) PWM_OUT: duty: 0 [0m
+[0;32mI (2701) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (2801) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (2801) PWM_OUT: duty: 0 [0m
+[0;32mI (2801) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (2901) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (2901) PWM_OUT: duty: 0 [0m
+[0;32mI (2901) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (3001) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (3001) PWM_OUT: duty: 0 [0m
+[0;32mI (3001) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (3101) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (3101) PWM_OUT: duty: 0 [0m
+[0;32mI (3101) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (3201) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (3201) PWM_OUT: duty: 0 [0m
+[0;32mI (3201) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (3301) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (3301) PWM_OUT: duty: 0 [0m
+[0;32mI (3301) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (3401) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (3401) PWM_OUT: duty: 0 [0m
+[0;32mI (3401) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (3501) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (3501) PWM_OUT: duty: 0 [0m
+[0;32mI (3501) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (3601) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (3601) PWM_OUT: duty: 0 [0m
+[0;32mI (3601) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (3701) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (3701) PWM_OUT: duty: 0 [0m
+[0;32mI (3701) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (3801) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (3801) PWM_OUT: duty: 0 [0m
+[0;32mI (3801) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (3901) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (3901) PWM_OUT: duty: 0 [0m
+[0;32mI (3901) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (4001) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (4001) PWM_OUT: duty: 0 [0m
+[0;32mI (4001) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (4101) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (4101) PWM_OUT: duty: 0 [0m
+[0;32mI (4101) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (4201) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (4201) PWM_OUT: duty: 0 [0m
+[0;32mI (4201) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (4301) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (4301) PWM_OUT: duty: 0 [0m
+[0;32mI (4301) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (4401) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (4401) PWM_OUT: duty: 0 [0m
+[0;32mI (4401) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (4501) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (4501) PWM_OUT: duty: 0 [0m
+[0;32mI (4501) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (4601) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (4601) PWM_OUT: duty: 0 [0m
+[0;32mI (4601) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (4701) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (4701) PWM_OUT: duty: 0 [0m
+[0;32mI (4701) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (4801) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (4801) PWM_OUT: duty: 0 [0m
+[0;32mI (4801) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (4901) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (4901) PWM_OUT: duty: 0 [0m
+[0;32mI (4901) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (5001) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (5001) PWM_OUT: duty: 0 [0m
+[0;32mI (5001) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (5101) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (5101) PWM_OUT: duty: 0 [0m
+[0;32mI (5101) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (5201) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (5201) PWM_OUT: duty: 0 [0m
+[0;32mI (5201) I2C_MASTER: Received ADC: 97[0m
+[0;32mI (5301) PWM_OUT: PWM Pulse Width Output: 97 us[0m
+[0;32mI (5301) PWM_OUT: duty: 776 [0m
+[0;32mI (5301) I2C_MASTER: Received ADC: 277[0m
+[0;32mI (5401) PWM_OUT: PWM Pulse Width Output: 277 us[0m
+[0;32mI (5401) PWM_OUT: duty: 2216 [0m
+
+***ERROR*** A stack overflow in task Tmr Svc has been detected.
+
+
+Backtrace: 0x400818e5:0x3ffb5330 0x400858b1:0x3ffb5350 0x400866c6:0x3ffb5370 0x40087beb:0x3ffb53f0 0x400867d0:0x3ffb5410 0x40086782:0x00000000 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 89c0c613d
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15904
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5-dev-3568-g565cca2fee 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jul 21 2025 18:53:46[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bd08h ( 48392) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001bd30 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001bd54 vaddr=3ffb0000 size=0239ch (  9116) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=0001e0f8 vaddr=40080000 size=01f20h (  7968) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=17dd8h ( 97752) map[0m
+[0;32mI (158) esp_image: segment 5: paddr=00037e00 vaddr=40081f20 size=0bcb4h ( 48308) load[0m
+[0;32mI (184) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (184) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     master2[0m
+[0;32mI (207) app_init: App version:      3fd932d-dirty[0m
+[0;32mI (212) app_init: Compile time:     Jul 21 2025 18:53:34[0m
+[0;32mI (217) app_init: ELF file SHA256:  89c0c613d...[0m
+[0;32mI (221) app_init: ESP-IDF:          v5.5-dev-3568-g565cca2fee[0m
+[0;32mI (226) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (230) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (234) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (238) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (244) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (249) heap_init: At 3FFB2E38 len 0002D1C8 (180 KiB): DRAM[0m
+[0;32mI (255) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (260) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (266) heap_init: At 4008DBD4 len 0001242C (73 KiB): IRAM[0m
+[0;32mI (272) spi_flash: detected chip: generic[0m
+[0;32mI (274) spi_flash: flash io: dio[0m
+[0;33mW (277) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (290) main_task: Started on CPU0[0m
+[0;32mI (300) main_task: Calling app_main()[0m
+[0;32mI (300) I2C_MASTER: Initializing I2C master...[0m
+[0;32mI (300) PWM_OUT: PWM output started on GPIO 26[0m
+[0;32mI (300) main_task: Returned from app_main()[0m
+[1;31mE (400) i2c.master: I2C hardware NACK detected[0m
+[1;31mE (400) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (400) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (400) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[0;32mI (500) I2C_MASTER: Received ADC: 1507[0m
+[0;32mI (600) PWM_OUT: PWM Pulse Width Output: 1507 us[0m
+[0;32mI (600) PWM_OUT: duty: 12058 [0m
+[0;32mI (600) I2C_MASTER: Received ADC: 1771[0m
+[0;32mI (700) PWM_OUT: PWM Pulse Width Output: 1771 us[0m
+[0;32mI (700) PWM_OUT: duty: 14171 [0m
+
+***ERROR*** A stack overflow in task Tmr Svc has been detected.
+
+
+Backtrace: 0x400818e5:0x3ffb5330 0x400858b1:0x3ffb5350 0x400866c6:0x3ffb5370 0x40087beb:0x3ffb53f0 0x400867d0:0x3ffb5410 0x40086782:0x00000000 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 89c0c613d
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15904
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5-dev-3568-g565cca2fee 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jul 21 2025 18:53:46[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bd08h ( 48392) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001bd30 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001bd54 vaddr=3ffb0000 size=0239ch (  9116) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=0001e0f8 vaddr=40080000 size=01f20h (  7968) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=17dd8h ( 97752) map[0m
+[0;32mI (158) esp_image: segment 5: paddr=00037e00 vaddr=40081f20 size=0bcb4h ( 48308) load[0m
+[0;32mI (184) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (184) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     master2[0m
+[0;32mI (207) app_init: App version:      3fd932d-dirty[0m
+[0;32mI (212) app_init: Compile time:     Jul 21 2025 18:53:34[0m
+[0;32mI (217) app_init: ELF file SHA256:  89c0c613d...[0m
+[0;32mI (221) app_init: ESP-IDF:          v5.5-dev-3568-g565cca2fee[0m
+[0;32mI (226) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (230) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (234) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (238) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (244) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (249) heap_init: At 3FFB2E38 len 0002D1C8 (180 KiB): DRAM[0m
+[0;32mI (255) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (260) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (266) heap_init: At 4008DBD4 len 0001242C (73 KiB): IRAM[0m
+[0;32mI (272) spi_flash: detected chip: generic[0m
+[0;32mI (274) spi_flash: flash io: dio[0m
+[0;33mW (277) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (290) main_task: Started on CPU0[0m
+[0;32mI (300) main_task: Calling app_main()[0m
+[0;32mI (300) I2C_MASTER: Initializing I2C master...[0m
+[0;32mI (300) PWM_OUT: PWM output started on GPIO 26[0m
+[0;32mI (300) main_task: Returned from app_main()[0m
+[1;31mE (400) i2c.master: I2C hardware NACK detected[0m
+[1;31mE (400) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (400) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (400) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[0;32mI (500) I2C_MASTER: Received ADC: 1964[0m
+[0;32mI (600) PWM_OUT: PWM Pulse Width Output: 1964 us[0m
+[0;32mI (600) PWM_OUT: duty: 15715 [0m
+[0;32mI (600) I2C_MASTER: Received ADC: 1945[0m
+[0;32mI (700) PWM_OUT: PWM Pulse Width Output: 1945 us[0m
+[0;32mI (700) PWM_OUT: duty: 15563 [0m
+
+***ERROR*** A stack overflow in task Tmr Svc has been detected.
+
+
+Backtrace: 0x400818e5:0x3ffb5330 0x400858b1:0x3ffb5350 0x400866c6:0x3ffb5370 0x40087beb:0x3ffb53f0 0x400867d0:0x3ffb5410 0x40086782:0x00000000 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 89c0c613d
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15904
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5-dev-3568-g565cca2fee 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jul 21 2025 18:53:46[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bd08h ( 48392) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001bd30 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001bd54 vaddr=3ffb0000 size=0239ch (  9116) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=0001e0f8 vaddr=40080000 size=01f20h (  7968) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=17dd8h ( 97752) map[0m
+[0;32mI (158) esp_image: segment 5: paddr=00037e00 vaddr=40081f20 size=0bcb4h ( 48308) load[0m
+[0;32mI (184) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (184) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     master2[0m
+[0;32mI (207) app_init: App version:      3fd932d-dirty[0m
+[0;32mI (212) app_init: Compile time:     Jul 21 2025 18:53:34[0m
+[0;32mI (217) app_init: ELF file SHA256:  89c0c613d...[0m
+[0;32mI (221) app_init: ESP-IDF:          v5.5-dev-3568-g565cca2fee[0m
+[0;32mI (226) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (230) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (234) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (238) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (244) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (249) heap_init: At 3FFB2E38 len 0002D1C8 (180 KiB): DRAM[0m
+[0;32mI (255) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (260) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (266) heap_init: At 4008DBD4 len 0001242C (73 KiB): IRAM[0m
+[0;32mI (272) spi_flash: detected chip: generic[0m
+[0;32mI (274) spi_flash: flash io: dio[0m
+[0;33mW (277) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (290) main_task: Started on CPU0[0m
+[0;32mI (300) main_task: Calling app_main()[0m
+[0;32mI (300) I2C_MASTER: Initializing I2C master...[0m
+[0;32mI (300) PWM_OUT: PWM output started on GPIO 26[0m
+[0;32mI (300) main_task: Returned from app_main()[0m
+[1;31mE (400) i2c.master: I2C hardware timeout detected[0m
+[1;31mE (400) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (400) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[0;32mI (500) I2C_MASTER: Received ADC: 2559[0m
+[0;32mI (600) PWM_OUT: PWM Pulse Width Output: 2559 us[0m
+[0;32mI (600) PWM_OUT: duty: 20476 [0m
+[0;32mI (600) I2C_MASTER: Received ADC: 2685[0m
+[0;32mI (700) PWM_OUT: PWM Pulse Width Output: 2685 us[0m
+[0;32mI (700) PWM_OUT: duty: 21484 [0m
+
+***ERROR*** A stack overflow in task Tmr Svc has been detected.
+
+
+Backtrace: 0x400818e5:0x3ffb5330 0x400858b1:0x3ffb5350 0x400866c6:0x3ffb5370 0x40087beb:0x3ffb53f0 0x400867d0:0x3ffb5410 0x40086782:0x00000000 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 89c0c613d
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15904
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5-dev-3568-g565cca2fee 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jul 21 2025 18:53:46[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bd08h ( 48392) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001bd30 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001bd54 vaddr=3ffb0000 size=0239ch (  9116) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=0001e0f8 vaddr=40080000 size=01f20h (  7968) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=17dd8h ( 97752) map[0m
+[0;32mI (158) esp_image: segment 5: paddr=00037e00 vaddr=40081f20 size=0bcb4h ( 48308) load[0m
+[0;32mI (184) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (184) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     master2[0m
+[0;32mI (207) app_init: App version:      3fd932d-dirty[0m
+[0;32mI (212) app_init: Compile time:     Jul 21 2025 18:53:34[0m
+[0;32mI (217) app_init: ELF file SHA256:  89c0c613d...[0m
+[0;32mI (221) app_init: ESP-IDF:          v5.5-dev-3568-g565cca2fee[0m
+[0;32mI (226) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (230) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (234) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (238) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (244) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (249) heap_init: At 3FFB2E38 len 0002D1C8 (180 KiB): DRAM[0m
+[0;32mI (255) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (260) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (266) heap_init: At 4008DBD4 len 0001242C (73 KiB): IRAM[0m
+[0;32mI (272) spi_flash: detected chip: generic[0m
+[0;32mI (274) spi_flash: flash io: dio[0m
+[0;33mW (277) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (290) main_task: Started on CPU0[0m
+[0;32mI (300) main_task: Calling app_main()[0m
+[0;32mI (300) I2C_MASTER: Initializing I2C master...[0m
+[0;32mI (300) PWM_OUT: PWM output started on GPIO 26[0m
+[0;32mI (300) main_task: Returned from app_main()[0m
+[1;31mE (400) i2c.master: I2C hardware timeout detected[0m
+[1;31mE (400) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (400) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[0;32mI (500) I2C_MASTER: Received ADC: 2582[0m
+[0;32mI (600) PWM_OUT: PWM Pulse Width Output: 2582 us[0m
+[0;32mI (600) PWM_OUT: duty: 20660 [0m
+[0;32mI (600) I2C_MASTER: Received ADC: 2559[0m
+[0;32mI (700) PWM_OUT: PWM Pulse Width Output: 2559 us[0m
+[0;32mI (700) PWM_OUT: duty: 20476 [0m
+
+***ERROR*** A stack overflow in task Tmr Svc has been detected.
+
+
+Backtrace: 0x400818e5:0x3ffb5330 0x400858b1:0x3ffb5350 0x400866c6:0x3ffb5370 0x40087beb:0x3ffb53f0 0x400867d0:0x3ffb5410 0x40086782:0x00000000 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 89c0c613d
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15904
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5-dev-3568-g565cca2fee 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jul 21 2025 18:53:46[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bd08h ( 48392) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001bd30 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001bd54 vaddr=3ffb0000 size=0239ch (  9116) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=0001e0f8 vaddr=40080000 size=01f20h (  7968) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=17dd8h ( 97752) map[0m
+[0;32mI (158) esp_image: segment 5: paddr=00037e00 vaddr=40081f20 size=0bcb4h ( 48308) load[0m
+[0;32mI (184) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (184) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     master2[0m
+[0;32mI (207) app_init: App version:      3fd932d-dirty[0m
+[0;32mI (212) app_init: Compile time:     Jul 21 2025 18:53:34[0m
+[0;32mI (217) app_init: ELF file SHA256:  89c0c613d...[0m
+[0;32mI (221) app_init: ESP-IDF:          v5.5-dev-3568-g565cca2fee[0m
+[0;32mI (226) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (230) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (234) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (238) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (244) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (249) heap_init: At 3FFB2E38 len 0002D1C8 (180 KiB): DRAM[0m
+[0;32mI (255) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (260) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (266) heap_init: At 4008DBD4 len 0001242C (73 KiB): IRAM[0m
+[0;32mI (272) spi_flash: detected chip: generic[0m
+[0;32mI (274) spi_flash: flash io: dio[0m
+[0;33mW (277) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (290) main_task: Started on CPU0[0m
+[0;32mI (300) main_task: Calling app_main()[0m
+[0;32mI (300) I2C_MASTER: Initializing I2C master...[0m
+[0;32mI (300) PWM_OUT: PWM output started on GPIO 26[0m
+[0;32mI (300) main_task: Returned from app_main()[0m
+[1;31mE (400) i2c.master: I2C hardware timeout detected[0m
+[1;31mE (400) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (400) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[0;32mI (500) I2C_MASTER: Received ADC: 1233[0m
+[0;32mI (600) PWM_OUT: PWM Pulse Width Output: 1233 us[0m
+[0;32mI (600) PWM_OUT: duty: 9866 [0m
+[0;32mI (600) I2C_MASTER: Received ADC: 965[0m
+[0;32mI (700) PWM_OUT: PWM Pulse Width Output: 965 us[0m
+[0;32mI (700) PWM_OUT: duty: 7721 [0m
+[0;32mI (700) I2C_MASTER: Received ADC: 148[0m
+[0;32mI (800) PWM_OUT: PWM Pulse Width Output: 148 us[0m
+[0;32mI (800) PWM_OUT: duty: 1184 [0m
+[0;32mI (800) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (900) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (900) PWM_OUT: duty: 0 [0m
+[0;32mI (900) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (1000) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (1000) PWM_OUT: duty: 0 [0m
+[0;32mI (1000) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (1100) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (1100) PWM_OUT: duty: 0 [0m
+[0;32mI (1100) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (1200) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (1200) PWM_OUT: duty: 0 [0m
+[0;32mI (1200) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (1300) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (1300) PWM_OUT: duty: 0 [0m
+[0;32mI (1300) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (1400) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (1400) PWM_OUT: duty: 0 [0m
+[0;32mI (1400) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (1500) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (1500) PWM_OUT: duty: 0 [0m
+[0;32mI (1500) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (1600) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (1600) PWM_OUT: duty: 0 [0m
+[0;32mI (1600) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (1700) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (1700) PWM_OUT: duty: 0 [0m
+[0;32mI (1700) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (1800) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (1800) PWM_OUT: duty: 0 [0m
+[0;32mI (1800) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (1900) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (1900) PWM_OUT: duty: 0 [0m
+[0;32mI (1900) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (2000) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (2000) PWM_OUT: duty: 0 [0m
+[0;32mI (2000) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (2100) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (2100) PWM_OUT: duty: 0 [0m
+[0;32mI (2100) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (2200) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (2200) PWM_OUT: duty: 0 [0m
+[0;32mI (2200) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (2300) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (2300) PWM_OUT: duty: 0 [0m
+[0;32mI (2300) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (2400) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (2400) PWM_OUT: duty: 0 [0m
+[0;32mI (2400) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (2500) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (2500) PWM_OUT: duty: 0 [0m
+[0;32mI (2500) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (2600) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (2600) PWM_OUT: duty: 0 [0m
+[0;32mI (2600) I2C_MASTER: Received ADC: 137[0m
+[0;32mI (2700) PWM_OUT: PWM Pulse Width Output: 137 us[0m
+[0;32mI (2700) PWM_OUT: duty: 1096 [0m
+
+***ERROR*** A stack overflow in task Tmr Svc has been detected.
+
+
+Backtrace: 0x400818e5:0x3ffb5330 0x400858b1:0x3ffb5350 0x400866c6:0x3ffb5370 0x40087beb:0x3ffb53f0 0x400867d0:0x3ffb5410 0x40086782:0x00000000 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 89c0c613d
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15904
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5-dev-3568-g565cca2fee 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jul 21 2025 18:53:46[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bd08h ( 48392) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001bd30 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001bd54 vaddr=3ffb0000 size=0239ch (  9116) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=0001e0f8 vaddr=40080000 size=01f20h (  7968) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=17dd8h ( 97752) map[0m
+[0;32mI (158) esp_image: segment 5: paddr=00037e00 vaddr=40081f20 size=0bcb4h ( 48308) load[0m
+[0;32mI (184) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (184) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     master2[0m
+[0;32mI (207) app_init: App version:      3fd932d-dirty[0m
+[0;32mI (212) app_init: Compile time:     Jul 21 2025 18:53:34[0m
+[0;32mI (217) app_init: ELF file SHA256:  89c0c613d...[0m
+[0;32mI (221) app_init: ESP-IDF:          v5.5-dev-3568-g565cca2fee[0m
+[0;32mI (226) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (230) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (234) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (238) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (244) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (249) heap_init: At 3FFB2E38 len 0002D1C8 (180 KiB): DRAM[0m
+[0;32mI (255) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (260) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (266) heap_init: At 4008DBD4 len 0001242C (73 KiB): IRAM[0m
+[0;32mI (272) spi_flash: detected chip: generic[0m
+[0;32mI (274) spi_flash: flash io: dio[0m
+[0;33mW (277) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (290) main_task: Started on CPU0[0m
+[0;32mI (300) main_task: Calling app_main()[0m
+[0;32mI (300) I2C_MASTER: Initializing I2C master...[0m
+[0;32mI (300) PWM_OUT: PWM output started on GPIO 26[0m
+[0;32mI (300) main_task: Returned from app_main()[0m
+[1;31mE (400) i2c.master: I2C hardware NACK detected[0m
+[1;31mE (400) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (400) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (400) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[0;32mI (500) I2C_MASTER: Received ADC: 2026[0m
+[0;32mI (600) PWM_OUT: PWM Pulse Width Output: 2026 us[0m
+[0;32mI (600) PWM_OUT: duty: 16211 [0m
+[0;32mI (600) I2C_MASTER: Received ADC: 2151[0m
+[0;32mI (700) PWM_OUT: PWM Pulse Width Output: 2151 us[0m
+[0;32mI (700) PWM_OUT: duty: 17211 [0m
+
+***ERROR*** A stack overflow in task Tmr Svc has been detected.
+
+
+Backtrace: 0x400818e5:0x3ffb5330 0x400858b1:0x3ffb5350 0x400866c6:0x3ffb5370 0x40087beb:0x3ffb53f0 0x400867d0:0x3ffb5410 0x40086782:0x00000000 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 89c0c613d
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15904
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5-dev-3568-g565cca2fee 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jul 21 2025 18:53:46[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bd08h ( 48392) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001bd30 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001bd54 vaddr=3ffb0000 size=0239ch (  9116) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=0001e0f8 vaddr=40080000 size=01f20h (  7968) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=17dd8h ( 97752) map[0m
+[0;32mI (158) esp_image: segment 5: paddr=00037e00 vaddr=40081f20 size=0bcb4h ( 48308) load[0m
+[0;32mI (184) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (184) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     master2[0m
+[0;32mI (207) app_init: App version:      3fd932d-dirty[0m
+[0;32mI (212) app_init: Compile time:     Jul 21 2025 18:53:34[0m
+[0;32mI (217) app_init: ELF file SHA256:  89c0c613d...[0m
+[0;32mI (221) app_init: ESP-IDF:          v5.5-dev-3568-g565cca2fee[0m
+[0;32mI (226) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (230) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (234) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (238) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (244) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (249) heap_init: At 3FFB2E38 len 0002D1C8 (180 KiB): DRAM[0m
+[0;32mI (255) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (260) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (266) heap_init: At 4008DBD4 len 0001242C (73 KiB): IRAM[0m
+[0;32mI (272) spi_flash: detected chip: generic[0m
+[0;32mI (274) spi_flash: flash io: dio[0m
+[0;33mW (277) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (290) main_task: Started on CPU0[0m
+[0;32mI (300) main_task: Calling app_main()[0m
+[0;32mI (300) I2C_MASTER: Initializing I2C master...[0m
+[0;32mI (300) PWM_OUT: PWM output started on GPIO 26[0m
+[0;32mI (300) main_task: Returned from app_main()[0m
+[1;31mE (400) i2c.master: I2C hardware timeout detected[0m
+[1;31mE (400) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (400) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[0;32mI (500) I2C_MASTER: Received ADC: 2491[0m
+[0;32mI (600) PWM_OUT: PWM Pulse Width Output: 2491 us[0m
+[0;32mI (600) PWM_OUT: duty: 19932 [0m
+[0;32mI (600) I2C_MASTER: Received ADC: 2499[0m
+[0;32mI (700) PWM_OUT: PWM Pulse Width Output: 2499 us[0m
+[0;32mI (700) PWM_OUT: duty: 19996 [0m
+
+***ERROR*** A stack overflow in task Tmr Svc has been detected.
+
+
+Backtrace: 0x400818e5:0x3ffb5330 0x400858b1:0x3ffb5350 0x400866c6:0x3ffb5370 0x40087beb:0x3ffb53f0 0x400867d0:0x3ffb5410 0x40086782:0x00000000 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 89c0c613d
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15904
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5-dev-3568-g565cca2fee 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jul 21 2025 18:53:46[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bd08h ( 48392) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001bd30 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001bd54 vaddr=3ffb0000 size=0239ch (  9116) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=0001e0f8 vaddr=40080000 size=01f20h (  7968) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=17dd8h ( 97752) map[0m
+[0;32mI (158) esp_image: segment 5: paddr=00037e00 vaddr=40081f20 size=0bcb4h ( 48308) load[0m
+[0;32mI (184) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (184) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     master2[0m
+[0;32mI (207) app_init: App version:      3fd932d-dirty[0m
+[0;32mI (212) app_init: Compile time:     Jul 21 2025 18:53:34[0m
+[0;32mI (217) app_init: ELF file SHA256:  89c0c613d...[0m
+[0;32mI (221) app_init: ESP-IDF:          v5.5-dev-3568-g565cca2fee[0m
+[0;32mI (226) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (230) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (234) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (238) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (244) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (249) heap_init: At 3FFB2E38 len 0002D1C8 (180 KiB): DRAM[0m
+[0;32mI (255) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (260) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (266) heap_init: At 4008DBD4 len 0001242C (73 KiB): IRAM[0m
+[0;32mI (272) spi_flash: detected chip: generic[0m
+[0;32mI (274) spi_flash: flash io: dio[0m
+[0;33mW (277) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (290) main_task: Started on CPU0[0m
+[0;32mI (300) main_task: Calling app_main()[0m
+[0;32mI (300) I2C_MASTER: Initializing I2C master...[0m
+[0;32mI (300) PWM_OUT: PWM output started on GPIO 26[0m
+[0;32mI (300) main_task: Returned from app_main()[0m

@@ -12,13 +12,12 @@
 QueueHandle_t pwmQueue;
 TimerHandle_t pwmTimer;
 TimerHandle_t output;
+TaskHandle_t i2c_handle;
 
 
 void poll_adc_and_pwm(TimerHandle_t xTimer) {
-    int val = i2c_receive_adc();
-    if (val >= 0) {
-        xQueueSend(pwmQueue, &val, portMAX_DELAY);
-    }
+    //notify task it can run. Needed to avoid stack overflow during nack error logging
+    xTaskNotifyGive(i2c_handle); 
 }
 
 void app_main(void) {
@@ -26,7 +25,10 @@ void app_main(void) {
 
     pwmQueue = xQueueCreate(2, sizeof(int));
     pwm_set_receive_queue(pwmQueue);
+    i2c_send_queue(pwmQueue);
     PWM_output_config(PWM_GPIO);
+
+    xTaskCreate(i2c_receive_adc, "i2c_task", 4096, NULL, 1, &i2c_handle);
 
     pwmTimer = xTimerCreate("PWM Timer", pdMS_TO_TICKS(PWM_PERIOD_MS), pdTRUE, NULL, poll_adc_and_pwm);
     if (pwmTimer == NULL || xTimerStart(pwmTimer, 0) != pdPASS) {

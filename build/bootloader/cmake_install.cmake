@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/dylan/esp/esp_proj/Lab5/master2/build/bootloader/esp-idf/cmake_install.cmake")
+  include("/home/dylan/esp/esp_proj/Lab5/RTS-lab5-master/build/bootloader/esp-idf/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/dylan/esp/esp_proj/Lab5/master2/build/bootloader/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/dylan/esp/esp_proj/Lab5/RTS-lab5-master/build/bootloader/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -1,0 +1,167 @@
+Command: /home/dylan/.espressif/python_env/idf5.5_py3.12_env/bin/python /home/dylan/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/dylan/esp/esp_proj/Lab5/RTS-lab5-master/build/master2.elf /home/dylan/esp/esp_proj/Lab5/RTS-lab5-master/build/bootloader/bootloader.elf -m '/home/dylan/.espressif/python_env/idf5.5_py3.12_env/bin/python' '/home/dylan/esp/esp-idf/tools/idf.py'
+[0;33m--- esp-idf-monitor 1.6.2 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/dylan/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/dylan/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400818e5: panic_abort at /home/dylan/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400858b1: esp_system_abort at /home/dylan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x400866c6: vApplicationStackOverflowHook at /home/dylan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:563
+--- 0x40087beb: vTaskSwitchContext at /home/dylan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3698 (discriminator 7)
+--- 0x400867d0: _frxt_dispatch at /home/dylan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+--- 0x40086782: _frxt_int_exit at /home/dylan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+--- 0x400d6847: poll_adc_and_pwm at /home/dylan/esp/esp_proj/Lab5/RTS-lab5-master/main/master2.c:18
+--- 0x40086ba1: prvProcessExpiredTimer at /home/dylan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/timers.c:653
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/dylan/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/dylan/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400818e5: panic_abort at /home/dylan/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400858b1: esp_system_abort at /home/dylan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x400866c6: vApplicationStackOverflowHook at /home/dylan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:563
+--- 0x40087beb: vTaskSwitchContext at /home/dylan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3698 (discriminator 7)
+--- 0x400867d0: _frxt_dispatch at /home/dylan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+--- 0x40086782: _frxt_int_exit at /home/dylan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+--- 0x400d6847: poll_adc_and_pwm at /home/dylan/esp/esp_proj/Lab5/RTS-lab5-master/main/master2.c:18
+--- 0x40086ba1: prvProcessExpiredTimer at /home/dylan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/timers.c:653
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/dylan/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/dylan/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400818e5: panic_abort at /home/dylan/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400858b1: esp_system_abort at /home/dylan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x400866c6: vApplicationStackOverflowHook at /home/dylan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:563
+--- 0x40087beb: vTaskSwitchContext at /home/dylan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3698 (discriminator 7)
+--- 0x400867d0: _frxt_dispatch at /home/dylan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+--- 0x40086782: _frxt_int_exit at /home/dylan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+--- 0x400d6847: poll_adc_and_pwm at /home/dylan/esp/esp_proj/Lab5/RTS-lab5-master/main/master2.c:18
+--- 0x40086ba1: prvProcessExpiredTimer at /home/dylan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/timers.c:653
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/dylan/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/dylan/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d8646: task_wdt_timeout_handling at /home/dylan/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:436
+--- 0x400d8a08: task_wdt_isr at /home/dylan/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:509
+--- 0x40082d1d: _xt_lowint1 at /home/dylan/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+--- 0x400e5cb3: i2c_ll_is_bus_busy at /home/dylan/esp/esp-idf/components/hal/esp32/include/hal/i2c_ll.h:463
+---  (inlined by) s_i2c_send_commands at /home/dylan/esp/esp-idf/components/esp_driver_i2c/i2c_master.c:543
+--- 0x400e5e5c: s_i2c_transaction_start at /home/dylan/esp/esp-idf/components/esp_driver_i2c/i2c_master.c:649
+--- 0x400e5f3f: s_i2c_synchronous_transaction at /home/dylan/esp/esp-idf/components/esp_driver_i2c/i2c_master.c:945
+--- 0x400e69e8: i2c_master_transmit_receive at /home/dylan/esp/esp-idf/components/esp_driver_i2c/i2c_master.c:1248
+--- 0x400d69a8: i2c_receive_adc at /home/dylan/esp/esp_proj/Lab5/RTS-lab5-master/main/I2C.c:31
+--- 0x400d6847: poll_adc_and_pwm at /home/dylan/esp/esp_proj/Lab5/RTS-lab5-master/main/master2.c:18
+--- 0x40086ba1: prvProcessExpiredTimer at /home/dylan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/timers.c:653
+--- 0x40086c39: prvProcessTimerOrBlockTask at /home/dylan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/timers.c:714
+--- 0x40086db4: prvTimerTask at /home/dylan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/timers.c:685
+--- 0x4008631d: vPortTaskWrapper at /home/dylan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x400d8646: task_wdt_timeout_handling at /home/dylan/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:436
+--- 0x400d8a08: task_wdt_isr at /home/dylan/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:509
+--- 0x40082d1d: _xt_lowint1 at /home/dylan/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+--- 0x400e5cb3: i2c_ll_is_bus_busy at /home/dylan/esp/esp-idf/components/hal/esp32/include/hal/i2c_ll.h:463
+---  (inlined by) s_i2c_send_commands at /home/dylan/esp/esp-idf/components/esp_driver_i2c/i2c_master.c:543
+--- 0x400e5e5c: s_i2c_transaction_start at /home/dylan/esp/esp-idf/components/esp_driver_i2c/i2c_master.c:649
+--- 0x400e5f3f: s_i2c_synchronous_transaction at /home/dylan/esp/esp-idf/components/esp_driver_i2c/i2c_master.c:945
+--- 0x400e69e8: i2c_master_transmit_receive at /home/dylan/esp/esp-idf/components/esp_driver_i2c/i2c_master.c:1248
+--- 0x400d69a8: i2c_receive_adc at /home/dylan/esp/esp_proj/Lab5/RTS-lab5-master/main/I2C.c:31
+--- 0x400d6847: poll_adc_and_pwm at /home/dylan/esp/esp_proj/Lab5/RTS-lab5-master/main/master2.c:18
+--- 0x40086ba1: prvProcessExpiredTimer at /home/dylan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/timers.c:653
+--- 0x40086c39: prvProcessTimerOrBlockTask at /home/dylan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/timers.c:714
+--- 0x40086db4: prvTimerTask at /home/dylan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/timers.c:685
+--- 0x4008631d: vPortTaskWrapper at /home/dylan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x400d8646: task_wdt_timeout_handling at /home/dylan/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:436
+--- 0x400d8a08: task_wdt_isr at /home/dylan/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:509
+--- 0x40082d1d: _xt_lowint1 at /home/dylan/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+--- 0x400e5cb3: i2c_ll_is_bus_busy at /home/dylan/esp/esp-idf/components/hal/esp32/include/hal/i2c_ll.h:463
+---  (inlined by) s_i2c_send_commands at /home/dylan/esp/esp-idf/components/esp_driver_i2c/i2c_master.c:543
+--- 0x400e5e5c: s_i2c_transaction_start at /home/dylan/esp/esp-idf/components/esp_driver_i2c/i2c_master.c:649
+--- 0x400e5f3f: s_i2c_synchronous_transaction at /home/dylan/esp/esp-idf/components/esp_driver_i2c/i2c_master.c:945
+--- 0x400e69e8: i2c_master_transmit_receive at /home/dylan/esp/esp-idf/components/esp_driver_i2c/i2c_master.c:1248
+--- 0x400d69a8: i2c_receive_adc at /home/dylan/esp/esp_proj/Lab5/RTS-lab5-master/main/I2C.c:31
+--- 0x400d6847: poll_adc_and_pwm at /home/dylan/esp/esp_proj/Lab5/RTS-lab5-master/main/master2.c:18
+--- 0x40086ba1: prvProcessExpiredTimer at /home/dylan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/timers.c:653
+--- 0x40086c39: prvProcessTimerOrBlockTask at /home/dylan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/timers.c:714
+--- 0x40086db4: prvTimerTask at /home/dylan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/timers.c:685
+--- 0x4008631d: vPortTaskWrapper at /home/dylan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x400d8646: task_wdt_timeout_handling at /home/dylan/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:436
+--- 0x400d8a08: task_wdt_isr at /home/dylan/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:509
+--- 0x40082d1d: _xt_lowint1 at /home/dylan/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+--- 0x400e5cb3: i2c_ll_is_bus_busy at /home/dylan/esp/esp-idf/components/hal/esp32/include/hal/i2c_ll.h:463
+---  (inlined by) s_i2c_send_commands at /home/dylan/esp/esp-idf/components/esp_driver_i2c/i2c_master.c:543
+--- 0x400e5e5c: s_i2c_transaction_start at /home/dylan/esp/esp-idf/components/esp_driver_i2c/i2c_master.c:649
+--- 0x400e5f3f: s_i2c_synchronous_transaction at /home/dylan/esp/esp-idf/components/esp_driver_i2c/i2c_master.c:945
+--- 0x400e69e8: i2c_master_transmit_receive at /home/dylan/esp/esp-idf/components/esp_driver_i2c/i2c_master.c:1248
+--- 0x400d69a8: i2c_receive_adc at /home/dylan/esp/esp_proj/Lab5/RTS-lab5-master/main/I2C.c:31
+--- 0x400d6847: poll_adc_and_pwm at /home/dylan/esp/esp_proj/Lab5/RTS-lab5-master/main/master2.c:18
+--- 0x40086ba1: prvProcessExpiredTimer at /home/dylan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/timers.c:653
+--- 0x40086c39: prvProcessTimerOrBlockTask at /home/dylan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/timers.c:714
+--- 0x40086db4: prvTimerTask at /home/dylan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/timers.c:685
+--- 0x4008631d: vPortTaskWrapper at /home/dylan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x400d8646: task_wdt_timeout_handling at /home/dylan/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:436
+--- 0x400d8a08: task_wdt_isr at /home/dylan/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:509
+--- 0x40082d1d: _xt_lowint1 at /home/dylan/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+--- 0x400e5cb3: i2c_ll_is_bus_busy at /home/dylan/esp/esp-idf/components/hal/esp32/include/hal/i2c_ll.h:463
+---  (inlined by) s_i2c_send_commands at /home/dylan/esp/esp-idf/components/esp_driver_i2c/i2c_master.c:543
+--- 0x400e5e5c: s_i2c_transaction_start at /home/dylan/esp/esp-idf/components/esp_driver_i2c/i2c_master.c:649
+--- 0x400e5f3f: s_i2c_synchronous_transaction at /home/dylan/esp/esp-idf/components/esp_driver_i2c/i2c_master.c:945
+--- 0x400e69e8: i2c_master_transmit_receive at /home/dylan/esp/esp-idf/components/esp_driver_i2c/i2c_master.c:1248
+--- 0x400d69a8: i2c_receive_adc at /home/dylan/esp/esp_proj/Lab5/RTS-lab5-master/main/I2C.c:31
+--- 0x400d6847: poll_adc_and_pwm at /home/dylan/esp/esp_proj/Lab5/RTS-lab5-master/main/master2.c:18
+--- 0x40086ba1: prvProcessExpiredTimer at /home/dylan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/timers.c:653
+--- 0x40086c39: prvProcessTimerOrBlockTask at /home/dylan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/timers.c:714
+--- 0x40086db4: prvTimerTask at /home/dylan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/timers.c:685
+--- 0x4008631d: vPortTaskWrapper at /home/dylan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x400d8646: task_wdt_timeout_handling at /home/dylan/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:436
+--- 0x400d8a08: task_wdt_isr at /home/dylan/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:509
+--- 0x40082d1d: _xt_lowint1 at /home/dylan/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+--- 0x400e5cb3: i2c_ll_is_bus_busy at /home/dylan/esp/esp-idf/components/hal/esp32/include/hal/i2c_ll.h:463
+---  (inlined by) s_i2c_send_commands at /home/dylan/esp/esp-idf/components/esp_driver_i2c/i2c_master.c:543
+--- 0x400e5e5c: s_i2c_transaction_start at /home/dylan/esp/esp-idf/components/esp_driver_i2c/i2c_master.c:649
+--- 0x400e5f3f: s_i2c_synchronous_transaction at /home/dylan/esp/esp-idf/components/esp_driver_i2c/i2c_master.c:945
+--- 0x400e69e8: i2c_master_transmit_receive at /home/dylan/esp/esp-idf/components/esp_driver_i2c/i2c_master.c:1248
+--- 0x400d69a8: i2c_receive_adc at /home/dylan/esp/esp_proj/Lab5/RTS-lab5-master/main/I2C.c:31
+--- 0x400d6847: poll_adc_and_pwm at /home/dylan/esp/esp_proj/Lab5/RTS-lab5-master/main/master2.c:18
+--- 0x40086ba1: prvProcessExpiredTimer at /home/dylan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/timers.c:653
+--- 0x40086c39: prvProcessTimerOrBlockTask at /home/dylan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/timers.c:714
+--- 0x40086db4: prvTimerTask at /home/dylan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/timers.c:685
+--- 0x4008631d: vPortTaskWrapper at /home/dylan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x400d8646: task_wdt_timeout_handling at /home/dylan/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:436
+--- 0x400d8a08: task_wdt_isr at /home/dylan/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:509
+--- 0x40082d1d: _xt_lowint1 at /home/dylan/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+--- 0x400e5cb3: i2c_ll_is_bus_busy at /home/dylan/esp/esp-idf/components/hal/esp32/include/hal/i2c_ll.h:463
+---  (inlined by) s_i2c_send_commands at /home/dylan/esp/esp-idf/components/esp_driver_i2c/i2c_master.c:543
+--- 0x400e5e5c: s_i2c_transaction_start at /home/dylan/esp/esp-idf/components/esp_driver_i2c/i2c_master.c:649
+--- 0x400e5f3f: s_i2c_synchronous_transaction at /home/dylan/esp/esp-idf/components/esp_driver_i2c/i2c_master.c:945
+--- 0x400e69e8: i2c_master_transmit_receive at /home/dylan/esp/esp-idf/components/esp_driver_i2c/i2c_master.c:1248
+--- 0x400d69a8: i2c_receive_adc at /home/dylan/esp/esp_proj/Lab5/RTS-lab5-master/main/I2C.c:31
+--- 0x400d6847: poll_adc_and_pwm at /home/dylan/esp/esp_proj/Lab5/RTS-lab5-master/main/master2.c:18
+--- 0x40086ba1: prvProcessExpiredTimer at /home/dylan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/timers.c:653
+--- 0x40086c39: prvProcessTimerOrBlockTask at /home/dylan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/timers.c:714
+--- 0x40086db4: prvTimerTask at /home/dylan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/timers.c:685
+--- 0x4008631d: vPortTaskWrapper at /home/dylan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x400d8646: task_wdt_timeout_handling at /home/dylan/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:436
+--- 0x400d8a08: task_wdt_isr at /home/dylan/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:509
+--- 0x40082d1d: _xt_lowint1 at /home/dylan/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+--- 0x400e5cb3: i2c_ll_is_bus_busy at /home/dylan/esp/esp-idf/components/hal/esp32/include/hal/i2c_ll.h:463
+---  (inlined by) s_i2c_send_commands at /home/dylan/esp/esp-idf/components/esp_driver_i2c/i2c_master.c:543
+--- 0x400e5e5c: s_i2c_transaction_start at /home/dylan/esp/esp-idf/components/esp_driver_i2c/i2c_master.c:649
+--- 0x400e5f3f: s_i2c_synchronous_transaction at /home/dylan/esp/esp-idf/components/esp_driver_i2c/i2c_master.c:945
+--- 0x400e69e8: i2c_master_transmit_receive at /home/dylan/esp/esp-idf/components/esp_driver_i2c/i2c_master.c:1248
+--- 0x400d69a8: i2c_receive_adc at /home/dylan/esp/esp_proj/Lab5/RTS-lab5-master/main/I2C.c:31
+--- 0x400d6847: poll_adc_and_pwm at /home/dylan/esp/esp_proj/Lab5/RTS-lab5-master/main/master2.c:18
+--- 0x40086ba1: prvProcessExpiredTimer at /home/dylan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/timers.c:653
+--- 0x40086c39: prvProcessTimerOrBlockTask at /home/dylan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/timers.c:714
+--- 0x40086db4: prvTimerTask at /home/dylan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/timers.c:685
+--- 0x4008631d: vPortTaskWrapper at /home/dylan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0m

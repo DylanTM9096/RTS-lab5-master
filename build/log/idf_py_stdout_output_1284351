@@ -1,0 +1,2830 @@
+Command: /home/dylan/.espressif/python_env/idf5.5_py3.12_env/bin/python /home/dylan/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/dylan/esp/esp_proj/Lab5/RTS-lab5-master/build/master2.elf /home/dylan/esp/esp_proj/Lab5/RTS-lab5-master/build/bootloader/bootloader.elf -m '/home/dylan/.espressif/python_env/idf5.5_py3.12_env/bin/python' '/home/dylan/esp/esp-idf/tools/idf.py' '-p' '/dev/ttyUSB0'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15904
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5-dev-3568-g565cca2fee 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jul 21 2025 18:53:46[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bd18h ( 48408) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001bd40 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001bd64 vaddr=3ffb0000 size=0239ch (  9116) load[0m
+[0;32mI (114) esp_image: segment 3: paddr=0001e108 vaddr=40080000 size=01f10h (  7952) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=17da4h ( 97700) map[0m
+[0;32mI (159) esp_image: segment 5: paddr=00037dcc vaddr=40081f10 size=0bcc4h ( 48324) load[0m
+[0;32mI (184) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (184) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     master2[0m
+[0;32mI (207) app_init: App version:      3fd932d-dirty[0m
+[0;32mI (212) app_init: Compile time:     Jul 21 2025 18:53:34[0m
+[0;32mI (217) app_init: ELF file SHA256:  028e46378...[0m
+[0;32mI (221) app_init: ESP-IDF:          v5.5-dev-3568-g565cca2fee[0m
+[0;32mI (227) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (230) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (234) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (238) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (245) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (250) heap_init: At 3FFB2E30 len 0002D1D0 (180 KiB): DRAM[0m
+[0;32mI (255) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (260) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (266) heap_init: At 4008DBD4 len 0001242C (73 KiB): IRAM[0m
+[0;32mI (272) spi_flash: detected chip: generic[0m
+[0;32mI (275) spi_flash: flash io: dio[0m
+[0;33mW (278) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (291) main_task: Started on CPU0[0m
+[0;32mI (301) main_task: Calling app_main()[0m
+[0;32mI (301) I2C_MASTER: Initializing I2C master...[0m
+[0;32mI (301) PWM_OUT: PWM output started on GPIO 26[0m
+[0;32mI (301) main_task: Returned from app_main()[0m
+[0;32mI (401) I2C_MASTER: Received ADC: 47871[0m
+[0;32mI (401) PWM_OUT: PWM Pulse Width Output: 47871 us[0m
+[0;32mI (401) PWM_OUT: duty: 383049 [0m
+[0;32mI (501) I2C_MASTER: Received ADC: 400[0m
+[0;32mI (501) PWM_OUT: PWM Pulse Width Output: 400 us[0m
+[0;32mI (501) PWM_OUT: duty: 3200 [0m
+[0;32mI (601) I2C_MASTER: Received ADC: 497[0m
+[0;32mI (601) PWM_OUT: PWM Pulse Width Output: 497 us[0m
+[0;32mI (601) PWM_OUT: duty: 3976 [0m
+[0;32mI (701) I2C_MASTER: Received ADC: 366[0m
+[0;32mI (701) PWM_OUT: PWM Pulse Width Output: 366 us[0m
+[0;32mI (701) PWM_OUT: duty: 2928 [0m
+[0;32mI (801) I2C_MASTER: Received ADC: 368[0m
+[0;32mI (801) PWM_OUT: PWM Pulse Width Output: 368 us[0m
+[0;32mI (801) PWM_OUT: duty: 2944 [0m
+[0;32mI (901) I2C_MASTER: Received ADC: 371[0m
+[0;32mI (901) PWM_OUT: PWM Pulse Width Output: 371 us[0m
+[0;32mI (901) PWM_OUT: duty: 2968 [0m
+[0;32mI (1001) I2C_MASTER: Received ADC: 371[0m
+[0;32mI (1001) PWM_OUT: PWM Pulse Width Output: 371 us[0m
+[0;32mI (1001) PWM_OUT: duty: 2968 [0m
+[0;32mI (1101) I2C_MASTER: Received ADC: 371[0m
+[0;32mI (1101) PWM_OUT: PWM Pulse Width Output: 371 us[0m
+[0;32mI (1101) PWM_OUT: duty: 2968 [0m
+[0;32mI (1201) I2C_MASTER: Received ADC: 370[0m
+[0;32mI (1201) PWM_OUT: PWM Pulse Width Output: 370 us[0m
+[0;32mI (1201) PWM_OUT: duty: 2960 [0m
+[0;32mI (1301) I2C_MASTER: Received ADC: 382[0m
+[0;32mI (1301) PWM_OUT: PWM Pulse Width Output: 382 us[0m
+[0;32mI (1301) PWM_OUT: duty: 3056 [0m
+[0;32mI (1401) I2C_MASTER: Received ADC: 384[0m
+[0;32mI (1401) PWM_OUT: PWM Pulse Width Output: 384 us[0m
+[0;32mI (1401) PWM_OUT: duty: 3072 [0m
+[0;32mI (1501) I2C_MASTER: Received ADC: 384[0m
+[0;32mI (1501) PWM_OUT: PWM Pulse Width Output: 384 us[0m
+[0;32mI (1501) PWM_OUT: duty: 3072 [0m
+[0;32mI (1601) I2C_MASTER: Received ADC: 383[0m
+[0;32mI (1601) PWM_OUT: PWM Pulse Width Output: 383 us[0m
+[0;32mI (1601) PWM_OUT: duty: 3064 [0m
+[0;32mI (1701) I2C_MASTER: Received ADC: 359[0m
+[0;32mI (1701) PWM_OUT: PWM Pulse Width Output: 359 us[0m
+[0;32mI (1701) PWM_OUT: duty: 2872 [0m
+[0;32mI (1801) I2C_MASTER: Received ADC: 375[0m
+[0;32mI (1801) PWM_OUT: PWM Pulse Width Output: 375 us[0m
+[0;32mI (1801) PWM_OUT: duty: 3000 [0m
+[0;32mI (1901) I2C_MASTER: Received ADC: 382[0m
+[0;32mI (1901) PWM_OUT: PWM Pulse Width Output: 382 us[0m
+[0;32mI (1901) PWM_OUT: duty: 3056 [0m
+[0;32mI (2001) I2C_MASTER: Received ADC: 349[0m
+[0;32mI (2001) PWM_OUT: PWM Pulse Width Output: 349 us[0m
+[0;32mI (2001) PWM_OUT: duty: 2792 [0m
+[0;32mI (2101) I2C_MASTER: Received ADC: 391[0m
+[0;32mI (2101) PWM_OUT: PWM Pulse Width Output: 391 us[0m
+[0;32mI (2101) PWM_OUT: duty: 3128 [0m
+[0;32mI (2201) I2C_MASTER: Received ADC: 406[0m
+[0;32mI (2201) PWM_OUT: PWM Pulse Width Output: 406 us[0m
+[0;32mI (2201) PWM_OUT: duty: 3248 [0m
+[0;32mI (2301) I2C_MASTER: Received ADC: 400[0m
+[0;32mI (2301) PWM_OUT: PWM Pulse Width Output: 400 us[0m
+[0;32mI (2301) PWM_OUT: duty: 3200 [0m
+[0;32mI (2401) I2C_MASTER: Received ADC: 397[0m
+[0;32mI (2401) PWM_OUT: PWM Pulse Width Output: 397 us[0m
+[0;32mI (2401) PWM_OUT: duty: 3176 [0m
+[0;32mI (2501) I2C_MASTER: Received ADC: 399[0m
+[0;32mI (2501) PWM_OUT: PWM Pulse Width Output: 399 us[0m
+[0;32mI (2501) PWM_OUT: duty: 3192 [0m
+[0;32mI (2601) I2C_MASTER: Received ADC: 403[0m
+[0;32mI (2601) PWM_OUT: PWM Pulse Width Output: 403 us[0m
+[0;32mI (2601) PWM_OUT: duty: 3224 [0m
+[0;32mI (2701) I2C_MASTER: Received ADC: 400[0m
+[0;32mI (2701) PWM_OUT: PWM Pulse Width Output: 400 us[0m
+[0;32mI (2701) PWM_OUT: duty: 3200 [0m
+[0;32mI (2801) I2C_MASTER: Received ADC: 409[0m
+[0;32mI (2801) PWM_OUT: PWM Pulse Width Output: 409 us[0m
+[0;32mI (2801) PWM_OUT: duty: 3272 [0m
+[0;32mI (2901) I2C_MASTER: Received ADC: 384[0m
+[0;32mI (2901) PWM_OUT: PWM Pulse Width Output: 384 us[0m
+[0;32mI (2901) PWM_OUT: duty: 3072 [0m
+[0;32mI (3001) I2C_MASTER: Received ADC: 388[0m
+[0;32mI (3001) PWM_OUT: PWM Pulse Width Output: 388 us[0m
+[0;32mI (3001) PWM_OUT: duty: 3104 [0m
+[0;32mI (3101) I2C_MASTER: Received ADC: 395[0m
+[0;32mI (3101) PWM_OUT: PWM Pulse Width Output: 395 us[0m
+[0;32mI (3101) PWM_OUT: duty: 3160 [0m
+[0;32mI (3201) I2C_MASTER: Received ADC: 400[0m
+[0;32mI (3201) PWM_OUT: PWM Pulse Width Output: 400 us[0m
+[0;32mI (3201) PWM_OUT: duty: 3200 [0m
+[0;32mI (3301) I2C_MASTER: Received ADC: 402[0m
+[0;32mI (3301) PWM_OUT: PWM Pulse Width Output: 402 us[0m
+[0;32mI (3301) PWM_OUT: duty: 3216 [0m
+[0;32mI (3401) I2C_MASTER: Received ADC: 409[0m
+[0;32mI (3401) PWM_OUT: PWM Pulse Width Output: 409 us[0m
+[0;32mI (3401) PWM_OUT: duty: 3272 [0m
+[0;32mI (3501) I2C_MASTER: Received ADC: 402[0m
+[0;32mI (3501) PWM_OUT: PWM Pulse Width Output: 402 us[0m
+[0;32mI (3501) PWM_OUT: duty: 3216 [0m
+[0;32mI (3601) I2C_MASTER: Received ADC: 413[0m
+[0;32mI (3601) PWM_OUT: PWM Pulse Width Output: 413 us[0m
+[0;32mI (3601) PWM_OUT: duty: 3304 [0m
+[0;32mI (3701) I2C_MASTER: Received ADC: 422[0m
+[0;32mI (3701) PWM_OUT: PWM Pulse Width Output: 422 us[0m
+[0;32mI (3701) PWM_OUT: duty: 3376 [0m
+[0;32mI (3801) I2C_MASTER: Received ADC: 418[0m
+[0;32mI (3801) PWM_OUT: PWM Pulse Width Output: 418 us[0m
+[0;32mI (3801) PWM_OUT: duty: 3344 [0m
+[0;32mI (3901) I2C_MASTER: Received ADC: 419[0m
+[0;32mI (3901) PWM_OUT: PWM Pulse Width Output: 419 us[0m
+[0;32mI (3901) PWM_OUT: duty: 3352 [0m
+[0;32mI (4001) I2C_MASTER: Received ADC: 419[0m
+[0;32mI (4001) PWM_OUT: PWM Pulse Width Output: 419 us[0m
+[0;32mI (4001) PWM_OUT: duty: 3352 [0m
+[0;32mI (4101) I2C_MASTER: Received ADC: 425[0m
+[0;32mI (4101) PWM_OUT: PWM Pulse Width Output: 425 us[0m
+[0;32mI (4101) PWM_OUT: duty: 3400 [0m
+[0;32mI (4201) I2C_MASTER: Received ADC: 412[0m
+[0;32mI (4201) PWM_OUT: PWM Pulse Width Output: 412 us[0m
+[0;32mI (4201) PWM_OUT: duty: 3296 [0m
+[0;32mI (4301) I2C_MASTER: Received ADC: 407[0m
+[0;32mI (4301) PWM_OUT: PWM Pulse Width Output: 407 us[0m
+[0;32mI (4301) PWM_OUT: duty: 3256 [0m
+[0;32mI (4401) I2C_MASTER: Received ADC: 418[0m
+[0;32mI (4401) PWM_OUT: PWM Pulse Width Output: 418 us[0m
+[0;32mI (4401) PWM_OUT: duty: 3344 [0m
+[0;32mI (4501) I2C_MASTER: Received ADC: 409[0m
+[0;32mI (4501) PWM_OUT: PWM Pulse Width Output: 409 us[0m
+[0;32mI (4501) PWM_OUT: duty: 3272 [0m
+[0;32mI (4601) I2C_MASTER: Received ADC: 409[0m
+[0;32mI (4601) PWM_OUT: PWM Pulse Width Output: 409 us[0m
+[0;32mI (4601) PWM_OUT: duty: 3272 [0m
+[0;32mI (4701) I2C_MASTER: Received ADC: 400[0m
+[0;32mI (4701) PWM_OUT: PWM Pulse Width Output: 400 us[0m
+[0;32mI (4701) PWM_OUT: duty: 3200 [0m
+[0;32mI (4801) I2C_MASTER: Received ADC: 416[0m
+[0;32mI (4801) PWM_OUT: PWM Pulse Width Output: 416 us[0m
+[0;32mI (4801) PWM_OUT: duty: 3328 [0m
+[0;32mI (4901) I2C_MASTER: Received ADC: 415[0m
+[0;32mI (4901) PWM_OUT: PWM Pulse Width Output: 415 us[0m
+[0;32mI (4901) PWM_OUT: duty: 3320 [0m
+[0;32mI (5001) I2C_MASTER: Received ADC: 416[0m
+[0;32mI (5001) PWM_OUT: PWM Pulse Width Output: 416 us[0m
+[0;32mI (5001) PWM_OUT: duty: 3328 [0m
+[0;32mI (5101) I2C_MASTER: Received ADC: 427[0m
+[0;32mI (5101) PWM_OUT: PWM Pulse Width Output: 427 us[0m
+[0;32mI (5101) PWM_OUT: duty: 3416 [0m
+[0;32mI (5201) I2C_MASTER: Received ADC: 423[0m
+[0;32mI (5201) PWM_OUT: PWM Pulse Width Output: 423 us[0m
+[0;32mI (5201) PWM_OUT: duty: 3384 [0m
+[0;32mI (5301) I2C_MASTER: Received ADC: 414[0m
+[0;32mI (5301) PWM_OUT: PWM Pulse Width Output: 414 us[0m
+[0;32mI (5301) PWM_OUT: duty: 3312 [0m
+[0;32mI (5401) I2C_MASTER: Received ADC: 419[0m
+[0;32mI (5401) PWM_OUT: PWM Pulse Width Output: 419 us[0m
+[0;32mI (5401) PWM_OUT: duty: 3352 [0m
+[0;32mI (5501) I2C_MASTER: Received ADC: 426[0m
+[0;32mI (5501) PWM_OUT: PWM Pulse Width Output: 426 us[0m
+[0;32mI (5501) PWM_OUT: duty: 3408 [0m
+[0;32mI (5601) I2C_MASTER: Received ADC: 403[0m
+[0;32mI (5601) PWM_OUT: PWM Pulse Width Output: 403 us[0m
+[0;32mI (5601) PWM_OUT: duty: 3224 [0m
+[0;32mI (5701) I2C_MASTER: Received ADC: 409[0m
+[0;32mI (5701) PWM_OUT: PWM Pulse Width Output: 409 us[0m
+[0;32mI (5701) PWM_OUT: duty: 3272 [0m
+[0;32mI (5801) I2C_MASTER: Received ADC: 398[0m
+[0;32mI (5801) PWM_OUT: PWM Pulse Width Output: 398 us[0m
+[0;32mI (5801) PWM_OUT: duty: 3184 [0m
+[0;32mI (5901) I2C_MASTER: Received ADC: 419[0m
+[0;32mI (5901) PWM_OUT: PWM Pulse Width Output: 419 us[0m
+[0;32mI (5901) PWM_OUT: duty: 3352 [0m
+[0;32mI (6001) I2C_MASTER: Received ADC: 420[0m
+[0;32mI (6001) PWM_OUT: PWM Pulse Width Output: 420 us[0m
+[0;32mI (6001) PWM_OUT: duty: 3360 [0m
+[0;32mI (6101) I2C_MASTER: Received ADC: 404[0m
+[0;32mI (6101) PWM_OUT: PWM Pulse Width Output: 404 us[0m
+[0;32mI (6101) PWM_OUT: duty: 3232 [0m
+[0;32mI (6201) I2C_MASTER: Received ADC: 406[0m
+[0;32mI (6201) PWM_OUT: PWM Pulse Width Output: 406 us[0m
+[0;32mI (6201) PWM_OUT: duty: 3248 [0m
+[0;32mI (6301) I2C_MASTER: Received ADC: 395[0m
+[0;32mI (6301) PWM_OUT: PWM Pulse Width Output: 395 us[0m
+[0;32mI (6301) PWM_OUT: duty: 3160 [0m
+[0;32mI (6401) I2C_MASTER: Received ADC: 397[0m
+[0;32mI (6401) PWM_OUT: PWM Pulse Width Output: 397 us[0m
+[0;32mI (6401) PWM_OUT: duty: 3176 [0m
+[0;32mI (6501) I2C_MASTER: Received ADC: 398[0m
+[0;32mI (6501) PWM_OUT: PWM Pulse Width Output: 398 us[0m
+[0;32mI (6501) PWM_OUT: duty: 3184 [0m
+[0;32mI (6601) I2C_MASTER: Received ADC: 400[0m
+[0;32mI (6601) PWM_OUT: PWM Pulse Width Output: 400 us[0m
+[0;32mI (6601) PWM_OUT: duty: 3200 [0m
+[0;32mI (6701) I2C_MASTER: Received ADC: 389[0m
+[0;32mI (6701) PWM_OUT: PWM Pulse Width Output: 389 us[0m
+[0;32mI (6701) PWM_OUT: duty: 3112 [0m
+[0;32mI (6801) I2C_MASTER: Received ADC: 407[0m
+[0;32mI (6801) PWM_OUT: PWM Pulse Width Output: 407 us[0m
+[0;32mI (6801) PWM_OUT: duty: 3256 [0m
+[0;32mI (6901) I2C_MASTER: Received ADC: 393[0m
+[0;32mI (6901) PWM_OUT: PWM Pulse Width Output: 393 us[0m
+[0;32mI (6901) PWM_OUT: duty: 3144 [0m
+[0;32mI (7001) I2C_MASTER: Received ADC: 397[0m
+[0;32mI (7001) PWM_OUT: PWM Pulse Width Output: 397 us[0m
+[0;32mI (7001) PWM_OUT: duty: 3176 [0m
+[0;32mI (7101) I2C_MASTER: Received ADC: 382[0m
+[0;32mI (7101) PWM_OUT: PWM Pulse Width Output: 382 us[0m
+[0;32mI (7101) PWM_OUT: duty: 3056 [0m
+[0;32mI (7201) I2C_MASTER: Received ADC: 375[0m
+[0;32mI (7201) PWM_OUT: PWM Pulse Width Output: 375 us[0m
+[0;32mI (7201) PWM_OUT: duty: 3000 [0m
+[0;32mI (7301) I2C_MASTER: Received ADC: 385[0m
+[0;32mI (7301) PWM_OUT: PWM Pulse Width Output: 385 us[0m
+[0;32mI (7301) PWM_OUT: duty: 3080 [0m
+[0;32mI (7401) I2C_MASTER: Received ADC: 391[0m
+[0;32mI (7401) PWM_OUT: PWM Pulse Width Output: 391 us[0m
+[0;32mI (7401) PWM_OUT: duty: 3128 [0m
+[0;32mI (7501) I2C_MASTER: Received ADC: 398[0m
+[0;32mI (7501) PWM_OUT: PWM Pulse Width Output: 398 us[0m
+[0;32mI (7501) PWM_OUT: duty: 3184 [0m
+[0;32mI (7601) I2C_MASTER: Received ADC: 400[0m
+[0;32mI (7601) PWM_OUT: PWM Pulse Width Output: 400 us[0m
+[0;32mI (7601) PWM_OUT: duty: 3200 [0m
+[0;32mI (7701) I2C_MASTER: Received ADC: 387[0m
+[0;32mI (7701) PWM_OUT: PWM Pulse Width Output: 387 us[0m
+[0;32mI (7701) PWM_OUT: duty: 3096 [0m
+[0;32mI (7801) I2C_MASTER: Received ADC: 391[0m
+[0;32mI (7801) PWM_OUT: PWM Pulse Width Output: 391 us[0m
+[0;32mI (7801) PWM_OUT: duty: 3128 [0m
+[0;32mI (7901) I2C_MASTER: Received ADC: 387[0m
+[0;32mI (7901) PWM_OUT: PWM Pulse Width Output: 387 us[0m
+[0;32mI (7901) PWM_OUT: duty: 3096 [0m
+[0;32mI (8001) I2C_MASTER: Received ADC: 394[0m
+[0;32mI (8001) PWM_OUT: PWM Pulse Width Output: 394 us[0m
+[0;32mI (8001) PWM_OUT: duty: 3152 [0m
+[0;32mI (8101) I2C_MASTER: Received ADC: 308[0m
+[0;32mI (8101) PWM_OUT: PWM Pulse Width Output: 308 us[0m
+[0;32mI (8101) PWM_OUT: duty: 2464 [0m
+[0;32mI (8201) I2C_MASTER: Received ADC: 290[0m
+[0;32mI (8201) PWM_OUT: PWM Pulse Width Output: 290 us[0m
+[0;32mI (8201) PWM_OUT: duty: 2320 [0m
+[0;32mI (8301) I2C_MASTER: Received ADC: 243[0m
+[0;32mI (8301) PWM_OUT: PWM Pulse Width Output: 243 us[0m
+[0;32mI (8301) PWM_OUT: duty: 1944 [0m
+[0;32mI (8401) I2C_MASTER: Received ADC: 272[0m
+[0;32mI (8401) PWM_OUT: PWM Pulse Width Output: 272 us[0m
+[0;32mI (8401) PWM_OUT: duty: 2176 [0m
+[0;32mI (8501) I2C_MASTER: Received ADC: 335[0m
+[0;32mI (8501) PWM_OUT: PWM Pulse Width Output: 335 us[0m
+[0;32mI (8501) PWM_OUT: duty: 2680 [0m
+[0;32mI (8601) I2C_MASTER: Received ADC: 330[0m
+[0;32mI (8601) PWM_OUT: PWM Pulse Width Output: 330 us[0m
+[0;32mI (8601) PWM_OUT: duty: 2640 [0m
+[0;32mI (8701) I2C_MASTER: Received ADC: 357[0m
+[0;32mI (8701) PWM_OUT: PWM Pulse Width Output: 357 us[0m
+[0;32mI (8701) PWM_OUT: duty: 2856 [0m
+[0;32mI (8801) I2C_MASTER: Received ADC: 338[0m
+[0;32mI (8801) PWM_OUT: PWM Pulse Width Output: 338 us[0m
+[0;32mI (8801) PWM_OUT: duty: 2704 [0m
+[0;32mI (8901) I2C_MASTER: Received ADC: 437[0m
+[0;32mI (8901) PWM_OUT: PWM Pulse Width Output: 437 us[0m
+[0;32mI (8901) PWM_OUT: duty: 3496 [0m
+[0;32mI (9001) I2C_MASTER: Received ADC: 372[0m
+[0;32mI (9001) PWM_OUT: PWM Pulse Width Output: 372 us[0m
+[0;32mI (9001) PWM_OUT: duty: 2976 [0m
+[0;32mI (9101) I2C_MASTER: Received ADC: 323[0m
+[0;32mI (9101) PWM_OUT: PWM Pulse Width Output: 323 us[0m
+[0;32mI (9101) PWM_OUT: duty: 2584 [0m
+[0;32mI (9201) I2C_MASTER: Received ADC: 321[0m
+[0;32mI (9201) PWM_OUT: PWM Pulse Width Output: 321 us[0m
+[0;32mI (9201) PWM_OUT: duty: 2568 [0m
+[0;32mI (9301) I2C_MASTER: Received ADC: 275[0m
+[0;32mI (9301) PWM_OUT: PWM Pulse Width Output: 275 us[0m
+[0;32mI (9301) PWM_OUT: duty: 2200 [0m
+[0;32mI (9401) I2C_MASTER: Received ADC: 80[0m
+[0;32mI (9401) PWM_OUT: PWM Pulse Width Output: 80 us[0m
+[0;32mI (9401) PWM_OUT: duty: 640 [0m
+[0;32mI (9501) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (9501) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (9501) PWM_OUT: duty: 0 [0m
+[0;32mI (9601) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (9601) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (9601) PWM_OUT: duty: 0 [0m
+[0;32mI (9701) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (9701) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (9701) PWM_OUT: duty: 0 [0m
+[0;32mI (9801) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (9801) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (9801) PWM_OUT: duty: 0 [0m
+[0;32mI (9901) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (9901) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (9901) PWM_OUT: duty: 0 [0m
+[0;32mI (10001) I2C_MASTER: Received ADC: 4[0m
+[0;32mI (10001) PWM_OUT: PWM Pulse Width Output: 4 us[0m
+[0;32mI (10001) PWM_OUT: duty: 32 [0m
+[0;32mI (10101) I2C_MASTER: Received ADC: 1[0m
+[0;32mI (10101) PWM_OUT: PWM Pulse Width Output: 1 us[0m
+[0;32mI (10101) PWM_OUT: duty: 8 [0m
+[0;32mI (10201) I2C_MASTER: Received ADC: 6[0m
+[0;32mI (10201) PWM_OUT: PWM Pulse Width Output: 6 us[0m
+[0;32mI (10201) PWM_OUT: duty: 48 [0m
+[0;32mI (10301) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (10301) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (10301) PWM_OUT: duty: 0 [0m
+[0;32mI (10401) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (10401) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (10401) PWM_OUT: duty: 0 [0m
+[0;32mI (10501) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (10501) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (10501) PWM_OUT: duty: 0 [0m
+[0;32mI (10601) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (10601) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (10601) PWM_OUT: duty: 0 [0m
+[0;32mI (10701) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (10701) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (10701) PWM_OUT: duty: 0 [0m
+[0;32mI (10801) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (10801) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (10801) PWM_OUT: duty: 0 [0m
+[0;32mI (10901) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (10901) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (10901) PWM_OUT: duty: 0 [0m
+[0;32mI (11001) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (11001) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (11001) PWM_OUT: duty: 0 [0m
+[0;32mI (11101) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (11101) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (11101) PWM_OUT: duty: 0 [0m
+[0;32mI (11201) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (11201) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (11201) PWM_OUT: duty: 0 [0m
+[0;32mI (11301) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (11301) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (11301) PWM_OUT: duty: 0 [0m
+[0;32mI (11401) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (11401) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (11401) PWM_OUT: duty: 0 [0m
+[0;32mI (11501) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (11501) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (11501) PWM_OUT: duty: 0 [0m
+[0;32mI (11601) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (11601) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (11601) PWM_OUT: duty: 0 [0m
+[0;32mI (11701) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (11701) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (11701) PWM_OUT: duty: 0 [0m
+[0;32mI (11801) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (11801) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (11801) PWM_OUT: duty: 0 [0m
+[0;32mI (11901) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (11901) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (11901) PWM_OUT: duty: 0 [0m
+[0;32mI (12001) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (12001) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (12001) PWM_OUT: duty: 0 [0m
+[0;32mI (12101) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (12101) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (12101) PWM_OUT: duty: 0 [0m
+[0;32mI (12201) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (12201) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (12201) PWM_OUT: duty: 0 [0m
+[0;32mI (12301) I2C_MASTER: Received ADC: 10[0m
+[0;32mI (12301) PWM_OUT: PWM Pulse Width Output: 10 us[0m
+[0;32mI (12301) PWM_OUT: duty: 80 [0m
+[0;32mI (12401) I2C_MASTER: Received ADC: 59[0m
+[0;32mI (12401) PWM_OUT: PWM Pulse Width Output: 59 us[0m
+[0;32mI (12401) PWM_OUT: duty: 472 [0m
+[0;32mI (12501) I2C_MASTER: Received ADC: 101[0m
+[0;32mI (12501) PWM_OUT: PWM Pulse Width Output: 101 us[0m
+[0;32mI (12501) PWM_OUT: duty: 808 [0m
+[0;32mI (12601) I2C_MASTER: Received ADC: 129[0m
+[0;32mI (12601) PWM_OUT: PWM Pulse Width Output: 129 us[0m
+[0;32mI (12601) PWM_OUT: duty: 1032 [0m
+[0;32mI (12701) I2C_MASTER: Received ADC: 140[0m
+[0;32mI (12701) PWM_OUT: PWM Pulse Width Output: 140 us[0m
+[0;32mI (12701) PWM_OUT: duty: 1120 [0m
+[0;32mI (12801) I2C_MASTER: Received ADC: 142[0m
+[0;32mI (12801) PWM_OUT: PWM Pulse Width Output: 142 us[0m
+[0;32mI (12801) PWM_OUT: duty: 1136 [0m
+[0;32mI (12901) I2C_MASTER: Received ADC: 163[0m
+[0;32mI (12901) PWM_OUT: PWM Pulse Width Output: 163 us[0m
+[0;32mI (12901) PWM_OUT: duty: 1304 [0m
+[0;32mI (13001) I2C_MASTER: Received ADC: 195[0m
+[0;32mI (13001) PWM_OUT: PWM Pulse Width Output: 195 us[0m
+[0;32mI (13001) PWM_OUT: duty: 1560 [0m
+[0;32mI (13101) I2C_MASTER: Received ADC: 270[0m
+[0;32mI (13101) PWM_OUT: PWM Pulse Width Output: 270 us[0m
+[0;32mI (13101) PWM_OUT: duty: 2160 [0m
+[0;32mI (13201) I2C_MASTER: Received ADC: 274[0m
+[0;32mI (13201) PWM_OUT: PWM Pulse Width Output: 274 us[0m
+[0;32mI (13201) PWM_OUT: duty: 2192 [0m
+[0;32mI (13301) I2C_MASTER: Received ADC: 368[0m
+[0;32mI (13301) PWM_OUT: PWM Pulse Width Output: 368 us[0m
+[0;32mI (13301) PWM_OUT: duty: 2944 [0m
+[0;32mI (13401) I2C_MASTER: Received ADC: 401[0m
+[0;32mI (13401) PWM_OUT: PWM Pulse Width Output: 401 us[0m
+[0;32mI (13401) PWM_OUT: duty: 3208 [0m
+[0;32mI (13501) I2C_MASTER: Received ADC: 507[0m
+[0;32mI (13501) PWM_OUT: PWM Pulse Width Output: 507 us[0m
+[0;32mI (13501) PWM_OUT: duty: 4056 [0m
+[0;32mI (13601) I2C_MASTER: Received ADC: 630[0m
+[0;32mI (13601) PWM_OUT: PWM Pulse Width Output: 630 us[0m
+[0;32mI (13601) PWM_OUT: duty: 5041 [0m
+[0;32mI (13701) I2C_MASTER: Received ADC: 720[0m
+[0;32mI (13701) PWM_OUT: PWM Pulse Width Output: 720 us[0m
+[0;32mI (13701) PWM_OUT: duty: 5761 [0m
+[0;32mI (13801) I2C_MASTER: Received ADC: 841[0m
+[0;32mI (13801) PWM_OUT: PWM Pulse Width Output: 841 us[0m
+[0;32mI (13801) PWM_OUT: duty: 6729 [0m
+[0;32mI (13901) I2C_MASTER: Received ADC: 971[0m
+[0;32mI (13901) PWM_OUT: PWM Pulse Width Output: 971 us[0m
+[0;32mI (13901) PWM_OUT: duty: 7769 [0m
+[0;32mI (14001) I2C_MASTER: Received ADC: 1097[0m
+[0;32mI (14001) PWM_OUT: PWM Pulse Width Output: 1097 us[0m
+[0;32mI (14001) PWM_OUT: duty: 8777 [0m
+[0;32mI (14101) I2C_MASTER: Received ADC: 1250[0m
+[0;32mI (14101) PWM_OUT: PWM Pulse Width Output: 1250 us[0m
+[0;32mI (14101) PWM_OUT: duty: 10002 [0m
+[0;32mI (14201) I2C_MASTER: Received ADC: 1399[0m
+[0;32mI (14201) PWM_OUT: PWM Pulse Width Output: 1399 us[0m
+[0;32mI (14201) PWM_OUT: duty: 11194 [0m
+[0;32mI (14301) I2C_MASTER: Received ADC: 1557[0m
+[0;32mI (14301) PWM_OUT: PWM Pulse Width Output: 1557 us[0m
+[0;32mI (14301) PWM_OUT: duty: 12458 [0m
+[0;32mI (14401) I2C_MASTER: Received ADC: 1846[0m
+[0;32mI (14401) PWM_OUT: PWM Pulse Width Output: 1846 us[0m
+[0;32mI (14401) PWM_OUT: duty: 14771 [0m
+[0;32mI (14501) I2C_MASTER: Received ADC: 2007[0m
+[0;32mI (14501) PWM_OUT: PWM Pulse Width Output: 2007 us[0m
+[0;32mI (14501) PWM_OUT: duty: 16059 [0m
+[0;32mI (14601) I2C_MASTER: Received ADC: 2161[0m
+[0;32mI (14601) PWM_OUT: PWM Pulse Width Output: 2161 us[0m
+[0;32mI (14601) PWM_OUT: duty: 17291 [0m
+[0;32mI (14701) I2C_MASTER: Received ADC: 2285[0m
+[0;32mI (14701) PWM_OUT: PWM Pulse Width Output: 2285 us[0m
+[0;32mI (14701) PWM_OUT: duty: 18283 [0m
+[0;32mI (14801) I2C_MASTER: Received ADC: 2282[0m
+[0;32mI (14801) PWM_OUT: PWM Pulse Width Output: 2282 us[0m
+[0;32mI (14801) PWM_OUT: duty: 18259 [0m
+[0;32mI (14901) I2C_MASTER: Received ADC: 2256[0m
+[0;32mI (14901) PWM_OUT: PWM Pulse Width Output: 2256 us[0m
+[0;32mI (14901) PWM_OUT: duty: 18051 [0m
+[0;32mI (15001) I2C_MASTER: Received ADC: 2279[0m
+[0;32mI (15001) PWM_OUT: PWM Pulse Width Output: 2279 us[0m
+[0;32mI (15001) PWM_OUT: duty: 18235 [0m
+[0;32mI (15101) I2C_MASTER: Received ADC: 2231[0m
+[0;32mI (15101) PWM_OUT: PWM Pulse Width Output: 2231 us[0m
+[0;32mI (15101) PWM_OUT: duty: 17851 [0m
+[0;32mI (15201) I2C_MASTER: Received ADC: 2204[0m
+[0;32mI (15201) PWM_OUT: PWM Pulse Width Output: 2204 us[0m
+[0;32mI (15201) PWM_OUT: duty: 17635 [0m
+[0;32mI (15301) I2C_MASTER: Received ADC: 2217[0m
+[0;32mI (15301) PWM_OUT: PWM Pulse Width Output: 2217 us[0m
+[0;32mI (15301) PWM_OUT: duty: 17739 [0m
+[0;32mI (15401) I2C_MASTER: Received ADC: 2239[0m
+[0;32mI (15401) PWM_OUT: PWM Pulse Width Output: 2239 us[0m
+[0;32mI (15401) PWM_OUT: duty: 17915 [0m
+[0;32mI (15501) I2C_MASTER: Received ADC: 2231[0m
+[0;32mI (15501) PWM_OUT: PWM Pulse Width Output: 2231 us[0m
+[0;32mI (15501) PWM_OUT: duty: 17851 [0m
+[0;32mI (15601) I2C_MASTER: Received ADC: 2226[0m
+[0;32mI (15601) PWM_OUT: PWM Pulse Width Output: 2226 us[0m
+[0;32mI (15601) PWM_OUT: duty: 17811 [0m
+[0;32mI (15701) I2C_MASTER: Received ADC: 2256[0m
+[0;32mI (15701) PWM_OUT: PWM Pulse Width Output: 2256 us[0m
+[0;32mI (15701) PWM_OUT: duty: 18051 [0m
+[0;32mI (15801) I2C_MASTER: Received ADC: 2380[0m
+[0;32mI (15801) PWM_OUT: PWM Pulse Width Output: 2380 us[0m
+[0;32mI (15801) PWM_OUT: duty: 19044 [0m
+[0;32mI (15901) I2C_MASTER: Received ADC: 2684[0m
+[0;32mI (15901) PWM_OUT: PWM Pulse Width Output: 2684 us[0m
+[0;32mI (15901) PWM_OUT: duty: 21476 [0m
+[0;32mI (16001) I2C_MASTER: Received ADC: 4023[0m
+[0;32mI (16001) PWM_OUT: PWM Pulse Width Output: 4023 us[0m
+[0;32mI (16001) PWM_OUT: duty: 32190 [0m
+[0;32mI (16101) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (16101) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (16101) PWM_OUT: duty: 32767 [0m
+[0;32mI (16201) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (16201) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (16201) PWM_OUT: duty: 32767 [0m
+[0;32mI (16301) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (16301) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (16301) PWM_OUT: duty: 32767 [0m
+[0;32mI (16401) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (16401) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (16401) PWM_OUT: duty: 32767 [0m
+[0;32mI (16501) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (16501) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (16501) PWM_OUT: duty: 32767 [0m
+[0;32mI (16601) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (16601) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (16601) PWM_OUT: duty: 32767 [0m
+[0;32mI (16701) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (16701) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (16701) PWM_OUT: duty: 32767 [0m
+[0;32mI (16801) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (16801) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (16801) PWM_OUT: duty: 32767 [0m
+[0;32mI (16901) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (16901) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (16901) PWM_OUT: duty: 32767 [0m
+[0;32mI (17001) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (17001) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (17001) PWM_OUT: duty: 32767 [0m
+[0;32mI (17101) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (17101) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (17101) PWM_OUT: duty: 32767 [0m
+[0;32mI (17201) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (17201) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (17201) PWM_OUT: duty: 32767 [0m
+[0;32mI (17301) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (17301) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (17301) PWM_OUT: duty: 32767 [0m
+[0;32mI (17401) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (17401) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (17401) PWM_OUT: duty: 32767 [0m
+[0;32mI (17501) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (17501) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (17501) PWM_OUT: duty: 32767 [0m
+[0;32mI (17601) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (17601) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (17601) PWM_OUT: duty: 32767 [0m
+[0;32mI (17701) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (17701) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (17701) PWM_OUT: duty: 32767 [0m
+[0;32mI (17801) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (17801) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (17801) PWM_OUT: duty: 32767 [0m
+[0;32mI (17901) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (17901) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (17901) PWM_OUT: duty: 32767 [0m
+[0;32mI (18001) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (18001) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (18001) PWM_OUT: duty: 32767 [0m
+[0;32mI (18101) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (18101) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (18101) PWM_OUT: duty: 32767 [0m
+[0;32mI (18201) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (18201) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (18201) PWM_OUT: duty: 32767 [0m
+[0;32mI (18301) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (18301) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (18301) PWM_OUT: duty: 32767 [0m
+[0;32mI (18401) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (18401) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (18401) PWM_OUT: duty: 32767 [0m
+[0;32mI (18501) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (18501) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (18501) PWM_OUT: duty: 32767 [0m
+[0;32mI (18601) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (18601) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (18601) PWM_OUT: duty: 32767 [0m
+[0;32mI (18701) I2C_MASTER: Received ADC: 3860[0m
+[0;32mI (18701) PWM_OUT: PWM Pulse Width Output: 3860 us[0m
+[0;32mI (18701) PWM_OUT: duty: 30886 [0m
+[0;32mI (18801) I2C_MASTER: Received ADC: 3951[0m
+[0;32mI (18801) PWM_OUT: PWM Pulse Width Output: 3951 us[0m
+[0;32mI (18801) PWM_OUT: duty: 31614 [0m
+[0;32mI (18901) I2C_MASTER: Received ADC: 3967[0m
+[0;32mI (18901) PWM_OUT: PWM Pulse Width Output: 3967 us[0m
+[0;32mI (18901) PWM_OUT: duty: 31742 [0m
+[0;32mI (19001) I2C_MASTER: Received ADC: 3971[0m
+[0;32mI (19001) PWM_OUT: PWM Pulse Width Output: 3971 us[0m
+[0;32mI (19001) PWM_OUT: duty: 31774 [0m
+[0;32mI (19101) I2C_MASTER: Received ADC: 4031[0m
+[0;32mI (19101) PWM_OUT: PWM Pulse Width Output: 4031 us[0m
+[0;32mI (19101) PWM_OUT: duty: 32254 [0m
+[0;32mI (19201) I2C_MASTER: Received ADC: 4048[0m
+[0;32mI (19201) PWM_OUT: PWM Pulse Width Output: 4048 us[0m
+[0;32mI (19201) PWM_OUT: duty: 32390 [0m
+[0;32mI (19301) I2C_MASTER: Received ADC: 4094[0m
+[0;32mI (19301) PWM_OUT: PWM Pulse Width Output: 4094 us[0m
+[0;32mI (19301) PWM_OUT: duty: 32758 [0m
+[0;32mI (19401) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (19401) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (19401) PWM_OUT: duty: 32767 [0m
+[0;32mI (19501) I2C_MASTER: Received ADC: 4080[0m
+[0;32mI (19501) PWM_OUT: PWM Pulse Width Output: 4080 us[0m
+[0;32mI (19501) PWM_OUT: duty: 32646 [0m
+[0;32mI (19601) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (19601) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (19601) PWM_OUT: duty: 32767 [0m
+[0;32mI (19701) I2C_MASTER: Received ADC: 4093[0m
+[0;32mI (19701) PWM_OUT: PWM Pulse Width Output: 4093 us[0m
+[0;32mI (19701) PWM_OUT: duty: 32750 [0m
+[0;32mI (19801) I2C_MASTER: Received ADC: 4013[0m
+[0;32mI (19801) PWM_OUT: PWM Pulse Width Output: 4013 us[0m
+[0;32mI (19801) PWM_OUT: duty: 32110 [0m
+[0;32mI (19901) I2C_MASTER: Received ADC: 3775[0m
+[0;32mI (19901) PWM_OUT: PWM Pulse Width Output: 3775 us[0m
+[0;32mI (19901) PWM_OUT: duty: 30206 [0m
+[0;32mI (20001) I2C_MASTER: Received ADC: 3358[0m
+[0;32mI (20001) PWM_OUT: PWM Pulse Width Output: 3358 us[0m
+[0;32mI (20001) PWM_OUT: duty: 26869 [0m
+[0;32mI (20101) I2C_MASTER: Received ADC: 2929[0m
+[0;32mI (20101) PWM_OUT: PWM Pulse Width Output: 2929 us[0m
+[0;32mI (20101) PWM_OUT: duty: 23437 [0m
+[0;32mI (20201) I2C_MASTER: Received ADC: 2697[0m
+[0;32mI (20201) PWM_OUT: PWM Pulse Width Output: 2697 us[0m
+[0;32mI (20201) PWM_OUT: duty: 21580 [0m
+[0;32mI (20301) I2C_MASTER: Received ADC: 2523[0m
+[0;32mI (20301) PWM_OUT: PWM Pulse Width Output: 2523 us[0m
+[0;32mI (20301) PWM_OUT: duty: 20188 [0m
+[0;32mI (20401) I2C_MASTER: Received ADC: 2201[0m
+[0;32mI (20401) PWM_OUT: PWM Pulse Width Output: 2201 us[0m
+[0;32mI (20401) PWM_OUT: duty: 17611 [0m
+[0;32mI (20501) I2C_MASTER: Received ADC: 1907[0m
+[0;32mI (20501) PWM_OUT: PWM Pulse Width Output: 1907 us[0m
+[0;32mI (20501) PWM_OUT: duty: 15259 [0m
+[0;32mI (20601) I2C_MASTER: Received ADC: 1806[0m
+[0;32mI (20601) PWM_OUT: PWM Pulse Width Output: 1806 us[0m
+[0;32mI (20601) PWM_OUT: duty: 14451 [0m
+[0;32mI (20701) I2C_MASTER: Received ADC: 1776[0m
+[0;32mI (20701) PWM_OUT: PWM Pulse Width Output: 1776 us[0m
+[0;32mI (20701) PWM_OUT: duty: 14211 [0m
+[0;32mI (20801) I2C_MASTER: Received ADC: 1792[0m
+[0;32mI (20801) PWM_OUT: PWM Pulse Width Output: 1792 us[0m
+[0;32mI (20801) PWM_OUT: duty: 14339 [0m
+[0;32mI (20901) I2C_MASTER: Received ADC: 1798[0m
+[0;32mI (20901) PWM_OUT: PWM Pulse Width Output: 1798 us[0m
+[0;32mI (20901) PWM_OUT: duty: 14387 [0m
+[0;32mI (21001) I2C_MASTER: Received ADC: 1826[0m
+[0;32mI (21001) PWM_OUT: PWM Pulse Width Output: 1826 us[0m
+[0;32mI (21001) PWM_OUT: duty: 14611 [0m
+[0;32mI (21101) I2C_MASTER: Received ADC: 1822[0m
+[0;32mI (21101) PWM_OUT: PWM Pulse Width Output: 1822 us[0m
+[0;32mI (21101) PWM_OUT: duty: 14579 [0m
+[0;32mI (21201) I2C_MASTER: Received ADC: 1808[0m
+[0;32mI (21201) PWM_OUT: PWM Pulse Width Output: 1808 us[0m
+[0;32mI (21201) PWM_OUT: duty: 14467 [0m
+[0;32mI (21301) I2C_MASTER: Received ADC: 1805[0m
+[0;32mI (21301) PWM_OUT: PWM Pulse Width Output: 1805 us[0m
+[0;32mI (21301) PWM_OUT: duty: 14443 [0m
+[0;32mI (21401) I2C_MASTER: Received ADC: 1801[0m
+[0;32mI (21401) PWM_OUT: PWM Pulse Width Output: 1801 us[0m
+[0;32mI (21401) PWM_OUT: duty: 14411 [0m
+[0;32mI (21501) I2C_MASTER: Received ADC: 1783[0m
+[0;32mI (21501) PWM_OUT: PWM Pulse Width Output: 1783 us[0m
+[0;32mI (21501) PWM_OUT: duty: 14267 [0m
+[0;32mI (21601) I2C_MASTER: Received ADC: 1767[0m
+[0;32mI (21601) PWM_OUT: PWM Pulse Width Output: 1767 us[0m
+[0;32mI (21601) PWM_OUT: duty: 14139 [0m
+[0;32mI (21701) I2C_MASTER: Received ADC: 1535[0m
+[0;32mI (21701) PWM_OUT: PWM Pulse Width Output: 1535 us[0m
+[0;32mI (21701) PWM_OUT: duty: 12282 [0m
+[0;32mI (21801) I2C_MASTER: Received ADC: 1435[0m
+[0;32mI (21801) PWM_OUT: PWM Pulse Width Output: 1435 us[0m
+[0;32mI (21801) PWM_OUT: duty: 11482 [0m
+[0;32mI (21901) I2C_MASTER: Received ADC: 1265[0m
+[0;32mI (21901) PWM_OUT: PWM Pulse Width Output: 1265 us[0m
+[0;32mI (21901) PWM_OUT: duty: 10122 [0m
+[0;32mI (22001) I2C_MASTER: Received ADC: 1115[0m
+[0;32mI (22001) PWM_OUT: PWM Pulse Width Output: 1115 us[0m
+[0;32mI (22001) PWM_OUT: duty: 8921 [0m
+[0;32mI (22101) I2C_MASTER: Received ADC: 941[0m
+[0;32mI (22101) PWM_OUT: PWM Pulse Width Output: 941 us[0m
+[0;32mI (22101) PWM_OUT: duty: 7529 [0m
+[0;32mI (22201) I2C_MASTER: Received ADC: 734[0m
+[0;32mI (22201) PWM_OUT: PWM Pulse Width Output: 734 us[0m
+[0;32mI (22201) PWM_OUT: duty: 5873 [0m
+[0;32mI (22301) I2C_MASTER: Received ADC: 529[0m
+[0;32mI (22301) PWM_OUT: PWM Pulse Width Output: 529 us[0m
+[0;32mI (22301) PWM_OUT: duty: 4232 [0m
+[0;32mI (22401) I2C_MASTER: Received ADC: 343[0m
+[0;32mI (22401) PWM_OUT: PWM Pulse Width Output: 343 us[0m
+[0;32mI (22401) PWM_OUT: duty: 2744 [0m
+[0;32mI (22501) I2C_MASTER: Received ADC: 93[0m
+[0;32mI (22501) PWM_OUT: PWM Pulse Width Output: 93 us[0m
+[0;32mI (22501) PWM_OUT: duty: 744 [0m
+[0;32mI (22601) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (22601) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (22601) PWM_OUT: duty: 0 [0m
+[0;32mI (22701) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (22701) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (22701) PWM_OUT: duty: 0 [0m
+[0;32mI (22801) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (22801) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (22801) PWM_OUT: duty: 0 [0m
+[0;32mI (22901) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (22901) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (22901) PWM_OUT: duty: 0 [0m
+[0;32mI (23001) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (23001) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (23001) PWM_OUT: duty: 0 [0m
+[0;32mI (23101) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (23101) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (23101) PWM_OUT: duty: 0 [0m
+[0;32mI (23201) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (23201) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (23201) PWM_OUT: duty: 0 [0m
+[0;32mI (23301) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (23301) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (23301) PWM_OUT: duty: 0 [0m
+[0;32mI (23401) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (23401) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (23401) PWM_OUT: duty: 0 [0m
+[0;32mI (23501) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (23501) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (23501) PWM_OUT: duty: 0 [0m
+[0;32mI (23601) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (23601) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (23601) PWM_OUT: duty: 0 [0m
+[0;32mI (23701) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (23701) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (23701) PWM_OUT: duty: 0 [0m
+[0;32mI (23801) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (23801) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (23801) PWM_OUT: duty: 0 [0m
+[0;32mI (23901) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (23901) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (23901) PWM_OUT: duty: 0 [0m
+[0;32mI (24001) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (24001) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (24001) PWM_OUT: duty: 0 [0m
+[0;32mI (24101) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (24101) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (24101) PWM_OUT: duty: 0 [0m
+[0;32mI (24201) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (24201) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (24201) PWM_OUT: duty: 0 [0m
+[0;32mI (24301) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (24301) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (24301) PWM_OUT: duty: 0 [0m
+[0;32mI (24401) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (24401) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (24401) PWM_OUT: duty: 0 [0m
+[0;32mI (24501) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (24501) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (24501) PWM_OUT: duty: 0 [0m
+[0;32mI (24601) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (24601) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (24601) PWM_OUT: duty: 0 [0m
+[0;32mI (24701) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (24701) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (24701) PWM_OUT: duty: 0 [0m
+[0;32mI (24801) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (24801) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (24801) PWM_OUT: duty: 0 [0m
+[0;32mI (24901) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (24901) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (24901) PWM_OUT: duty: 0 [0m
+[0;32mI (25001) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (25001) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (25001) PWM_OUT: duty: 0 [0m
+[0;32mI (25101) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (25101) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (25101) PWM_OUT: duty: 0 [0m
+[0;32mI (25201) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (25201) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (25201) PWM_OUT: duty: 0 [0m
+[0;32mI (25301) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (25301) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (25301) PWM_OUT: duty: 0 [0m
+[0;32mI (25401) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (25401) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (25401) PWM_OUT: duty: 0 [0m
+[0;32mI (25501) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (25501) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (25501) PWM_OUT: duty: 0 [0m
+[0;32mI (25601) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (25601) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (25601) PWM_OUT: duty: 0 [0m
+[0;32mI (25701) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (25701) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (25701) PWM_OUT: duty: 0 [0m
+[0;32mI (25801) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (25801) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (25801) PWM_OUT: duty: 0 [0m
+[0;32mI (25901) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (25901) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (25901) PWM_OUT: duty: 0 [0m
+[0;32mI (26001) I2C_MASTER: Received ADC: 22[0m
+[0;32mI (26001) PWM_OUT: PWM Pulse Width Output: 22 us[0m
+[0;32mI (26001) PWM_OUT: duty: 176 [0m
+[0;32mI (26101) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (26101) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (26101) PWM_OUT: duty: 0 [0m
+[0;32mI (26201) I2C_MASTER: Received ADC: 720[0m
+[0;32mI (26201) PWM_OUT: PWM Pulse Width Output: 720 us[0m
+[0;32mI (26201) PWM_OUT: duty: 5761 [0m
+[0;32mI (26301) I2C_MASTER: Received ADC: 178[0m
+[0;32mI (26301) PWM_OUT: PWM Pulse Width Output: 178 us[0m
+[0;32mI (26301) PWM_OUT: duty: 1424 [0m
+[0;32mI (26401) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (26401) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (26401) PWM_OUT: duty: 0 [0m
+[0;32mI (26501) I2C_MASTER: Received ADC: 419[0m
+[0;32mI (26501) PWM_OUT: PWM Pulse Width Output: 419 us[0m
+[0;32mI (26501) PWM_OUT: duty: 3352 [0m
+[0;32mI (26601) I2C_MASTER: Received ADC: 106[0m
+[0;32mI (26601) PWM_OUT: PWM Pulse Width Output: 106 us[0m
+[0;32mI (26601) PWM_OUT: duty: 848 [0m
+[0;32mI (26701) I2C_MASTER: Received ADC: 918[0m
+[0;32mI (26701) PWM_OUT: PWM Pulse Width Output: 918 us[0m
+[0;32mI (26701) PWM_OUT: duty: 7345 [0m
+[0;32mI (26801) I2C_MASTER: Received ADC: 465[0m
+[0;32mI (26801) PWM_OUT: PWM Pulse Width Output: 465 us[0m
+[0;32mI (26801) PWM_OUT: duty: 3720 [0m
+[0;32mI (26901) I2C_MASTER: Received ADC: 561[0m
+[0;32mI (26901) PWM_OUT: PWM Pulse Width Output: 561 us[0m
+[0;32mI (26901) PWM_OUT: duty: 4488 [0m
+[0;32mI (27001) I2C_MASTER: Received ADC: 285[0m
+[0;32mI (27001) PWM_OUT: PWM Pulse Width Output: 285 us[0m
+[0;32mI (27001) PWM_OUT: duty: 2280 [0m
+[0;32mI (27101) I2C_MASTER: Received ADC: 246[0m
+[0;32mI (27101) PWM_OUT: PWM Pulse Width Output: 246 us[0m
+[0;32mI (27101) PWM_OUT: duty: 1968 [0m
+[0;32mI (27201) I2C_MASTER: Received ADC: 166[0m
+[0;32mI (27201) PWM_OUT: PWM Pulse Width Output: 166 us[0m
+[0;32mI (27201) PWM_OUT: duty: 1328 [0m
+[0;32mI (27301) I2C_MASTER: Received ADC: 403[0m
+[0;32mI (27301) PWM_OUT: PWM Pulse Width Output: 403 us[0m
+[0;32mI (27301) PWM_OUT: duty: 3224 [0m
+[0;32mI (27401) I2C_MASTER: Received ADC: 181[0m
+[0;32mI (27401) PWM_OUT: PWM Pulse Width Output: 181 us[0m
+[0;32mI (27401) PWM_OUT: duty: 1448 [0m
+[0;32mI (27501) I2C_MASTER: Received ADC: 17[0m
+[0;32mI (27501) PWM_OUT: PWM Pulse Width Output: 17 us[0m
+[0;32mI (27501) PWM_OUT: duty: 136 [0m
+[0;32mI (27601) I2C_MASTER: Received ADC: 240[0m
+[0;32mI (27601) PWM_OUT: PWM Pulse Width Output: 240 us[0m
+[0;32mI (27601) PWM_OUT: duty: 1920 [0m
+[0;32mI (27701) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (27701) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (27701) PWM_OUT: duty: 0 [0m
+[0;32mI (27801) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (27801) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (27801) PWM_OUT: duty: 0 [0m
+[0;32mI (27901) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (27901) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (27901) PWM_OUT: duty: 0 [0m
+[0;32mI (28001) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (28001) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (28001) PWM_OUT: duty: 0 [0m
+[0;32mI (28101) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (28101) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (28101) PWM_OUT: duty: 0 [0m
+[0;32mI (28201) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (28201) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (28201) PWM_OUT: duty: 0 [0m
+[0;32mI (28301) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (28301) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (28301) PWM_OUT: duty: 0 [0m
+[0;32mI (28401) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (28401) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (28401) PWM_OUT: duty: 0 [0m
+[0;32mI (28501) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (28501) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (28501) PWM_OUT: duty: 0 [0m
+[0;32mI (28601) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (28601) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (28601) PWM_OUT: duty: 0 [0m
+[0;32mI (28701) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (28701) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (28701) PWM_OUT: duty: 0 [0m
+[0;32mI (28801) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (28801) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (28801) PWM_OUT: duty: 0 [0m
+[0;32mI (28901) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (28901) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (28901) PWM_OUT: duty: 0 [0m
+[0;32mI (29001) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (29001) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (29001) PWM_OUT: duty: 0 [0m
+[0;32mI (29101) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (29101) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (29101) PWM_OUT: duty: 0 [0m
+[0;32mI (29201) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (29201) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (29201) PWM_OUT: duty: 0 [0m
+[0;32mI (29301) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (29301) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (29301) PWM_OUT: duty: 0 [0m
+[0;32mI (29401) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (29401) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (29401) PWM_OUT: duty: 0 [0m
+[0;32mI (29501) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (29501) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (29501) PWM_OUT: duty: 0 [0m
+[0;32mI (29601) I2C_MASTER: Received ADC: 62[0m
+[0;32mI (29601) PWM_OUT: PWM Pulse Width Output: 62 us[0m
+[0;32mI (29601) PWM_OUT: duty: 496 [0m
+[0;32mI (29701) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (29701) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (29701) PWM_OUT: duty: 0 [0m
+[0;32mI (29801) I2C_MASTER: Received ADC: 291[0m
+[0;32mI (29801) PWM_OUT: PWM Pulse Width Output: 291 us[0m
+[0;32mI (29801) PWM_OUT: duty: 2328 [0m
+[0;32mI (29901) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (29901) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (29901) PWM_OUT: duty: 0 [0m
+[0;32mI (30001) I2C_MASTER: Received ADC: 451[0m
+[0;32mI (30001) PWM_OUT: PWM Pulse Width Output: 451 us[0m
+[0;32mI (30001) PWM_OUT: duty: 3608 [0m
+[0;32mI (30101) I2C_MASTER: Received ADC: 256[0m
+[0;32mI (30101) PWM_OUT: PWM Pulse Width Output: 256 us[0m
+[0;32mI (30101) PWM_OUT: duty: 2048 [0m
+[0;32mI (30201) I2C_MASTER: Received ADC: 377[0m
+[0;32mI (30201) PWM_OUT: PWM Pulse Width Output: 377 us[0m
+[0;32mI (30201) PWM_OUT: duty: 3016 [0m
+[0;32mI (30301) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (30301) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (30301) PWM_OUT: duty: 0 [0m
+[0;32mI (30401) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (30401) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (30401) PWM_OUT: duty: 0 [0m
+[0;32mI (30501) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (30501) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (30501) PWM_OUT: duty: 0 [0m
+[0;32mI (30601) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (30601) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (30601) PWM_OUT: duty: 0 [0m
+[0;32mI (30701) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (30701) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (30701) PWM_OUT: duty: 0 [0m
+[0;32mI (30801) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (30801) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (30801) PWM_OUT: duty: 0 [0m
+[0;32mI (30901) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (30901) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (30901) PWM_OUT: duty: 0 [0m
+[0;32mI (31001) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (31001) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (31001) PWM_OUT: duty: 0 [0m
+[0;32mI (31101) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (31101) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (31101) PWM_OUT: duty: 0 [0m
+[0;32mI (31201) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (31201) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (31201) PWM_OUT: duty: 0 [0m
+[0;32mI (31301) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (31301) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (31301) PWM_OUT: duty: 0 [0m
+[0;32mI (31401) I2C_MASTER: Received ADC: 331[0m
+[0;32mI (31401) PWM_OUT: PWM Pulse Width Output: 331 us[0m
+[0;32mI (31401) PWM_OUT: duty: 2648 [0m
+[0;32mI (31501) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (31501) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (31501) PWM_OUT: duty: 0 [0m
+[0;32mI (31601) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (31601) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (31601) PWM_OUT: duty: 0 [0m
+[0;32mI (31701) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (31701) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (31701) PWM_OUT: duty: 0 [0m
+[0;32mI (31801) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (31801) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (31801) PWM_OUT: duty: 0 [0m
+[0;32mI (31901) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (31901) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (31901) PWM_OUT: duty: 0 [0m
+[0;32mI (32001) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (32001) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (32001) PWM_OUT: duty: 0 [0m
+[0;32mI (32101) I2C_MASTER: Received ADC: 8[0m
+[0;32mI (32101) PWM_OUT: PWM Pulse Width Output: 8 us[0m
+[0;32mI (32101) PWM_OUT: duty: 64 [0m
+[0;32mI (32201) I2C_MASTER: Received ADC: 64[0m
+[0;32mI (32201) PWM_OUT: PWM Pulse Width Output: 64 us[0m
+[0;32mI (32201) PWM_OUT: duty: 512 [0m
+[0;32mI (32301) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (32301) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (32301) PWM_OUT: duty: 0 [0m
+[0;32mI (32401) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (32401) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (32401) PWM_OUT: duty: 0 [0m
+[0;32mI (32501) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (32501) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (32501) PWM_OUT: duty: 0 [0m
+[0;32mI (32601) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (32601) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (32601) PWM_OUT: duty: 0 [0m
+[0;32mI (32701) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (32701) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (32701) PWM_OUT: duty: 0 [0m
+[0;32mI (32801) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (32801) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (32801) PWM_OUT: duty: 0 [0m
+[0;32mI (32901) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (32901) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (32901) PWM_OUT: duty: 0 [0m
+[0;32mI (33001) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (33001) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (33001) PWM_OUT: duty: 0 [0m
+[0;32mI (33101) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (33101) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (33101) PWM_OUT: duty: 0 [0m
+[0;32mI (33201) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (33201) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (33201) PWM_OUT: duty: 0 [0m
+[0;32mI (33301) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (33301) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (33301) PWM_OUT: duty: 0 [0m
+[0;32mI (33401) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (33401) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (33401) PWM_OUT: duty: 0 [0m
+[0;32mI (33501) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (33501) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (33501) PWM_OUT: duty: 0 [0m
+[0;32mI (33601) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (33601) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (33601) PWM_OUT: duty: 0 [0m
+[0;32mI (33701) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (33701) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (33701) PWM_OUT: duty: 0 [0m
+[0;32mI (33801) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (33801) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (33801) PWM_OUT: duty: 0 [0m
+[0;32mI (33901) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (33901) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (33901) PWM_OUT: duty: 0 [0m
+[0;32mI (34001) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (34001) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (34001) PWM_OUT: duty: 0 [0m
+[0;32mI (34101) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (34101) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (34101) PWM_OUT: duty: 0 [0m
+[0;32mI (34201) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (34201) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (34201) PWM_OUT: duty: 0 [0m
+[0;32mI (34301) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (34301) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (34301) PWM_OUT: duty: 0 [0m
+[0;32mI (34401) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (34401) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (34401) PWM_OUT: duty: 0 [0m
+[0;32mI (34501) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (34501) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (34501) PWM_OUT: duty: 0 [0m
+[0;32mI (34601) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (34601) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (34601) PWM_OUT: duty: 0 [0m
+[0;32mI (34701) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (34701) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (34701) PWM_OUT: duty: 0 [0m
+[0;32mI (34801) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (34801) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (34801) PWM_OUT: duty: 0 [0m
+[0;32mI (34901) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (34901) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (34901) PWM_OUT: duty: 0 [0m
+[0;32mI (35001) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (35001) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (35001) PWM_OUT: duty: 0 [0m
+[0;32mI (35101) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (35101) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (35101) PWM_OUT: duty: 0 [0m
+[0;32mI (35201) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (35201) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (35201) PWM_OUT: duty: 0 [0m
+[0;32mI (35301) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (35301) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (35301) PWM_OUT: duty: 0 [0m
+[0;32mI (35401) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (35401) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (35401) PWM_OUT: duty: 0 [0m
+[0;32mI (35501) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (35501) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (35501) PWM_OUT: duty: 0 [0m
+[0;32mI (35601) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (35601) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (35601) PWM_OUT: duty: 0 [0m
+[0;32mI (35701) I2C_MASTER: Received ADC: 91[0m
+[0;32mI (35701) PWM_OUT: PWM Pulse Width Output: 91 us[0m
+[0;32mI (35701) PWM_OUT: duty: 728 [0m
+[0;32mI (35801) I2C_MASTER: Received ADC: 489[0m
+[0;32mI (35801) PWM_OUT: PWM Pulse Width Output: 489 us[0m
+[0;32mI (35801) PWM_OUT: duty: 3912 [0m
+[0;32mI (35901) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (35901) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (35901) PWM_OUT: duty: 0 [0m
+[0;32mI (36001) I2C_MASTER: Received ADC: 9[0m
+[0;32mI (36001) PWM_OUT: PWM Pulse Width Output: 9 us[0m
+[0;32mI (36001) PWM_OUT: duty: 72 [0m
+[0;32mI (36101) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (36101) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (36101) PWM_OUT: duty: 0 [0m
+[0;32mI (36201) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (36201) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (36201) PWM_OUT: duty: 0 [0m
+[0;32mI (36301) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (36301) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (36301) PWM_OUT: duty: 0 [0m
+[0;32mI (36401) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (36401) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (36401) PWM_OUT: duty: 0 [0m
+[0;32mI (36501) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (36501) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (36501) PWM_OUT: duty: 0 [0m
+[0;32mI (36601) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (36601) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (36601) PWM_OUT: duty: 0 [0m
+[0;32mI (36701) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (36701) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (36701) PWM_OUT: duty: 0 [0m
+[0;32mI (36801) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (36801) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (36801) PWM_OUT: duty: 0 [0m
+[0;32mI (36901) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (36901) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (36901) PWM_OUT: duty: 0 [0m
+[0;32mI (37001) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (37001) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (37001) PWM_OUT: duty: 0 [0m
+[0;32mI (37101) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (37101) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (37101) PWM_OUT: duty: 0 [0m
+[0;32mI (37201) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (37201) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (37201) PWM_OUT: duty: 0 [0m
+[0;32mI (37301) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (37301) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (37301) PWM_OUT: duty: 0 [0m
+[0;32mI (37401) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (37401) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (37401) PWM_OUT: duty: 0 [0m
+[0;32mI (37501) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (37501) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (37501) PWM_OUT: duty: 0 [0m
+[0;32mI (37601) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (37601) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (37601) PWM_OUT: duty: 0 [0m
+[0;32mI (37701) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (37701) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (37701) PWM_OUT: duty: 0 [0m
+[0;32mI (37801) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (37801) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (37801) PWM_OUT: duty: 0 [0m
+[0;32mI (37901) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (37901) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (37901) PWM_OUT: duty: 0 [0m
+[0;32mI (38001) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (38001) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (38001) PWM_OUT: duty: 0 [0m
+[0;32mI (38101) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (38101) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (38101) PWM_OUT: duty: 0 [0m
+[0;32mI (38201) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (38201) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (38201) PWM_OUT: duty: 0 [0m
+[0;32mI (38301) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (38301) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (38301) PWM_OUT: duty: 0 [0m
+[0;32mI (38401) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (38401) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (38401) PWM_OUT: duty: 0 [0m
+[0;32mI (38501) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (38501) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (38501) PWM_OUT: duty: 0 [0m
+[0;32mI (38601) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (38601) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (38601) PWM_OUT: duty: 0 [0m
+[0;32mI (38701) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (38701) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (38701) PWM_OUT: duty: 0 [0m
+[0;32mI (38801) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (38801) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (38801) PWM_OUT: duty: 0 [0m
+[0;32mI (38901) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (38901) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (38901) PWM_OUT: duty: 0 [0m
+[0;32mI (39001) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (39001) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (39001) PWM_OUT: duty: 0 [0m
+[0;32mI (39101) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (39101) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (39101) PWM_OUT: duty: 0 [0m
+[0;32mI (39201) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (39201) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (39201) PWM_OUT: duty: 0 [0m
+[0;32mI (39301) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (39301) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (39301) PWM_OUT: duty: 0 [0m
+[0;32mI (39401) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (39401) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (39401) PWM_OUT: duty: 0 [0m
+[0;32mI (39501) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (39501) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (39501) PWM_OUT: duty: 0 [0m
+[0;32mI (39601) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (39601) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (39601) PWM_OUT: duty: 0 [0m
+[0;32mI (39701) I2C_MASTER: Received ADC: 727[0m
+[0;32mI (39701) PWM_OUT: PWM Pulse Width Output: 727 us[0m
+[0;32mI (39701) PWM_OUT: duty: 5817 [0m
+[0;32mI (39801) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (39801) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (39801) PWM_OUT: duty: 0 [0m
+[0;32mI (39901) I2C_MASTER: Received ADC: 66[0m
+[0;32mI (39901) PWM_OUT: PWM Pulse Width Output: 66 us[0m
+[0;32mI (39901) PWM_OUT: duty: 528 [0m
+[0;32mI (40001) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (40001) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (40001) PWM_OUT: duty: 0 [0m
+[0;32mI (40101) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (40101) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (40101) PWM_OUT: duty: 0 [0m
+[0;32mI (40201) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (40201) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (40201) PWM_OUT: duty: 0 [0m
+[0;32mI (40301) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (40301) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (40301) PWM_OUT: duty: 0 [0m
+[0;32mI (40401) I2C_MASTER: Received ADC: 76[0m
+[0;32mI (40401) PWM_OUT: PWM Pulse Width Output: 76 us[0m
+[0;32mI (40401) PWM_OUT: duty: 608 [0m
+[0;32mI (40501) I2C_MASTER: Received ADC: 101[0m
+[0;32mI (40501) PWM_OUT: PWM Pulse Width Output: 101 us[0m
+[0;32mI (40501) PWM_OUT: duty: 808 [0m
+[0;32mI (40601) I2C_MASTER: Received ADC: 240[0m
+[0;32mI (40601) PWM_OUT: PWM Pulse Width Output: 240 us[0m
+[0;32mI (40601) PWM_OUT: duty: 1920 [0m
+[0;32mI (40701) I2C_MASTER: Received ADC: 128[0m
+[0;32mI (40701) PWM_OUT: PWM Pulse Width Output: 128 us[0m
+[0;32mI (40701) PWM_OUT: duty: 1024 [0m
+[0;32mI (40801) I2C_MASTER: Received ADC: 49[0m
+[0;32mI (40801) PWM_OUT: PWM Pulse Width Output: 49 us[0m
+[0;32mI (40801) PWM_OUT: duty: 392 [0m
+[0;32mI (40901) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (40901) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (40901) PWM_OUT: duty: 0 [0m
+[0;32mI (41001) I2C_MASTER: Received ADC: 155[0m
+[0;32mI (41001) PWM_OUT: PWM Pulse Width Output: 155 us[0m
+[0;32mI (41001) PWM_OUT: duty: 1240 [0m
+[0;32mI (41101) I2C_MASTER: Received ADC: 275[0m
+[0;32mI (41101) PWM_OUT: PWM Pulse Width Output: 275 us[0m
+[0;32mI (41101) PWM_OUT: duty: 2200 [0m
+[0;32mI (41201) I2C_MASTER: Received ADC: 48[0m
+[0;32mI (41201) PWM_OUT: PWM Pulse Width Output: 48 us[0m
+[0;32mI (41201) PWM_OUT: duty: 384 [0m
+[0;32mI (41301) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (41301) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (41301) PWM_OUT: duty: 0 [0m
+[0;32mI (41401) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (41401) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (41401) PWM_OUT: duty: 0 [0m
+[0;32mI (41501) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (41501) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (41501) PWM_OUT: duty: 0 [0m
+[0;32mI (41601) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (41601) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (41601) PWM_OUT: duty: 0 [0m
+[0;32mI (41701) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (41701) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (41701) PWM_OUT: duty: 0 [0m
+[0;32mI (41801) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (41801) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (41801) PWM_OUT: duty: 0 [0m
+[0;32mI (41901) I2C_MASTER: Received ADC: 48[0m
+[0;32mI (41901) PWM_OUT: PWM Pulse Width Output: 48 us[0m
+[0;32mI (41901) PWM_OUT: duty: 384 [0m
+[0;32mI (42001) I2C_MASTER: Received ADC: 5[0m
+[0;32mI (42001) PWM_OUT: PWM Pulse Width Output: 5 us[0m
+[0;32mI (42001) PWM_OUT: duty: 40 [0m
+[0;32mI (42101) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (42101) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (42101) PWM_OUT: duty: 0 [0m
+[0;32mI (42201) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (42201) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (42201) PWM_OUT: duty: 0 [0m
+[0;32mI (42301) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (42301) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (42301) PWM_OUT: duty: 0 [0m
+[0;32mI (42401) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (42401) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (42401) PWM_OUT: duty: 0 [0m
+[0;32mI (42501) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (42501) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (42501) PWM_OUT: duty: 0 [0m
+[0;32mI (42601) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (42601) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (42601) PWM_OUT: duty: 0 [0m
+[0;32mI (42701) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (42701) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (42701) PWM_OUT: duty: 0 [0m
+[0;32mI (42801) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (42801) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (42801) PWM_OUT: duty: 0 [0m
+[0;32mI (42901) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (42901) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (42901) PWM_OUT: duty: 0 [0m
+[0;32mI (43001) I2C_MASTER: Received ADC: 424[0m
+[0;32mI (43001) PWM_OUT: PWM Pulse Width Output: 424 us[0m
+[0;32mI (43001) PWM_OUT: duty: 3392 [0m
+[0;32mI (43101) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (43101) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (43101) PWM_OUT: duty: 0 [0m
+[0;32mI (43201) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (43201) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (43201) PWM_OUT: duty: 0 [0m
+[0;32mI (43301) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (43301) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (43301) PWM_OUT: duty: 0 [0m
+[0;32mI (43401) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (43401) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (43401) PWM_OUT: duty: 0 [0m
+[0;32mI (43501) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (43501) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (43501) PWM_OUT: duty: 0 [0m
+[0;32mI (43601) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (43601) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (43601) PWM_OUT: duty: 0 [0m
+[0;32mI (43701) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (43701) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (43701) PWM_OUT: duty: 0 [0m
+[0;32mI (43801) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (43801) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (43801) PWM_OUT: duty: 0 [0m
+[0;32mI (43901) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (43901) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (43901) PWM_OUT: duty: 0 [0m
+[0;32mI (44001) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (44001) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (44001) PWM_OUT: duty: 0 [0m
+[0;32mI (44101) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (44101) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (44101) PWM_OUT: duty: 0 [0m
+[0;32mI (44201) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (44201) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (44201) PWM_OUT: duty: 0 [0m
+[0;32mI (44301) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (44301) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (44301) PWM_OUT: duty: 0 [0m
+[0;32mI (44401) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (44401) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (44401) PWM_OUT: duty: 0 [0m
+[0;32mI (44501) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (44501) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (44501) PWM_OUT: duty: 0 [0m
+[0;32mI (44601) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (44601) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (44601) PWM_OUT: duty: 0 [0m
+[0;32mI (44701) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (44701) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (44701) PWM_OUT: duty: 0 [0m
+[0;32mI (44801) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (44801) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (44801) PWM_OUT: duty: 0 [0m
+[0;32mI (44901) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (44901) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (44901) PWM_OUT: duty: 0 [0m
+[0;32mI (45001) I2C_MASTER: Received ADC: 93[0m
+[0;32mI (45001) PWM_OUT: PWM Pulse Width Output: 93 us[0m
+[0;32mI (45001) PWM_OUT: duty: 744 [0m
+[0;32mI (45101) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (45101) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (45101) PWM_OUT: duty: 0 [0m
+[0;32mI (45201) I2C_MASTER: Received ADC: 64[0m
+[0;32mI (45201) PWM_OUT: PWM Pulse Width Output: 64 us[0m
+[0;32mI (45201) PWM_OUT: duty: 512 [0m
+[0;32mI (45301) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (45301) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (45301) PWM_OUT: duty: 0 [0m
+[0;32mI (45401) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (45401) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (45401) PWM_OUT: duty: 0 [0m
+[0;32mI (45501) I2C_MASTER: Received ADC: 64[0m
+[0;32mI (45501) PWM_OUT: PWM Pulse Width Output: 64 us[0m
+[0;32mI (45501) PWM_OUT: duty: 512 [0m
+[0;32mI (45601) I2C_MASTER: Received ADC: 26[0m
+[0;32mI (45601) PWM_OUT: PWM Pulse Width Output: 26 us[0m
+[0;32mI (45601) PWM_OUT: duty: 208 [0m
+[0;32mI (45701) I2C_MASTER: Received ADC: 33[0m
+[0;32mI (45701) PWM_OUT: PWM Pulse Width Output: 33 us[0m
+[0;32mI (45701) PWM_OUT: duty: 264 [0m
+[0;32mI (45801) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (45801) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (45801) PWM_OUT: duty: 0 [0m
+[0;32mI (45901) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (45901) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (45901) PWM_OUT: duty: 0 [0m
+[0;32mI (46001) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (46001) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (46001) PWM_OUT: duty: 0 [0m
+[0;32mI (46101) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (46101) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (46101) PWM_OUT: duty: 0 [0m
+[0;32mI (46201) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (46201) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (46201) PWM_OUT: duty: 0 [0m
+[0;32mI (46301) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (46301) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (46301) PWM_OUT: duty: 0 [0m
+[0;32mI (46401) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (46401) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (46401) PWM_OUT: duty: 0 [0m
+[0;32mI (46501) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (46501) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (46501) PWM_OUT: duty: 0 [0m
+[0;32mI (46601) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (46601) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (46601) PWM_OUT: duty: 0 [0m
+[0;32mI (46701) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (46701) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (46701) PWM_OUT: duty: 0 [0m
+[0;32mI (46801) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (46801) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (46801) PWM_OUT: duty: 0 [0m
+[0;32mI (46901) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (46901) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (46901) PWM_OUT: duty: 0 [0m
+[0;32mI (47001) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (47001) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (47001) PWM_OUT: duty: 0 [0m
+[0;32mI (47101) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (47101) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (47101) PWM_OUT: duty: 0 [0m
+[0;32mI (47201) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (47201) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (47201) PWM_OUT: duty: 0 [0m
+[0;32mI (47301) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (47301) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (47301) PWM_OUT: duty: 0 [0m
+[0;32mI (47401) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (47401) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (47401) PWM_OUT: duty: 0 [0m
+[0;32mI (47501) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (47501) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (47501) PWM_OUT: duty: 0 [0m
+[0;32mI (47601) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (47601) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (47601) PWM_OUT: duty: 0 [0m
+[0;32mI (47701) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (47701) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (47701) PWM_OUT: duty: 0 [0m
+[0;32mI (47801) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (47801) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (47801) PWM_OUT: duty: 0 [0m
+[0;32mI (47901) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (47901) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (47901) PWM_OUT: duty: 0 [0m
+[0;32mI (48001) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (48001) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (48001) PWM_OUT: duty: 0 [0m
+[0;32mI (48101) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (48101) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (48101) PWM_OUT: duty: 0 [0m
+[0;32mI (48201) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (48201) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (48201) PWM_OUT: duty: 0 [0m
+[0;32mI (48301) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (48301) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (48301) PWM_OUT: duty: 0 [0m
+[0;32mI (48401) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (48401) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (48401) PWM_OUT: duty: 0 [0m
+[0;32mI (48501) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (48501) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (48501) PWM_OUT: duty: 0 [0m
+[0;32mI (48601) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (48601) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (48601) PWM_OUT: duty: 0 [0m
+[0;32mI (48701) I2C_MASTER: Received ADC: 73[0m
+[0;32mI (48701) PWM_OUT: PWM Pulse Width Output: 73 us[0m
+[0;32mI (48701) PWM_OUT: duty: 584 [0m
+[0;32mI (48801) I2C_MASTER: Received ADC: 176[0m
+[0;32mI (48801) PWM_OUT: PWM Pulse Width Output: 176 us[0m
+[0;32mI (48801) PWM_OUT: duty: 1408 [0m
+[0;32mI (48901) I2C_MASTER: Received ADC: 268[0m
+[0;32mI (48901) PWM_OUT: PWM Pulse Width Output: 268 us[0m
+[0;32mI (48901) PWM_OUT: duty: 2144 [0m
+[0;32mI (49001) I2C_MASTER: Received ADC: 305[0m
+[0;32mI (49001) PWM_OUT: PWM Pulse Width Output: 305 us[0m
+[0;32mI (49001) PWM_OUT: duty: 2440 [0m
+[0;32mI (49101) I2C_MASTER: Received ADC: 357[0m
+[0;32mI (49101) PWM_OUT: PWM Pulse Width Output: 357 us[0m
+[0;32mI (49101) PWM_OUT: duty: 2856 [0m
+[0;32mI (49201) I2C_MASTER: Received ADC: 450[0m
+[0;32mI (49201) PWM_OUT: PWM Pulse Width Output: 450 us[0m
+[0;32mI (49201) PWM_OUT: duty: 3600 [0m
+[0;32mI (49301) I2C_MASTER: Received ADC: 482[0m
+[0;32mI (49301) PWM_OUT: PWM Pulse Width Output: 482 us[0m
+[0;32mI (49301) PWM_OUT: duty: 3856 [0m
+[0;32mI (49401) I2C_MASTER: Received ADC: 562[0m
+[0;32mI (49401) PWM_OUT: PWM Pulse Width Output: 562 us[0m
+[0;32mI (49401) PWM_OUT: duty: 4496 [0m
+[0;32mI (49501) I2C_MASTER: Received ADC: 591[0m
+[0;32mI (49501) PWM_OUT: PWM Pulse Width Output: 591 us[0m
+[0;32mI (49501) PWM_OUT: duty: 4729 [0m
+[0;32mI (49601) I2C_MASTER: Received ADC: 603[0m
+[0;32mI (49601) PWM_OUT: PWM Pulse Width Output: 603 us[0m
+[0;32mI (49601) PWM_OUT: duty: 4825 [0m
+[0;32mI (49701) I2C_MASTER: Received ADC: 617[0m
+[0;32mI (49701) PWM_OUT: PWM Pulse Width Output: 617 us[0m
+[0;32mI (49701) PWM_OUT: duty: 4937 [0m
+[0;32mI (49801) I2C_MASTER: Received ADC: 592[0m
+[0;32mI (49801) PWM_OUT: PWM Pulse Width Output: 592 us[0m
+[0;32mI (49801) PWM_OUT: duty: 4737 [0m
+[0;32mI (49901) I2C_MASTER: Received ADC: 567[0m
+[0;32mI (49901) PWM_OUT: PWM Pulse Width Output: 567 us[0m
+[0;32mI (49901) PWM_OUT: duty: 4536 [0m
+[0;32mI (50001) I2C_MASTER: Received ADC: 576[0m
+[0;32mI (50001) PWM_OUT: PWM Pulse Width Output: 576 us[0m
+[0;32mI (50001) PWM_OUT: duty: 4608 [0m
+[0;32mI (50101) I2C_MASTER: Received ADC: 565[0m
+[0;32mI (50101) PWM_OUT: PWM Pulse Width Output: 565 us[0m
+[0;32mI (50101) PWM_OUT: duty: 4520 [0m
+[0;32mI (50201) I2C_MASTER: Received ADC: 583[0m
+[0;32mI (50201) PWM_OUT: PWM Pulse Width Output: 583 us[0m
+[0;32mI (50201) PWM_OUT: duty: 4664 [0m
+[0;32mI (50301) I2C_MASTER: Received ADC: 576[0m
+[0;32mI (50301) PWM_OUT: PWM Pulse Width Output: 576 us[0m
+[0;32mI (50301) PWM_OUT: duty: 4608 [0m
+[0;32mI (50401) I2C_MASTER: Received ADC: 570[0m
+[0;32mI (50401) PWM_OUT: PWM Pulse Width Output: 570 us[0m
+[0;32mI (50401) PWM_OUT: duty: 4560 [0m
+[0;32mI (50501) I2C_MASTER: Received ADC: 575[0m
+[0;32mI (50501) PWM_OUT: PWM Pulse Width Output: 575 us[0m
+[0;32mI (50501) PWM_OUT: duty: 4600 [0m
+[0;32mI (50601) I2C_MASTER: Received ADC: 582[0m
+[0;32mI (50601) PWM_OUT: PWM Pulse Width Output: 582 us[0m
+[0;32mI (50601) PWM_OUT: duty: 4656 [0m
+[0;32mI (50701) I2C_MASTER: Received ADC: 577[0m
+[0;32mI (50701) PWM_OUT: PWM Pulse Width Output: 577 us[0m
+[0;32mI (50701) PWM_OUT: duty: 4616 [0m
+[0;32mI (50801) I2C_MASTER: Received ADC: 565[0m
+[0;32mI (50801) PWM_OUT: PWM Pulse Width Output: 565 us[0m
+[0;32mI (50801) PWM_OUT: duty: 4520 [0m
+[0;32mI (50901) I2C_MASTER: Received ADC: 590[0m
+[0;32mI (50901) PWM_OUT: PWM Pulse Width Output: 590 us[0m
+[0;32mI (50901) PWM_OUT: duty: 4721 [0m
+[0;32mI (51001) I2C_MASTER: Received ADC: 578[0m
+[0;32mI (51001) PWM_OUT: PWM Pulse Width Output: 578 us[0m
+[0;32mI (51001) PWM_OUT: duty: 4624 [0m
+[0;32mI (51101) I2C_MASTER: Received ADC: 597[0m
+[0;32mI (51101) PWM_OUT: PWM Pulse Width Output: 597 us[0m
+[0;32mI (51101) PWM_OUT: duty: 4777 [0m
+[0;32mI (51201) I2C_MASTER: Received ADC: 611[0m
+[0;32mI (51201) PWM_OUT: PWM Pulse Width Output: 611 us[0m
+[0;32mI (51201) PWM_OUT: duty: 4889 [0m
+[0;32mI (51301) I2C_MASTER: Received ADC: 668[0m
+[0;32mI (51301) PWM_OUT: PWM Pulse Width Output: 668 us[0m
+[0;32mI (51301) PWM_OUT: duty: 5345 [0m
+[0;32mI (51401) I2C_MASTER: Received ADC: 735[0m
+[0;32mI (51401) PWM_OUT: PWM Pulse Width Output: 735 us[0m
+[0;32mI (51401) PWM_OUT: duty: 5881 [0m
+[0;32mI (51501) I2C_MASTER: Received ADC: 809[0m
+[0;32mI (51501) PWM_OUT: PWM Pulse Width Output: 809 us[0m
+[0;32mI (51501) PWM_OUT: duty: 6473 [0m
+[0;32mI (51601) I2C_MASTER: Received ADC: 883[0m
+[0;32mI (51601) PWM_OUT: PWM Pulse Width Output: 883 us[0m
+[0;32mI (51601) PWM_OUT: duty: 7065 [0m
+[0;32mI (51701) I2C_MASTER: Received ADC: 987[0m
+[0;32mI (51701) PWM_OUT: PWM Pulse Width Output: 987 us[0m
+[0;32mI (51701) PWM_OUT: duty: 7897 [0m
+[0;32mI (51801) I2C_MASTER: Received ADC: 1023[0m
+[0;32mI (51801) PWM_OUT: PWM Pulse Width Output: 1023 us[0m
+[0;32mI (51801) PWM_OUT: duty: 8185 [0m
+[0;32mI (51901) I2C_MASTER: Received ADC: 1088[0m
+[0;32mI (51901) PWM_OUT: PWM Pulse Width Output: 1088 us[0m
+[0;32mI (51901) PWM_OUT: duty: 8705 [0m
+[0;32mI (52001) I2C_MASTER: Received ADC: 1138[0m
+[0;32mI (52001) PWM_OUT: PWM Pulse Width Output: 1138 us[0m
+[0;32mI (52001) PWM_OUT: duty: 9105 [0m
+[0;32mI (52101) I2C_MASTER: Received ADC: 1210[0m
+[0;32mI (52101) PWM_OUT: PWM Pulse Width Output: 1210 us[0m
+[0;32mI (52101) PWM_OUT: duty: 9682 [0m
+[0;32mI (52201) I2C_MASTER: Received ADC: 1288[0m
+[0;32mI (52201) PWM_OUT: PWM Pulse Width Output: 1288 us[0m
+[0;32mI (52201) PWM_OUT: duty: 10306 [0m
+[0;32mI (52301) I2C_MASTER: Received ADC: 1417[0m
+[0;32mI (52301) PWM_OUT: PWM Pulse Width Output: 1417 us[0m
+[0;32mI (52301) PWM_OUT: duty: 11338 [0m
+[0;32mI (52401) I2C_MASTER: Received ADC: 1463[0m
+[0;32mI (52401) PWM_OUT: PWM Pulse Width Output: 1463 us[0m
+[0;32mI (52401) PWM_OUT: duty: 11706 [0m
+[0;32mI (52501) I2C_MASTER: Received ADC: 1565[0m
+[0;32mI (52501) PWM_OUT: PWM Pulse Width Output: 1565 us[0m
+[0;32mI (52501) PWM_OUT: duty: 12522 [0m
+[0;32mI (52601) I2C_MASTER: Received ADC: 1648[0m
+[0;32mI (52601) PWM_OUT: PWM Pulse Width Output: 1648 us[0m
+[0;32mI (52601) PWM_OUT: duty: 13186 [0m
+[0;32mI (52701) I2C_MASTER: Received ADC: 1741[0m
+[0;32mI (52701) PWM_OUT: PWM Pulse Width Output: 1741 us[0m
+[0;32mI (52701) PWM_OUT: duty: 13930 [0m
+[0;32mI (52801) I2C_MASTER: Received ADC: 1787[0m
+[0;32mI (52801) PWM_OUT: PWM Pulse Width Output: 1787 us[0m
+[0;32mI (52801) PWM_OUT: duty: 14299 [0m
+[0;32mI (52901) I2C_MASTER: Received ADC: 1891[0m
+[0;32mI (52901) PWM_OUT: PWM Pulse Width Output: 1891 us[0m
+[0;32mI (52901) PWM_OUT: duty: 15131 [0m
+[0;32mI (53001) I2C_MASTER: Received ADC: 1904[0m
+[0;32mI (53001) PWM_OUT: PWM Pulse Width Output: 1904 us[0m
+[0;32mI (53001) PWM_OUT: duty: 15235 [0m
+[0;32mI (53101) I2C_MASTER: Received ADC: 1943[0m
+[0;32mI (53101) PWM_OUT: PWM Pulse Width Output: 1943 us[0m
+[0;32mI (53101) PWM_OUT: duty: 15547 [0m
+[0;32mI (53201) I2C_MASTER: Received ADC: 1964[0m
+[0;32mI (53201) PWM_OUT: PWM Pulse Width Output: 1964 us[0m
+[0;32mI (53201) PWM_OUT: duty: 15715 [0m
+[0;32mI (53301) I2C_MASTER: Received ADC: 2000[0m
+[0;32mI (53301) PWM_OUT: PWM Pulse Width Output: 2000 us[0m
+[0;32mI (53301) PWM_OUT: duty: 16003 [0m
+[0;32mI (53401) I2C_MASTER: Received ADC: 2032[0m
+[0;32mI (53401) PWM_OUT: PWM Pulse Width Output: 2032 us[0m
+[0;32mI (53401) PWM_OUT: duty: 16259 [0m
+[0;32mI (53501) I2C_MASTER: Received ADC: 2079[0m
+[0;32mI (53501) PWM_OUT: PWM Pulse Width Output: 2079 us[0m
+[0;32mI (53501) PWM_OUT: duty: 16635 [0m
+[0;32mI (53601) I2C_MASTER: Received ADC: 2069[0m
+[0;32mI (53601) PWM_OUT: PWM Pulse Width Output: 2069 us[0m
+[0;32mI (53601) PWM_OUT: duty: 16555 [0m
+[0;32mI (53701) I2C_MASTER: Received ADC: 2073[0m
+[0;32mI (53701) PWM_OUT: PWM Pulse Width Output: 2073 us[0m
+[0;32mI (53701) PWM_OUT: duty: 16587 [0m
+[0;32mI (53801) I2C_MASTER: Received ADC: 2074[0m
+[0;32mI (53801) PWM_OUT: PWM Pulse Width Output: 2074 us[0m
+[0;32mI (53801) PWM_OUT: duty: 16595 [0m
+[0;32mI (53901) I2C_MASTER: Received ADC: 2070[0m
+[0;32mI (53901) PWM_OUT: PWM Pulse Width Output: 2070 us[0m
+[0;32mI (53901) PWM_OUT: duty: 16563 [0m
+[0;32mI (54001) I2C_MASTER: Received ADC: 2079[0m
+[0;32mI (54001) PWM_OUT: PWM Pulse Width Output: 2079 us[0m
+[0;32mI (54001) PWM_OUT: duty: 16635 [0m
+[0;32mI (54101) I2C_MASTER: Received ADC: 2057[0m
+[0;32mI (54101) PWM_OUT: PWM Pulse Width Output: 2057 us[0m
+[0;32mI (54101) PWM_OUT: duty: 16459 [0m
+[0;32mI (54201) I2C_MASTER: Received ADC: 2038[0m
+[0;32mI (54201) PWM_OUT: PWM Pulse Width Output: 2038 us[0m
+[0;32mI (54201) PWM_OUT: duty: 16307 [0m
+[0;32mI (54301) I2C_MASTER: Received ADC: 2057[0m
+[0;32mI (54301) PWM_OUT: PWM Pulse Width Output: 2057 us[0m
+[0;32mI (54301) PWM_OUT: duty: 16459 [0m
+[0;32mI (54401) I2C_MASTER: Received ADC: 2047[0m
+[0;32mI (54401) PWM_OUT: PWM Pulse Width Output: 2047 us[0m
+[0;32mI (54401) PWM_OUT: duty: 16379 [0m
+[0;32mI (54501) I2C_MASTER: Received ADC: 2032[0m
+[0;32mI (54501) PWM_OUT: PWM Pulse Width Output: 2032 us[0m
+[0;32mI (54501) PWM_OUT: duty: 16259 [0m
+[0;32mI (54601) I2C_MASTER: Received ADC: 2045[0m
+[0;32mI (54601) PWM_OUT: PWM Pulse Width Output: 2045 us[0m
+[0;32mI (54601) PWM_OUT: duty: 16363 [0m
+[0;32mI (54701) I2C_MASTER: Received ADC: 2029[0m
+[0;32mI (54701) PWM_OUT: PWM Pulse Width Output: 2029 us[0m
+[0;32mI (54701) PWM_OUT: duty: 16235 [0m
+[0;32mI (54801) I2C_MASTER: Received ADC: 2023[0m
+[0;32mI (54801) PWM_OUT: PWM Pulse Width Output: 2023 us[0m
+[0;32mI (54801) PWM_OUT: duty: 16187 [0m
+[0;32mI (54901) I2C_MASTER: Received ADC: 2061[0m
+[0;32mI (54901) PWM_OUT: PWM Pulse Width Output: 2061 us[0m
+[0;32mI (54901) PWM_OUT: duty: 16491 [0m
+[0;32mI (55001) I2C_MASTER: Received ADC: 2046[0m
+[0;32mI (55001) PWM_OUT: PWM Pulse Width Output: 2046 us[0m
+[0;32mI (55001) PWM_OUT: duty: 16371 [0m
+[0;32mI (55101) I2C_MASTER: Received ADC: 2039[0m
+[0;32mI (55101) PWM_OUT: PWM Pulse Width Output: 2039 us[0m
+[0;32mI (55101) PWM_OUT: duty: 16315 [0m
+[0;32mI (55201) I2C_MASTER: Received ADC: 2060[0m
+[0;32mI (55201) PWM_OUT: PWM Pulse Width Output: 2060 us[0m
+[0;32mI (55201) PWM_OUT: duty: 16483 [0m
+[0;32mI (55301) I2C_MASTER: Received ADC: 2042[0m
+[0;32mI (55301) PWM_OUT: PWM Pulse Width Output: 2042 us[0m
+[0;32mI (55301) PWM_OUT: duty: 16339 [0m
+[0;32mI (55401) I2C_MASTER: Received ADC: 2118[0m
+[0;32mI (55401) PWM_OUT: PWM Pulse Width Output: 2118 us[0m
+[0;32mI (55401) PWM_OUT: duty: 16947 [0m
+[0;32mI (55501) I2C_MASTER: Received ADC: 2256[0m
+[0;32mI (55501) PWM_OUT: PWM Pulse Width Output: 2256 us[0m
+[0;32mI (55501) PWM_OUT: duty: 18051 [0m
+[0;32mI (55601) I2C_MASTER: Received ADC: 2458[0m
+[0;32mI (55601) PWM_OUT: PWM Pulse Width Output: 2458 us[0m
+[0;32mI (55601) PWM_OUT: duty: 19668 [0m
+[0;32mI (55701) I2C_MASTER: Received ADC: 2671[0m
+[0;32mI (55701) PWM_OUT: PWM Pulse Width Output: 2671 us[0m
+[0;32mI (55701) PWM_OUT: duty: 21372 [0m
+[0;32mI (55801) I2C_MASTER: Received ADC: 2858[0m
+[0;32mI (55801) PWM_OUT: PWM Pulse Width Output: 2858 us[0m
+[0;32mI (55801) PWM_OUT: duty: 22868 [0m
+[0;32mI (55901) I2C_MASTER: Received ADC: 3127[0m
+[0;32mI (55901) PWM_OUT: PWM Pulse Width Output: 3127 us[0m
+[0;32mI (55901) PWM_OUT: duty: 25021 [0m
+[0;32mI (56001) I2C_MASTER: Received ADC: 3391[0m
+[0;32mI (56001) PWM_OUT: PWM Pulse Width Output: 3391 us[0m
+[0;32mI (56001) PWM_OUT: duty: 27133 [0m
+[0;32mI (56101) I2C_MASTER: Received ADC: 3742[0m
+[0;32mI (56101) PWM_OUT: PWM Pulse Width Output: 3742 us[0m
+[0;32mI (56101) PWM_OUT: duty: 29942 [0m
+[0;32mI (56201) I2C_MASTER: Received ADC: 3983[0m
+[0;32mI (56201) PWM_OUT: PWM Pulse Width Output: 3983 us[0m
+[0;32mI (56201) PWM_OUT: duty: 31870 [0m
+[0;32mI (56301) I2C_MASTER: Received ADC: 4045[0m
+[0;32mI (56301) PWM_OUT: PWM Pulse Width Output: 4045 us[0m
+[0;32mI (56301) PWM_OUT: duty: 32366 [0m
+[0;32mI (56401) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (56401) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (56401) PWM_OUT: duty: 32767 [0m
+[0;32mI (56501) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (56501) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (56501) PWM_OUT: duty: 32767 [0m
+[0;32mI (56601) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (56601) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (56601) PWM_OUT: duty: 32767 [0m
+[0;32mI (56701) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (56701) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (56701) PWM_OUT: duty: 32767 [0m
+[0;32mI (56801) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (56801) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (56801) PWM_OUT: duty: 32767 [0m
+[0;32mI (56901) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (56901) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (56901) PWM_OUT: duty: 32767 [0m
+[0;32mI (57001) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (57001) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (57001) PWM_OUT: duty: 32767 [0m
+[0;32mI (57101) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (57101) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (57101) PWM_OUT: duty: 32767 [0m
+[0;32mI (57201) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (57201) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (57201) PWM_OUT: duty: 32767 [0m
+[0;32mI (57301) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (57301) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (57301) PWM_OUT: duty: 32767 [0m
+[0;32mI (57401) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (57401) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (57401) PWM_OUT: duty: 32767 [0m
+[0;32mI (57501) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (57501) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (57501) PWM_OUT: duty: 32767 [0m
+[0;32mI (57601) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (57601) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (57601) PWM_OUT: duty: 32767 [0m
+[0;32mI (57701) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (57701) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (57701) PWM_OUT: duty: 32767 [0m
+[0;32mI (57801) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (57801) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (57801) PWM_OUT: duty: 32767 [0m
+[0;32mI (57901) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (57901) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (57901) PWM_OUT: duty: 32767 [0m
+[0;32mI (58001) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (58001) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (58001) PWM_OUT: duty: 32767 [0m
+[0;32mI (58101) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (58101) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (58101) PWM_OUT: duty: 32767 [0m
+[0;32mI (58201) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (58201) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (58201) PWM_OUT: duty: 32767 [0m
+[0;32mI (58301) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (58301) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (58301) PWM_OUT: duty: 32767 [0m
+[0;32mI (58401) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (58401) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (58401) PWM_OUT: duty: 32767 [0m
+[0;32mI (58501) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (58501) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (58501) PWM_OUT: duty: 32767 [0m
+[0;32mI (58601) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (58601) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (58601) PWM_OUT: duty: 32767 [0m
+[0;32mI (58701) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (58701) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (58701) PWM_OUT: duty: 32767 [0m
+[0;32mI (58801) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (58801) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (58801) PWM_OUT: duty: 32767 [0m
+[0;32mI (58901) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (58901) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (58901) PWM_OUT: duty: 32767 [0m
+[0;32mI (59001) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (59001) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (59001) PWM_OUT: duty: 32767 [0m
+[0;32mI (59101) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (59101) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (59101) PWM_OUT: duty: 32767 [0m
+[0;32mI (59201) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (59201) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (59201) PWM_OUT: duty: 32767 [0m
+[0;32mI (59301) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (59301) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (59301) PWM_OUT: duty: 32767 [0m
+[1;31mE (59401) i2c.master: I2C hardware NACK detected[0m
+[1;31mE (59401) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (59401) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (59401) i2c.master: i2c_master_transmit_receive(1248): I2C transaction failed[0m
+[1;31mE (59411) I2C_MASTER: I2C receive failed[0m
+
+***ERROR*** A stack overflow in task Tmr Svc has been detected.
+
+
+Backtrace: 0x400818e5:0x3ffb5340 0x400858b1:0x3ffb5360 0x400866c6:0x3ffb5380 0x40087beb:0x3ffb5400 0x400867d0:0x3ffb5420 0x40086782:0x3ffb5480 0x400d6847:0x3ffb54b0 0x40086ba1:0x00000000 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 028e46378
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15904
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5-dev-3568-g565cca2fee 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jul 21 2025 18:53:46[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bd18h ( 48408) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001bd40 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001bd64 vaddr=3ffb0000 size=0239ch (  9116) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=0001e108 vaddr=40080000 size=01f10h (  7952) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=17da4h ( 97700) map[0m
+[0;32mI (158) esp_image: segment 5: paddr=00037dcc vaddr=40081f10 size=0bcc4h ( 48324) load[0m
+[0;32mI (184) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (184) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     master2[0m
+[0;32mI (207) app_init: App version:      3fd932d-dirty[0m
+[0;32mI (212) app_init: Compile time:     Jul 21 2025 18:53:34[0m
+[0;32mI (217) app_init: ELF file SHA256:  028e46378...[0m
+[0;32mI (221) app_init: ESP-IDF:          v5.5-dev-3568-g565cca2fee[0m
+[0;32mI (226) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (230) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (234) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (238) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (244) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (249) heap_init: At 3FFB2E30 len 0002D1D0 (180 KiB): DRAM[0m
+[0;32mI (255) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (260) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (266) heap_init: At 4008DBD4 len 0001242C (73 KiB): IRAM[0m
+[0;32mI (272) spi_flash: detected chip: generic[0m
+[0;32mI (275) spi_flash: flash io: dio[0m
+[0;33mW (277) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (290) main_task: Started on CPU0[0m
+[0;32mI (300) main_task: Calling app_main()[0m
+[0;32mI (300) I2C_MASTER: Initializing I2C master...[0m
+[0;32mI (300) PWM_OUT: PWM output started on GPIO 26[0m
+[0;32mI (300) main_task: Returned from app_main()[0m
+[0;32mI (400) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (400) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (400) PWM_OUT: duty: 32767 [0m
+[0;32mI (500) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (500) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (500) PWM_OUT: duty: 32767 [0m
+[0;32mI (600) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (600) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (600) PWM_OUT: duty: 32767 [0m
+[0;32mI (700) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (700) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (700) PWM_OUT: duty: 32767 [0m
+[0;32mI (800) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (800) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (800) PWM_OUT: duty: 32767 [0m
+[0;32mI (900) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (900) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (900) PWM_OUT: duty: 32767 [0m
+[0;32mI (1000) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (1000) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (1000) PWM_OUT: duty: 32767 [0m
+[0;32mI (1100) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (1100) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (1100) PWM_OUT: duty: 32767 [0m
+[0;32mI (1200) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (1200) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (1200) PWM_OUT: duty: 32767 [0m
+[0;32mI (1300) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (1300) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (1300) PWM_OUT: duty: 32767 [0m
+[0;32mI (1400) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (1400) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (1400) PWM_OUT: duty: 32767 [0m
+[0;32mI (1500) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (1500) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (1500) PWM_OUT: duty: 32767 [0m
+[0;32mI (1600) I2C_MASTER: Received ADC: 3110[0m
+[0;32mI (1600) PWM_OUT: PWM Pulse Width Output: 3110 us[0m
+[0;32mI (1600) PWM_OUT: duty: 24885 [0m
+[0;32mI (1700) I2C_MASTER: Received ADC: 2896[0m
+[0;32mI (1700) PWM_OUT: PWM Pulse Width Output: 2896 us[0m
+[0;32mI (1700) PWM_OUT: duty: 23172 [0m
+[0;32mI (1800) I2C_MASTER: Received ADC: 2911[0m
+[0;32mI (1800) PWM_OUT: PWM Pulse Width Output: 2911 us[0m
+[0;32mI (1800) PWM_OUT: duty: 23292 [0m
+[0;32mI (1900) I2C_MASTER: Received ADC: 2943[0m
+[0;32mI (1900) PWM_OUT: PWM Pulse Width Output: 2943 us[0m
+[0;32mI (1900) PWM_OUT: duty: 23549 [0m
+[0;32mI (2000) I2C_MASTER: Received ADC: 2977[0m
+[0;32mI (2000) PWM_OUT: PWM Pulse Width Output: 2977 us[0m
+[0;32mI (2000) PWM_OUT: duty: 23821 [0m
+[0;32mI (2100) I2C_MASTER: Received ADC: 2960[0m
+[0;32mI (2100) PWM_OUT: PWM Pulse Width Output: 2960 us[0m
+[0;32mI (2100) PWM_OUT: duty: 23685 [0m
+[0;32mI (2200) I2C_MASTER: Received ADC: 2954[0m
+[0;32mI (2200) PWM_OUT: PWM Pulse Width Output: 2954 us[0m
+[0;32mI (2200) PWM_OUT: duty: 23637 [0m
+[0;32mI (2300) I2C_MASTER: Received ADC: 2951[0m
+[0;32mI (2300) PWM_OUT: PWM Pulse Width Output: 2951 us[0m
+[0;32mI (2300) PWM_OUT: duty: 23613 [0m
+[0;32mI (2400) I2C_MASTER: Received ADC: 2970[0m
+[0;32mI (2400) PWM_OUT: PWM Pulse Width Output: 2970 us[0m
+[0;32mI (2400) PWM_OUT: duty: 23765 [0m
+[0;32mI (2500) I2C_MASTER: Received ADC: 2915[0m
+[0;32mI (2500) PWM_OUT: PWM Pulse Width Output: 2915 us[0m
+[0;32mI (2500) PWM_OUT: duty: 23324 [0m
+[0;32mI (2600) I2C_MASTER: Received ADC: 2956[0m
+[0;32mI (2600) PWM_OUT: PWM Pulse Width Output: 2956 us[0m
+[0;32mI (2600) PWM_OUT: duty: 23653 [0m
+[0;32mI (2700) I2C_MASTER: Received ADC: 2998[0m
+[0;32mI (2700) PWM_OUT: PWM Pulse Width Output: 2998 us[0m
+[0;32mI (2700) PWM_OUT: duty: 23989 [0m
+[0;32mI (2800) I2C_MASTER: Received ADC: 3302[0m
+[0;32mI (2800) PWM_OUT: PWM Pulse Width Output: 3302 us[0m
+[0;32mI (2800) PWM_OUT: duty: 26421 [0m
+[0;32mI (2900) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (2900) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (2900) PWM_OUT: duty: 32767 [0m
+[0;32mI (3000) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (3000) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (3000) PWM_OUT: duty: 32767 [0m
+[0;32mI (3100) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (3100) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (3100) PWM_OUT: duty: 32767 [0m
+[0;32mI (3200) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (3200) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (3200) PWM_OUT: duty: 32767 [0m
+[0;32mI (3300) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (3300) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (3300) PWM_OUT: duty: 32767 [0m
+[0;32mI (3400) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (3400) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (3400) PWM_OUT: duty: 32767 [0m
+[0;32mI (3500) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (3500) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (3500) PWM_OUT: duty: 32767 [0m
+[0;32mI (3600) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (3600) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (3600) PWM_OUT: duty: 32767 [0m
+[0;32mI (3700) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (3700) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (3700) PWM_OUT: duty: 32767 [0m
+[0;32mI (3800) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (3800) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (3800) PWM_OUT: duty: 32767 [0m
+[0;32mI (3900) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (3900) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (3900) PWM_OUT: duty: 32767 [0m
+[0;32mI (4000) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (4000) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (4000) PWM_OUT: duty: 32767 [0m
+[0;32mI (4100) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (4100) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (4100) PWM_OUT: duty: 32767 [0m
+[0;32mI (4200) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (4200) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (4200) PWM_OUT: duty: 32767 [0m
+[0;32mI (4300) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (4300) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (4300) PWM_OUT: duty: 32767 [0m
+[0;32mI (4400) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (4400) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (4400) PWM_OUT: duty: 32767 [0m
+[0;32mI (4500) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (4500) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (4500) PWM_OUT: duty: 32767 [0m
+[0;32mI (4600) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (4600) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (4600) PWM_OUT: duty: 32767 [0m
+[0;32mI (4700) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (4700) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (4700) PWM_OUT: duty: 32767 [0m
+[0;32mI (4800) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (4800) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (4800) PWM_OUT: duty: 32767 [0m
+[0;32mI (4900) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (4900) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (4900) PWM_OUT: duty: 32767 [0m
+[0;32mI (5000) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (5000) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (5000) PWM_OUT: duty: 32767 [0m
+[0;32mI (5100) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (5100) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (5100) PWM_OUT: duty: 32767 [0m
+[0;32mI (5200) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (5200) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (5200) PWM_OUT: duty: 32767 [0m
+[0;32mI (5300) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (5300) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (5300) PWM_OUT: duty: 32767 [0m
+[0;32mI (5400) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (5400) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (5400) PWM_OUT: duty: 32767 [0m
+[0;32mI (5500) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (5500) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (5500) PWM_OUT: duty: 32767 [0m
+[0;32mI (5600) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (5600) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (5600) PWM_OUT: duty: 32767 [0m
+[0;32mI (5700) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (5700) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (5700) PWM_OUT: duty: 32767 [0m
+[0;32mI (5800) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (5800) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (5800) PWM_OUT: duty: 32767 [0m
+[0;32mI (5900) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (5900) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (5900) PWM_OUT: duty: 32767 [0m
+[0;32mI (6000) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (6000) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (6000) PWM_OUT: duty: 32767 [0m
+[0;32mI (6100) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (6100) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (6100) PWM_OUT: duty: 32767 [0m
+[0;32mI (6200) I2C_MASTER: Received ADC: 4095[0m
+[0;32mI (6200) PWM_OUT: PWM Pulse Width Output: 4095 us[0m
+[0;32mI (6200) PWM_OUT: duty: 32767 [0m
+[0;32mI (6300) I2C_MASTER: Received ADC: 3978[0m
+[0;32mI (6300) PWM_OUT: PWM Pulse Width Output: 3978 us[0m
+[0;32mI (6300) PWM_OUT: duty: 31830 [0m
+[0;32mI (6400) I2C_MASTER: Received ADC: 3270[0m
+[0;32mI (6400) PWM_OUT: PWM Pulse Width Output: 3270 us[0m
+[0;32mI (6400) PWM_OUT: duty: 26165 [0m
+[0;32mI (6500) I2C_MASTER: Received ADC: 2779[0m
+[0;32mI (6500) PWM_OUT: PWM Pulse Width Output: 2779 us[0m
+[0;32mI (6500) PWM_OUT: duty: 22236 [0m
+[0;32mI (6600) I2C_MASTER: Received ADC: 2425[0m
+[0;32mI (6600) PWM_OUT: PWM Pulse Width Output: 2425 us[0m
+[0;32mI (6600) PWM_OUT: duty: 19404 [0m
+[0;32mI (6700) I2C_MASTER: Received ADC: 1910[0m
+[0;32mI (6700) PWM_OUT: PWM Pulse Width Output: 1910 us[0m
+[0;32mI (6700) PWM_OUT: duty: 15283 [0m
+[0;32mI (6800) I2C_MASTER: Received ADC: 1415[0m
+[0;32mI (6800) PWM_OUT: PWM Pulse Width Output: 1415 us[0m
+[0;32mI (6800) PWM_OUT: duty: 11322 [0m
+[0;32mI (6900) I2C_MASTER: Received ADC: 1449[0m
+[0;32mI (6900) PWM_OUT: PWM Pulse Width Output: 1449 us[0m
+[0;32mI (6900) PWM_OUT: duty: 11594 [0m
+[0;32mI (7000) I2C_MASTER: Received ADC: 1222[0m
+[0;32mI (7000) PWM_OUT: PWM Pulse Width Output: 1222 us[0m
+[0;32mI (7000) PWM_OUT: duty: 9778 [0m
+[0;32mI (7100) I2C_MASTER: Received ADC: 1219[0m
+[0;32mI (7100) PWM_OUT: PWM Pulse Width Output: 1219 us[0m
+[0;32mI (7100) PWM_OUT: duty: 9754 [0m
+[0;32mI (7200) I2C_MASTER: Received ADC: 1215[0m
+[0;32mI (7200) PWM_OUT: PWM Pulse Width Output: 1215 us[0m
+[0;32mI (7200) PWM_OUT: duty: 9722 [0m
+[0;32mI (7300) I2C_MASTER: Received ADC: 1206[0m
+[0;32mI (7300) PWM_OUT: PWM Pulse Width Output: 1206 us[0m
+[0;32mI (7300) PWM_OUT: duty: 9650 [0m
+[0;32mI (7400) I2C_MASTER: Received ADC: 1191[0m
+[0;32mI (7400) PWM_OUT: PWM Pulse Width Output: 1191 us[0m
+[0;32mI (7400) PWM_OUT: duty: 9530 [0m
+[0;32mI (7500) I2C_MASTER: Received ADC: 1224[0m
+[0;32mI (7500) PWM_OUT: PWM Pulse Width Output: 1224 us[0m
+[0;32mI (7500) PWM_OUT: duty: 9794 [0m
+[0;32mI (7600) I2C_MASTER: Received ADC: 1206[0m
+[0;32mI (7600) PWM_OUT: PWM Pulse Width Output: 1206 us[0m
+[0;32mI (7600) PWM_OUT: duty: 9650 [0m
+[0;32mI (7700) I2C_MASTER: Received ADC: 1215[0m
+[0;32mI (7700) PWM_OUT: PWM Pulse Width Output: 1215 us[0m
+[0;32mI (7700) PWM_OUT: duty: 9722 [0m
+[0;32mI (7800) I2C_MASTER: Received ADC: 1194[0m
+[0;32mI (7800) PWM_OUT: PWM Pulse Width Output: 1194 us[0m
+[0;32mI (7800) PWM_OUT: duty: 9554 [0m
+[0;32mI (7900) I2C_MASTER: Received ADC: 1165[0m
+[0;32mI (7900) PWM_OUT: PWM Pulse Width Output: 1165 us[0m
+[0;32mI (7900) PWM_OUT: duty: 9321 [0m
+[0;32mI (8000) I2C_MASTER: Received ADC: 1062[0m
+[0;32mI (8000) PWM_OUT: PWM Pulse Width Output: 1062 us[0m
+[0;32mI (8000) PWM_OUT: duty: 8497 [0m
+[0;32mI (8100) I2C_MASTER: Received ADC: 827[0m
+[0;32mI (8100) PWM_OUT: PWM Pulse Width Output: 827 us[0m
+[0;32mI (8100) PWM_OUT: duty: 6617 [0m
+[0;32mI (8200) I2C_MASTER: Received ADC: 657[0m
+[0;32mI (8200) PWM_OUT: PWM Pulse Width Output: 657 us[0m
+[0;32mI (8200) PWM_OUT: duty: 5257 [0m
+[0;32mI (8300) I2C_MASTER: Received ADC: 463[0m
+[0;32mI (8300) PWM_OUT: PWM Pulse Width Output: 463 us[0m
+[0;32mI (8300) PWM_OUT: duty: 3704 [0m
+[0;32mI (8400) I2C_MASTER: Received ADC: 246[0m
+[0;32mI (8400) PWM_OUT: PWM Pulse Width Output: 246 us[0m
+[0;32mI (8400) PWM_OUT: duty: 1968 [0m
+[0;32mI (8500) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (8500) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (8500) PWM_OUT: duty: 0 [0m
+[0;32mI (8600) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (8600) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (8600) PWM_OUT: duty: 0 [0m
+[0;32mI (8700) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (8700) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (8700) PWM_OUT: duty: 0 [0m
+[0;32mI (8800) I2C_MASTER: Received ADC: 112[0m
+[0;32mI (8800) PWM_OUT: PWM Pulse Width Output: 112 us[0m
+[0;32mI (8800) PWM_OUT: duty: 896 [0m
+[0;32mI (8900) I2C_MASTER: Received ADC: 107[0m
+[0;32mI (8900) PWM_OUT: PWM Pulse Width Output: 107 us[0m
+[0;32mI (8900) PWM_OUT: duty: 856 [0m
+[0;32mI (9000) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (9000) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (9000) PWM_OUT: duty: 0 [0m
+[0;32mI (9100) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (9100) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (9100) PWM_OUT: duty: 0 [0m
+[0;32mI (9200) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (9200) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (9200) PWM_OUT: duty: 0 [0m
+[0;32mI (9300) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (9300) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (9300) PWM_OUT: duty: 0 [0m
+[0;32mI (9400) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (9400) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (9400) PWM_OUT: duty: 0 [0m
+[0;32mI (9500) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (9500) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (9500) PWM_OUT: duty: 0 [0m
+[0;32mI (9600) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (9600) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (9600) PWM_OUT: duty: 0 [0m
+[0;32mI (9700) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (9700) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (9700) PWM_OUT: duty: 0 [0m
+[0;32mI (9800) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (9800) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (9800) PWM_OUT: duty: 0 [0m
+[0;32mI (9900) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (9900) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (9900) PWM_OUT: duty: 0 [0m
+[0;32mI (10000) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (10000) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (10000) PWM_OUT: duty: 0 [0m
+[0;32mI (10100) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (10100) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (10100) PWM_OUT: duty: 0 [0m
+[0;32mI (10200) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (10200) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (10200) PWM_OUT: duty: 0 [0m
+[0;32mI (10300) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (10300) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (10300) PWM_OUT: duty: 0 [0m
+[0;32mI (10400) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (10400) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (10400) PWM_OUT: duty: 0 [0m
+[0;32mI (10500) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (10500) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (10500) PWM_OUT: duty: 0 [0m
+[0;32mI (10600) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (10600) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (10600) PWM_OUT: duty: 0 [0m
+[0;32mI (10700) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (10700) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (10700) PWM_OUT: duty: 0 [0m
+[0;32mI (10800) I2C_MASTER: Received ADC: 112[0m
+[0;32mI (10800) PWM_OUT: PWM Pulse Width Output: 112 us[0m
+[0;32mI (10800) PWM_OUT: duty: 896 [0m
+[0;32mI (10900) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (10900) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (10900) PWM_OUT: duty: 0 [0m
+[0;32mI (11000) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (11000) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (11000) PWM_OUT: duty: 0 [0m
+[0;32mI (11100) I2C_MASTER: Received ADC: 0[0m
+[0;32mI (11100) PWM_OUT: PWM Pulse Width Output: 0 us[0m
+[0;32mI (11100) PWM_OUT: duty: 0 [0m
+[0;32mI (11200) I2C_MASTER: Received ADC: 16[0m
+[0;32mI (11200) PWM_OUT: PWM Pulse Width Output: 16 us[0m
+[0;32mI (11200) PWM_OUT: duty: 128 [0m
+[0;32mI (11300) I2C_MASTER: Received ADC: 149[0m
+[0;32mI (11300) PWM_OUT: PWM Pulse Width Output: 149 us[0m
+[0;32mI (11300) PWM_OUT: duty: 1192 [0m
+[0;32mI (11400) I2C_MASTER: Received ADC: 350[0m
+[0;32mI (11400) PWM_OUT: PWM Pulse Width Output: 350 us[0m
+[0;32mI (11400) PWM_OUT: duty: 2800 [0m
+[0;32mI (11500) I2C_MASTER: Received ADC: 561[0m
+[0;32mI (11500) PWM_OUT: PWM Pulse Width Output: 561 us[0m
+[0;32mI (11500) PWM_OUT: duty: 4488 [0m
+[0;32mI (11600) I2C_MASTER: Received ADC: 694[0m
+[0;32mI (11600) PWM_OUT: PWM Pulse Width Output: 694 us[0m
+[0;32mI (11600) PWM_OUT: duty: 5553 [0m
+[0;32mI (11700) I2C_MASTER: Received ADC: 816[0m
+[0;32mI (11700) PWM_OUT: PWM Pulse Width Output: 816 us[0m
+[0;32mI (11700) PWM_OUT: duty: 6529 [0m
+[0;32mI (11800) I2C_MASTER: Received ADC: 926[0m
+[0;32mI (11800) PWM_OUT: PWM Pulse Width Output: 926 us[0m
+[0;32mI (11800) PWM_OUT: duty: 7409 [0m
+[0;32mI (11900) I2C_MASTER: Received ADC: 976[0m
+[0;32mI (11900) PWM_OUT: PWM Pulse Width Output: 976 us[0m
+[0;32mI (11900) PWM_OUT: duty: 7809 [0m
+[0;32mI (12000) I2C_MASTER: Received ADC: 1046[0m
+[0;32mI (12000) PWM_OUT: PWM Pulse Width Output: 1046 us[0m
+[0;32mI (12000) PWM_OUT: duty: 8369 [0m
+[0;32mI (12100) I2C_MASTER: Received ADC: 1107[0m
+[0;32mI (12100) PWM_OUT: PWM Pulse Width Output: 1107 us[0m
+[0;32mI (12100) PWM_OUT: duty: 8857 [0m
+[0;32mI (12200) I2C_MASTER: Received ADC: 1200[0m
+[0;32mI (12200) PWM_OUT: PWM Pulse Width Output: 1200 us[0m
+[0;32mI (12200) PWM_OUT: duty: 9602 [0m
+[0;32mI (12300) I2C_MASTER: Received ADC: 1297[0m
+[0;32mI (12300) PWM_OUT: PWM Pulse Width Output: 1297 us[0m
+[0;32mI (12300) PWM_OUT: duty: 10378 [0m
+[0;32mI (12400) I2C_MASTER: Received ADC: 1393[0m
+[0;32mI (12400) PWM_OUT: PWM Pulse Width Output: 1393 us[0m
+[0;32mI (12400) PWM_OUT: duty: 11146 [0m
+[0;32mI (12500) I2C_MASTER: Received ADC: 1523[0m
+[0;32mI (12500) PWM_OUT: PWM Pulse Width Output: 1523 us[0m
+[0;32mI (12500) PWM_OUT: duty: 12186 [0m
+[0;32mI (12600) I2C_MASTER: Received ADC: 1648[0m
+[0;32mI (12600) PWM_OUT: PWM Pulse Width Output: 1648 us[0m
+[0;32mI (12600) PWM_OUT: duty: 13186 [0m
+[0;32mI (12700) I2C_MASTER: Received ADC: 1745[0m
+[0;32mI (12700) PWM_OUT: PWM Pulse Width Output: 1745 us[0m
+[0;32mI (12700) PWM_OUT: duty: 13962 [0m
+[0;32mI (12800) I2C_MASTER: Received ADC: 1850[0m
+[0;32mI (12800) PWM_OUT: PWM Pulse Width Output: 1850 us[0m
+[0;32mI (12800) PWM_OUT: duty: 14803 [0m
+[0;32mI (12900) I2C_MASTER: Received ADC: 1950[0m
+[0;32mI (12900) PWM_OUT: PWM Pulse Width Output: 1950 us[0m
+[0;32mI (12900) PWM_OUT: duty: 15603 [0m
+[0;32mI (13000) I2C_MASTER: Received ADC: 2066[0m
+[0;32mI (13000) PWM_OUT: PWM Pulse Width Output: 2066 us[0m
+[0;32mI (13000) PWM_OUT: duty: 16531 [0m
+[0;32mI (13100) I2C_MASTER: Received ADC: 2160[0m
+[0;32mI (13100) PWM_OUT: PWM Pulse Width Output: 2160 us[0m
+[0;32mI (13100) PWM_OUT: duty: 17283 [0m
+[0;32mI (13200) I2C_MASTER: Received ADC: 2207[0m
+[0;32mI (13200) PWM_OUT: PWM Pulse Width Output: 2207 us[0m
+[0;32mI (13200) PWM_OUT: duty: 17659 [0m
+[0;32mI (13300) I2C_MASTER: Received ADC: 2191[0m
+[0;32mI (13300) PWM_OUT: PWM Pulse Width Output: 2191 us[0m
+[0;32mI (13300) PWM_OUT: duty: 17531 [0m
+[0;32mI (13400) I2C_MASTER: Received ADC: 2208[0m
+[0;32mI (13400) PWM_OUT: PWM Pulse Width Output: 2208 us[0m
+[0;32mI (13400) PWM_OUT: duty: 17667 [0m
+[0;32mI (13500) I2C_MASTER: Received ADC: 2217[0m
+[0;32mI (13500) PWM_OUT: PWM Pulse Width Output: 2217 us[0m
+[0;32mI (13500) PWM_OUT: duty: 17739 [0m
+[0;32mI (13600) I2C_MASTER: Received ADC: 2211[0m
+[0;32mI (13600) PWM_OUT: PWM Pulse Width Output: 2211 us[0m
+[0;32mI (13600) PWM_OUT: duty: 17691 [0m
+[0;32mI (13700) I2C_MASTER: Received ADC: 2203[0m
+[0;32mI (13700) PWM_OUT: PWM Pulse Width Output: 2203 us[0m
+[0;32mI (13700) PWM_OUT: duty: 17627 [0m
+[0;32mI (13800) I2C_MASTER: Received ADC: 2192[0m
+[0;32mI (13800) PWM_OUT: PWM Pulse Width Output: 2192 us[0m
+[0;32mI (13800) PWM_OUT: duty: 17539 [0m
+[0;32mI (13900) I2C_MASTER: Received ADC: 2202[0m
+[0;32mI (13900) PWM_OUT: PWM Pulse Width Output: 2202 us[0m
+[0;32mI (13900) PWM_OUT: duty: 17619 [0m
+[0;32mI (14000) I2C_MASTER: Received ADC: 2204[0m
+[0;32mI (14000) PWM_OUT: PWM Pulse Width Output: 2204 us[0m
+[0;32mI (14000) PWM_OUT: duty: 17635 [0m
+[0;32mI (14100) I2C_MASTER: Received ADC: 2189[0m
+[0;32mI (14100) PWM_OUT: PWM Pulse Width Output: 2189 us[0m
+[0;32mI (14100) PWM_OUT: duty: 17515 [0m
+[0;32mI (14200) I2C_MASTER: Received ADC: 2187[0m
+[0;32mI (14200) PWM_OUT: PWM Pulse Width Output: 2187 us[0m
+[0;32mI (14200) PWM_OUT: duty: 17499 [0m
+[0;32mI (14300) I2C_MASTER: Received ADC: 2198[0m
+[0;32mI (14300) PWM_OUT: PWM Pulse Width Output: 2198 us[0m
+[0;32mI (14300) PWM_OUT: duty: 17587 [0m
+[0;32mI (14400) I2C_MASTER: Received ADC: 2203[0m
+[0;32mI (14400) PWM_OUT: PWM Pulse Width Output: 2203 us[0m
+[0;32mI (14400) PWM_OUT: duty: 17627 [0m
+[0;32mI (14500) I2C_MASTER: Received ADC: 2193[0m
+[0;32mI (14500) PWM_OUT: PWM Pulse Width Output: 2193 us[0m
+[0;32mI (14500) PWM_OUT: duty: 17547 [0m
+[0;32mI (14600) I2C_MASTER: Received ADC: 2202[0m
+[0;32mI (14600) PWM_OUT: PWM Pulse Width Output: 2202 us[0m
+[0;32mI (14600) PWM_OUT: duty: 17619 [0m
+[0;32mI (14700) I2C_MASTER: Received ADC: 2196[0m
+[0;32mI (14700) PWM_OUT: PWM Pulse Width Output: 2196 us[0m
+[0;32mI (14700) PWM_OUT: duty: 17571 [0m
+[0;32mI (14800) I2C_MASTER: Received ADC: 2176[0m
+[0;32mI (14800) PWM_OUT: PWM Pulse Width Output: 2176 us[0m
+[0;32mI (14800) PWM_OUT: duty: 17411 [0m
+[0;32mI (14900) I2C_MASTER: Received ADC: 2189[0m
+[0;32mI (14900) PWM_OUT: PWM Pulse Width Output: 2189 us[0m
+[0;32mI (14900) PWM_OUT: duty: 17515 [0m
+[0;32mI (15000) I2C_MASTER: Received ADC: 2192[0m
+[0;32mI (15000) PWM_OUT: PWM Pulse Width Output: 2192 us[0m
+[0;32mI (15000) PWM_OUT: duty: 17539 [0m
+[0;32mI (15100) I2C_MASTER: Received ADC: 2192[0m
+[0;32mI (15100) PWM_OUT: PWM Pulse Width Output: 2192 us[0m
+[0;32mI (15100) PWM_OUT: duty: 17539 [0m
+[0;32mI (15200) I2C_MASTER: Received ADC: 2189[0m
+[0;32mI (15200) PWM_OUT: PWM Pulse Width Output: 2189 us[0m
+[0;32mI (15200) PWM_OUT: duty: 17515 [0m
+[0;32mI (15300) I2C_MASTER: Received ADC: 2202[0m
+[0;32mI (15300) PWM_OUT: PWM Pulse Width Output: 2202 us[0m
+[0;32mI (15300) PWM_OUT: duty: 17619 [0m
+[0;32mI (15400) I2C_MASTER: Received ADC: 2192[0m
+[0;32mI (15400) PWM_OUT: PWM Pulse Width Output: 2192 us[0m
+[0;32mI (15400) PWM_OUT: duty: 17539 [0m
+[0;32mI (15500) I2C_MASTER: Received ADC: 2206[0m
+[0;32mI (15500) PWM_OUT: PWM Pulse Width Output: 2206 us[0m
+[0;32mI (15500) PWM_OUT: duty: 17651 [0m
+[0;32mI (15600) I2C_MASTER: Received ADC: 2202[0m
+[0;32mI (15600) PWM_OUT: PWM Pulse Width Output: 2202 us[0m
+[0;32mI (15600) PWM_OUT: duty: 17619 [0m
+[0;32mI (15700) I2C_MASTER: Received ADC: 2202[0m
+[0;32mI (15700) PWM_OUT: PWM Pulse Width Output: 2202 us[0m
+[0;32mI (15700) PWM_OUT: duty: 17619 [0m
+[0;32mI (15800) I2C_MASTER: Received ADC: 2192[0m
+[0;32mI (15800) PWM_OUT: PWM Pulse Width Output: 2192 us[0m
+[0;32mI (15800) PWM_OUT: duty: 17539 [0m
+[0;32mI (15900) I2C_MASTER: Received ADC: 2192[0m
+[0;32mI (15900) PWM_OUT: PWM Pulse Width Output: 2192 us[0m
+[0;32mI (15900) PWM_OUT: duty: 17539 [0m
+[0;32mI (16000) I2C_MASTER: Received ADC: 2196[0m
+[0;32mI (16000) PWM_OUT: PWM Pulse Width Output: 2196 us[0m
+[0;32mI (16000) PWM_OUT: duty: 17571 [0m
+[0;32mI (16100) I2C_MASTER: Received ADC: 2193[0m
+[0;32mI (16100) PWM_OUT: PWM Pulse Width Output: 2193 us[0m
+[0;32mI (16100) PWM_OUT: duty: 17547 [0m
+[0;32mI (16200) I2C_MASTER: Received ADC: 2234[0m
+[0;32mI (16200) PWM_OUT: PWM Pulse Width Output: 2234 us[0m
+[0;32mI (16200) PWM_OUT: duty: 17875 [0m
+[0;32mI (16300) I2C_MASTER: Received ADC: 2182[0m
+[0;32mI (16300) PWM_OUT: PWM Pulse Width Output: 2182 us[0m
+[0;32mI (16300) PWM_OUT: duty: 17459 [0m
+[0;32mI (16400) I2C_MASTER: Received ADC: 2193[0m
+[0;32mI (16400) PWM_OUT: PWM Pulse Width Output: 2193 us[0m
+[0;32mI (16400) PWM_OUT: duty: 17547 [0m
+[0;32mI (16500) I2C_MASTER: Received ADC: 2190[0m
+[0;32mI (16500) PWM_OUT: PWM Pulse Width Output: 2190 us[0m
+[0;32mI (16500) PWM_OUT: duty: 17523 [0m
+[0;32mI (16600) I2C_MASTER: Received ADC: 2194[0m
+[0;32mI (16600) PWM_OUT: PWM Pulse Width Output: 2194 us[0m
+[0;32mI (16600) PWM_OUT: duty: 17555 [0m
+[0;32mI (16700) I2C_MASTER: Received ADC: 2192[0m
+[0;32mI (16700) PWM_OUT: PWM Pulse Width Output: 2192 us[0m
+[0;32mI (16700) PWM_OUT: duty: 17539 [0m
+[0;32mI (16800) I2C_MASTER: Received ADC: 2192[0m
+[0;32mI (16800) PWM_OUT: PWM Pulse Width Output: 2192 us[0m
+[0;32mI (16800) PWM_OUT: duty: 17539 [0m
+[0;32mI (16900) I2C_MASTER: Received ADC: 2182[0m
+[0;32mI (16900) PWM_OUT: PWM Pulse Width Output: 2182 us[0m
+[0;32mI (16900) PWM_OUT: duty: 17459 [0m
+[0;32mI (17000) I2C_MASTER: Received ADC: 2202[0m
+[0;32mI (17000) PWM_OUT: PWM Pulse Width Output: 2202 us[0m
+[0;32mI (17000) PWM_OUT: duty: 17619 [0m
+[0;32mI (17100) I2C_MASTER: Received ADC: 2218[0m
+[0;32mI (17100) PWM_OUT: PWM Pulse Width Output: 2218 us[0m
+[0;32mI (17100) PWM_OUT: duty: 17747 [0m
+[0;32mI (17200) I2C_MASTER: Received ADC: 2206[0m
+[0;32mI (17200) PWM_OUT: PWM Pulse Width Output: 2206 us[0m
+[0;32mI (17200) PWM_OUT: duty: 17651 [0m
+[0;32mI (17300) I2C_MASTER: Received ADC: 2192[0m
+[0;32mI (17300) PWM_OUT: PWM Pulse Width Output: 2192 us[0m
+[0;32mI (17300) PWM_OUT: duty: 17539 [0m
+[0;32mI (17400) I2C_MASTER: Received ADC: 2204[0m
+[0;32mI (17400) PWM_OUT: PWM Pulse Width Output: 2204 us[0m
+[0;32mI (17400) PWM_OUT: duty: 17635 [0m
+[0;32mI (17500) I2C_MASTER: Received ADC: 2192[0m
+[0;32mI (17500) PWM_OUT: PWM Pulse Width Output: 2192 us[0m
+[0;32mI (17500) PWM_OUT: duty: 17539 [0m
+[0;32mI (17600) I2C_MASTER: Received ADC: 2199[0m
+[0;32mI (17600) PWM_OUT: PWM Pulse Width Output: 2199 us[0m
+[0;32mI (17600) PWM_OUT: duty: 17595 [0m
+[0;32mI (17700) I2C_MASTER: Received ADC: 2178[0m
+[0;32mI (17700) PWM_OUT: PWM Pulse Width Output: 2178 us[0m
+[0;32mI (17700) PWM_OUT: duty: 17427 [0m
+[0;32mI (17800) I2C_MASTER: Received ADC: 2193[0m
+[0;32mI (17800) PWM_OUT: PWM Pulse Width Output: 2193 us[0m
+[0;32mI (17800) PWM_OUT: duty: 17547 [0m
+[0;32mI (17900) I2C_MASTER: Received ADC: 2192[0m
+[0;32mI (17900) PWM_OUT: PWM Pulse Width Output: 2192 us[0m
+[0;32mI (17900) PWM_OUT: duty: 17539 [0m
+[0;32mI (18000) I2C_MASTER: Received ADC: 2205[0m
+[0;32mI (18000) PWM_OUT: PWM Pulse Width Output: 2205 us[0m
+[0;32mI (18000) PWM_OUT: duty: 17643 [0m
+[0;32mI (18100) I2C_MASTER: Received ADC: 2198[0m
+[0;32mI (18100) PWM_OUT: PWM Pulse Width Output: 2198 us[0m
+[0;32mI (18100) PWM_OUT: duty: 17587 [0m
+[0;32mI (18200) I2C_MASTER: Received ADC: 2219[0m
+[0;32mI (18200) PWM_OUT: PWM Pulse Width Output: 2219 us[0m
+[0;32mI (18200) PWM_OUT: duty: 17755 [0m
+[0;32mI (18300) I2C_MASTER: Received ADC: 2195[0m
+[0;32mI (18300) PWM_OUT: PWM Pulse Width Output: 2195 us[0m
+[0;32mI (18300) PWM_OUT: duty: 17563 [0m
+[0;32mI (18400) I2C_MASTER: Received ADC: 2187[0m
+[0;32mI (18400) PWM_OUT: PWM Pulse Width Output: 2187 us[0m
+[0;32mI (18400) PWM_OUT: duty: 17499 [0m
+[0;32mI (18500) I2C_MASTER: Received ADC: 2190[0m
+[0;32mI (18500) PWM_OUT: PWM Pulse Width Output: 2190 us[0m
+[0;32mI (18500) PWM_OUT: duty: 17523 [0m
+[0;32mI (18600) I2C_MASTER: Received ADC: 2139[0m
+[0;32mI (18600) PWM_OUT: PWM Pulse Width Output: 2139 us[0m
+[0;32mI (18600) PWM_OUT: duty: 17115 [0m
+[0;32mI (18700) I2C_MASTER: Received ADC: 2205[0m
+[0;32mI (18700) PWM_OUT: PWM Pulse Width Output: 2205 us[0m
+[0;32mI (18700) PWM_OUT: duty: 17643 [0m
+[0;32mI (18800) I2C_MASTER: Received ADC: 2192[0m
+[0;32mI (18800) PWM_OUT: PWM Pulse Width Output: 2192 us[0m
+[0;32mI (18800) PWM_OUT: duty: 17539 [0m
+[0;32mI (18900) I2C_MASTER: Received ADC: 2201[0m
+[0;32mI (18900) PWM_OUT: PWM Pulse Width Output: 2201 us[0m
+[0;32mI (18900) PWM_OUT: duty: 17611 [0m
+[0;32mI (19000) I2C_MASTER: Received ADC: 2209[0m
+[0;32mI (19000) PWM_OUT: PWM Pulse Width Output: 2209 us[0m
+[0;32mI (19000) PWM_OUT: duty: 17675 [0m
+[0;32mI (19100) I2C_MASTER: Received ADC: 2206[0m
+[0;32mI (19100) PWM_OUT: PWM Pulse Width Output: 2206 us[0m
+[0;32mI (19100) PWM_OUT: duty: 17651 [0m
+[0;32mI (19200) I2C_MASTER: Received ADC: 2178[0m
+[0;32mI (19200) PWM_OUT: PWM Pulse Width Output: 2178 us[0m
+[0;32mI (19200) PWM_OUT: duty: 17427 [0m
+[0;32mI (19300) I2C_MASTER: Received ADC: 2203[0m
+[0;32mI (19300) PWM_OUT: PWM Pulse Width Output: 2203 us[0m
+[0;32mI (19300) PWM_OUT: duty: 17627 [0m
+[0;32mI (19400) I2C_MASTER: Received ADC: 2217[0m
+[0;32mI (19400) PWM_OUT: PWM Pulse Width Output: 2217 us[0m
+[0;32mI (19400) PWM_OUT: duty: 17739 [0m
+[0;32mI (19500) I2C_MASTER: Received ADC: 2190[0m
+[0;32mI (19500) PWM_OUT: PWM Pulse Width Output: 2190 us[0m
+[0;32mI (19500) PWM_OUT: duty: 17523 [0m
+[0;32mI (19600) I2C_MASTER: Received ADC: 2198[0m
+[0;32mI (19600) PWM_OUT: PWM Pulse Width Output: 2198 us[0m
+[0;32mI (19600) PWM_OUT: duty: 17587 [0m
+[0;32mI (19700) I2C_MASTER: Received ADC: 2194[0m
+[0;32mI (19700) PWM_OUT: PWM Pulse Width Output: 2194 us[0m
+[0;32mI (19700) PWM_OUT: duty: 17555 [0m
+[0;32mI (19800) I2C_MASTER: Received ADC: 2203[0m
+[0;32mI (19800) PWM_OUT: PWM Pulse Width Output: 2203 us[0m
+[0;32mI (19800) PWM_OUT: duty: 17627 [0m
+[0;32mI (19900) I2C_MASTER: Received ADC: 2187[0m
+[0;32mI (19900) PWM_OUT: PWM Pulse Width Output: 2187 us[0m
+[0;32mI (19900) PWM_OUT: duty: 17499 [0m
+[0;32mI (20000) I2C_MASTER: Received ADC: 2179[0m
+[0;32mI (20000) PWM_OUT: PWM Pulse Width Output: 2179 us[0m
+[0;32mI (20000) PWM_OUT: duty: 17435 [0m
+[0;32mI (20100) I2C_MASTER: Received ADC: 2199[0m
+[0;32mI (20100) PWM_OUT: PWM Pulse Width Output: 2199 us[0m
+[0;32mI (20100) PWM_OUT: duty: 17595 [0m
+[0;32mI (20200) I2C_MASTER: Received ADC: 2192[0m
+[0;32mI (20200) PWM_OUT: PWM Pulse Width Output: 2192 us[0m
+[0;32mI (20200) PWM_OUT: duty: 17539 [0m
+[0;32mI (20300) I2C_MASTER: Received ADC: 2193[0m
+[0;32mI (20300) PWM_OUT: PWM Pulse Width Output: 2193 us[0m
+[0;32mI (20300) PWM_OUT: duty: 17547 [0m
+[0;32mI (20400) I2C_MASTER: Received ADC: 2187[0m
+[0;32mI (20400) PWM_OUT: PWM Pulse Width Output: 2187 us[0m
+[0;32mI (20400) PWM_OUT: duty: 17499 [0m
+[0;32mI (20500) I2C_MASTER: Received ADC: 2203[0m
+[0;32mI (20500) PWM_OUT: PWM Pulse Width Output: 2203 us[0m
+[0;32mI (20500) PWM_OUT: duty: 17627 [0m
+[0;32mI (20600) I2C_MASTER: Received ADC: 2192[0m
+[0;32mI (20600) PWM_OUT: PWM Pulse Width Output: 2192 us[0m
+[0;32mI (20600) PWM_OUT: duty: 17539 [0m
+[0;32mI (20700) I2C_MASTER: Received ADC: 2195[0m
+[0;32mI (20700) PWM_OUT: PWM Pulse Width Output: 2195 us[0m
+[0;32mI (20700) PWM_OUT: duty: 17563 [0m
+[0;32mI (20800) I2C_MASTER: Received ADC: 2189[0m
+[0;32mI (20800) PWM_OUT: PWM Pulse Width Output: 2189 us[0m
+[0;32mI (20800) PWM_OUT: duty: 17515 [0m
+[0;32mI (20900) I2C_MASTER: Received ADC: 2208[0m
+[0;32mI (20900) PWM_OUT: PWM Pulse Width Output: 2208 us[0m
+[0;32mI (20900) PWM_OUT: duty: 17667 [0m
+[0;32mI (21000) I2C_MASTER: Received ADC: 2207[0m
+[0;32mI (21000) PWM_OUT: PWM Pulse Width Output: 2207 us[0m
+[0;32mI (21000) PWM_OUT: duty: 17659 [0m
+[0;32mI (21100) I2C_MASTER: Received ADC: 2207[0m
+[0;32mI (21100) PWM_OUT: PWM Pulse Width Output: 2207 us[0m
+[0;32mI (21100) PWM_OUT: duty: 17659 [0m
+[0;32mI (21200) I2C_MASTER: Received ADC: 2199[0m
+[0;32mI (21200) PWM_OUT: PWM Pulse Width Output: 2199 us[0m
+[0;32mI (21200) PWM_OUT: duty: 17595 [0m
+[0;32mI (21300) I2C_MASTER: Received ADC: 2193[0m
+[0;32mI (21300) PWM_OUT: PWM Pulse Width Output: 2193 us[0m
+[0;32mI (21300) PWM_OUT: duty: 17547 [0m
+[0;32mI (21400) I2C_MASTER: Received ADC: 2192[0m
+[0;32mI (21400) PWM_OUT: PWM Pulse Width Output: 2192 us[0m
+[0;32mI (21400) PWM_OUT: duty: 17539 [0m
+[0;32mI (21500) I2C_MASTER: Received ADC: 2201[0m
+[0;32mI (21500) PWM_OUT: PWM Pulse Width Output: 2201 us[0m
+[0;32mI (21500) PWM_OUT: duty: 17611 [0m
+[0;32mI (21600) I2C_MASTER: Received ADC: 2217[0m
+[0;32mI (21600) PWM_OUT: PWM Pulse Width Output: 2217 us[0m
+[0;32mI (21600) PWM_OUT: duty: 17739 [0m
+[0;32mI (21700) I2C_MASTER: Received ADC: 2188[0m
+[0;32mI (21700) PWM_OUT: PWM Pulse Width Output: 2188 us[0m
+[0;32mI (21700) PWM_OUT: duty: 17507 [0m
+[0;32mI (21800) I2C_MASTER: Received ADC: 2202[0m
+[0;32mI (21800) PWM_OUT: PWM Pulse Width Output: 2202 us[0m
+[0;32mI (21800) PWM_OUT: duty: 17619 [0m
+[0;32mI (21900) I2C_MASTER: Received ADC: 2192[0m
+[0;32mI (21900) PWM_OUT: PWM Pulse Width Output: 2192 us[0m
+[0;32mI (21900) PWM_OUT: duty: 17539 [0m
+[0;32mI (22000) I2C_MASTER: Received ADC: 2208[0m
+[0;32mI (22000) PWM_OUT: PWM Pulse Width Output: 2208 us[0m
+[0;32mI (22000) PWM_OUT: duty: 17667 [0m
+[0;32mI (22100) I2C_MASTER: Received ADC: 2177[0m
+[0;32mI (22100) PWM_OUT: PWM Pulse Width Output: 2177 us[0m
+[0;32mI (22100) PWM_OUT: duty: 17419 [0m
+[0;32mI (22200) I2C_MASTER: Received ADC: 2183[0m
+[0;32mI (22200) PWM_OUT: PWM Pulse Width Output: 2183 us[0m
+[0;32mI (22200) PWM_OUT: duty: 17467 [0m
+[0;32mI (22300) I2C_MASTER: Received ADC: 2206[0m
+[0;32mI (22300) PWM_OUT: PWM Pulse Width Output: 2206 us[0m
+[0;32mI (22300) PWM_OUT: duty: 17651 [0m
+[0;32mI (22400) I2C_MASTER: Received ADC: 2210[0m
+[0;32mI (22400) PWM_OUT: PWM Pulse Width Output: 2210 us[0m
+[0;32mI (22400) PWM_OUT: duty: 17683 [0m
+[0;32mI (22500) I2C_MASTER: Received ADC: 2188[0m
+[0;32mI (22500) PWM_OUT: PWM Pulse Width Output: 2188 us[0m
+[0;32mI (22500) PWM_OUT: duty: 17507 [0m
+[0;32mI (22600) I2C_MASTER: Received ADC: 2206[0m
+[0;32mI (22600) PWM_OUT: PWM Pulse Width Output: 2206 us[0m
+[0;32mI (22600) PWM_OUT: duty: 17651 [0m
+[0;32mI (22700) I2C_MASTER: Received ADC: 2201[0m
+[0;32mI (22700) PWM_OUT: PWM Pulse Width Output: 2201 us[0m
+[0;32mI (22700) PWM_OUT: duty: 17611 [0m
+[0;32mI (22800) I2C_MASTER: Received ADC: 2194[0m
+[0;32mI (22800) PWM_OUT: PWM Pulse Width Output: 2194 us[0m
+[0;32mI (22800) PWM_OUT: duty: 17555 [0m
+[0;32mI (22900) I2C_MASTER: Received ADC: 2210[0m
+[0;32mI (22900) PWM_OUT: PWM Pulse Width Output: 2210 us[0m
+[0;32mI (22900) PWM_OUT: duty: 17683 [0m
+[0;32mI (23000) I2C_MASTER: Received ADC: 2194[0m
+[0;32mI (23000) PWM_OUT: PWM Pulse Width Output: 2194 us[0m
+[0;32mI (23000) PWM_OUT: duty: 17555 [0m
+[0;32mI (23100) I2C_MASTER: Received ADC: 2207[0m
+[0;32mI (23100) PWM_OUT: PWM Pulse Width Output: 2207 us[0m
+[0;32mI (23100) PWM_OUT: duty: 17659 [0m
+[0;32mI (23200) I2C_MASTER: Received ADC: 2180[0m
+[0;32mI (23200) PWM_OUT: PWM Pulse Width Output: 2180 us[0m
+[0;32mI (23200) PWM_OUT: duty: 17443 [0m
+[0;32mI (23300) I2C_MASTER: Received ADC: 2205[0m
+[0;32mI (23300) PWM_OUT: PWM Pulse Width Output: 2205 us[0m
+[0;32mI (23300) PWM_OUT: duty: 17643 [0m
+[0;32mI (23400) I2C_MASTER: Received ADC: 2195[0m
+[0;32mI (23400) PWM_OUT: PWM Pulse Width Output: 2195 us[0m
+[0;32mI (23400) PWM_OUT: duty: 17563 [0m
+[0;32mI (23500) I2C_MASTER: Received ADC: 2192[0m
+[0;32mI (23500) PWM_OUT: PWM Pulse Width Output: 2192 us[0m
+[0;32mI (23500) PWM_OUT: duty: 17539 [0m
+[0;32mI (23600) I2C_MASTER: Received ADC: 2210[0m
+[0;32mI (23600) PWM_OUT: PWM Pulse Width Output: 2210 us[0m
+[0;32mI (23600) PWM_OUT: duty: 17683 [0m
+[0;32mI (23700) I2C_MASTER: Received ADC: 2211[0m
+[0;32mI (23700) PWM_OUT: PWM Pulse Width Output: 2211 us[0m
+[0;32mI (23700) PWM_OUT: duty: 17691 [0m
+[0;32mI (23800) I2C_MASTER: Received ADC: 2209[0m
+[0;32mI (23800) PWM_OUT: PWM Pulse Width Output: 2209 us[0m
+[0;32mI (23800) PWM_OUT: duty: 17675 [0m
+[0;32mI (23900) I2C_MASTER: Received ADC: 2181[0m
+[0;32mI (23900) PWM_OUT: PWM Pulse Width Output: 2181 us[0m
+[0;32mI (23900) PWM_OUT: duty: 17451 [0m
+[0;32mI (24000) I2C_MASTER: Received ADC: 2192[0m
+[0;32mI (24000) PWM_OUT: PWM Pulse Width Output: 2192 us[0m
+[0;32mI (24000) PWM_OUT: duty: 17539 [0m
+[0;32mI (24100) I2C_MASTER: Received ADC: 2193[0m
+[0;32mI (24100) PWM_OUT: PWM Pulse Width Output: 2193 us[0m
+[0;32mI (24100) PWM_OUT: duty: 17547 [0m
+[0;32mI (24200) I2C_MASTER: Received ADC: 2211[0m
+[0;32mI (24200) PWM_OUT: PWM Pulse Width Output: 2211 us[0m
+[0;32mI (24200) PWM_OUT: duty: 17691 [0m
+[0;32mI (24300) I2C_MASTER: Received ADC: 2181[0m
+[0;32mI (24300) PWM_OUT: PWM Pulse Width Output: 2181 us[0m
+[0;32mI (24300) PWM_OUT: duty: 17451 [0m
+[0;32mI (24400) I2C_MASTER: Received ADC: 2197[0m
+[0;32mI (24400) PWM_OUT: PWM Pulse Width Output: 2197 us[0m
+[0;32mI (24400) PWM_OUT: duty: 17579 [0m
+[0;32mI (24500) I2C_MASTER: Received ADC: 2206[0m
+[0;32mI (24500) PWM_OUT: PWM Pulse Width Output: 2206 us[0m
+[0;32mI (24500) PWM_OUT: duty: 17651 [0m
+[0;32mI (24600) I2C_MASTER: Received ADC: 2196[0m
+[0;32mI (24600) PWM_OUT: PWM Pulse Width Output: 2196 us[0m
+[0;32mI (24600) PWM_OUT: duty: 17571 [0m
+[0;32mI (24700) I2C_MASTER: Received ADC: 2196[0m
+[0;32mI (24700) PWM_OUT: PWM Pulse Width Output: 2196 us[0m
+[0;32mI (24700) PWM_OUT: duty: 17571 [0m
+[0;32mI (24800) I2C_MASTER: Received ADC: 2193[0m
+[0;32mI (24800) PWM_OUT: PWM Pulse Width Output: 2193 us[0m
+[0;32mI (24800) PWM_OUT: duty: 17547 [0m
+[0;32mI (24900) I2C_MASTER: Received ADC: 2192[0m
+[0;32mI (24900) PWM_OUT: PWM Pulse Width Output: 2192 us[0m
+[0;32mI (24900) PWM_OUT: duty: 17539 [0m
+[0;32mI (25000) I2C_MASTER: Received ADC: 2193[0m
+[0;32mI (25000) PWM_OUT: PWM Pulse Width Output: 2193 us[0m
+[0;32mI (25000) PWM_OUT: duty: 17547 [0m
+[0;32mI (25100) I2C_MASTER: Received ADC: 2195[0m
+[0;32mI (25100) PWM_OUT: PWM Pulse Width Output: 2195 us[0m
+[0;32mI (25100) PWM_OUT: duty: 17563 [0m
+[0;32mI (25200) I2C_MASTER: Received ADC: 2198[0m
+[0;32mI (25200) PWM_OUT: PWM Pulse Width Output: 2198 us[0m
+[0;32mI (25200) PWM_OUT: duty: 17587 [0m
+[0;32mI (25300) I2C_MASTER: Received ADC: 2221[0m
+[0;32mI (25300) PWM_OUT: PWM Pulse Width Output: 2221 us[0m
+[0;32mI (25300) PWM_OUT: duty: 17771 [0m
+[0;32mI (25400) I2C_MASTER: Received ADC: 2212[0m
+[0;32mI (25400) PWM_OUT: PWM Pulse Width Output: 2212 us[0m
+[0;32mI (25400) PWM_OUT: duty: 17699 [0m
+[0;32mI (25500) I2C_MASTER: Received ADC: 2195[0m
+[0;32mI (25500) PWM_OUT: PWM Pulse Width Output: 2195 us[0m
+[0;32mI (25500) PWM_OUT: duty: 17563 [0m
+[0;32mI (25600) I2C_MASTER: Received ADC: 2192[0m
+[0;32mI (25600) PWM_OUT: PWM Pulse Width Output: 2192 us[0m
+[0;32mI (25600) PWM_OUT: duty: 17539 [0m
+[0;32mI (25700) I2C_MASTER: Received ADC: 2196[0m
+[0;32mI (25700) PWM_OUT: PWM Pulse Width Output: 2196 us[0m
+[0;32mI (25700) PWM_OUT: duty: 17571 [0m
+[0;32mI (25800) I2C_MASTER: Received ADC: 2192[0m
+[0;32mI (25800) PWM_OUT: PWM Pulse Width Output: 2192 us[0m
+[0;32mI (25800) PWM_OUT: duty: 17539 [0m
+[0;32mI (25900) I2C_MASTER: Received ADC: 2192[0m
+[0;32mI (25900) PWM_OUT: PWM Pulse Width Output: 2192 us[0m
+[0;32mI (25900) PWM_OUT: duty: 17539 [0m
+[0;32mI (26000) I2C_MASTER: Received ADC: 2195[0m
+[0;32mI (26000) PWM_OUT: PWM Pulse Width Output: 2195 us[0m
+[0;32mI (26000) PWM_OUT: duty: 17563 [0m
+[0;32mI (26100) I2C_MASTER: Received ADC: 2195[0m
+[0;32mI (26100) PWM_OUT: PWM Pulse Width Output: 2195 us[0m
+[0;32mI (26100) PWM_OUT: duty: 17563 [0m
+[0;32mI (26200) I2C_MASTER: Received ADC: 2206[0m
+[0;32mI (26200) PWM_OUT: PWM Pulse Width Output: 2206 us[0m
+[0;32mI (26200) PWM_OUT: duty: 17651 [0m
+[0;32mI (26300) I2C_MASTER: Received ADC: 2191[0m
+[0;32mI (26300) PWM_OUT: PWM Pulse Width Output: 2191 us[0m
+[0;32mI (26300) PWM_OUT: duty: 17531 [0m
+[0;32mI (26400) I2C_MASTER: Received ADC: 2194[0m
+[0;32mI (26400) PWM_OUT: PWM Pulse Width Output: 2194 us[0m
+[0;32mI (26400) PWM_OUT: duty: 17555 [0m
+[0;32mI (26500) I2C_MASTER: Received ADC: 2192[0m
+[0;32mI (26500) PWM_OUT: PWM Pulse Width Output: 2192 us[0m
+[0;32mI (26500) PWM_OUT: duty: 17539 [0m
+[0;32mI (26600) I2C_MASTER: Received ADC: 2192[0m
+[0;32mI (26600) PWM_OUT: PWM Pulse Width Output: 2192 us[0m
+[0;32mI (26600) PWM_OUT: duty: 17539 [0m
+[0;32mI (26700) I2C_MASTER: Received ADC: 2198[0m
+[0;32mI (26700) PWM_OUT: PWM Pulse Width Output: 2198 us[0m
+[0;32mI (26700) PWM_OUT: duty: 17587 [0m
+[0;32mI (26800) I2C_MASTER: Received ADC: 2180[0m
+[0;32mI (26800) PWM_OUT: PWM Pulse Width Output: 2180 us[0m
+[0;32mI (26800) PWM_OUT: duty: 17443 [0m
+[0;32mI (26900) I2C_MASTER: Received ADC: 2205[0m
+[0;32mI (26900) PWM_OUT: PWM Pulse Width Output: 2205 us[0m
+[0;32mI (26900) PWM_OUT: duty: 17643 [0m
+[0;32mI (27000) I2C_MASTER: Received ADC: 2214[0m
+[0;32mI (27000) PWM_OUT: PWM Pulse Width Output: 2214 us[0m
+[0;32mI (27000) PWM_OUT: duty: 17715 [0m
+[0;32mI (27100) I2C_MASTER: Received ADC: 2211[0m
+[0;32mI (27100) PWM_OUT: PWM Pulse Width Output: 2211 us[0m
+[0;32mI (27100) PWM_OUT: duty: 17691 [0m
+[0;32mI (27200) I2C_MASTER: Received ADC: 2202[0m
+[0;32mI (27200) PWM_OUT: PWM Pulse Width Output: 2202 us[0m
+[0;32mI (27200) PWM_OUT: duty: 17619 [0m
+[0;32mI (27300) I2C_MASTER: Received ADC: 2183[0m
+[0;32mI (27300) PWM_OUT: PWM Pulse Width Output: 2183 us[0m
+[0;32mI (27300) PWM_OUT: duty: 17467 [0m
+[0;32mI (27400) I2C_MASTER: Received ADC: 2198[0m
+[0;32mI (27400) PWM_OUT: PWM Pulse Width Output: 2198 us[0m
+[0;32mI (27400) PWM_OUT: duty: 17587 [0m
+[0;32mI (27500) I2C_MASTER: Received ADC: 2197[0m
+[0;32mI (27500) PWM_OUT: PWM Pulse Width Output: 2197 us[0m
+[0;32mI (27500) PWM_OUT: duty: 17579 [0m
+[0;32mI (27600) I2C_MASTER: Received ADC: 2207[0m
+[0;32mI (27600) PWM_OUT: PWM Pulse Width Output: 2207 us[0m
+[0;32mI (27600) PWM_OUT: duty: 17659 [0m
+[0;32mI (27700) I2C_MASTER: Received ADC: 2196[0m
+[0;32mI (27700) PWM_OUT: PWM Pulse Width Output: 2196 us[0m
+[0;32mI (27700) PWM_OUT: duty: 17571 [0m
+[0;32mI (27800) I2C_MASTER: Received ADC: 2203[0m
+[0;32mI (27800) PWM_OUT: PWM Pulse Width Output: 2203 us[0m
+[0;32mI (27800) PWM_OUT: duty: 17627 [0m
+[0;32mI (27900) I2C_MASTER: Received ADC: 2192[0m
+[0;32mI (27900) PWM_OUT: PWM Pulse Width Output: 2192 us[0m
+[0;32mI (27900) PWM_OUT: duty: 17539 [0m
+[0;32mI (28000) I2C_MASTER: Received ADC: 2193[0m
+[0;32mI (28000) PWM_OUT: PWM Pulse Width Output: 2193 us[0m
+[0;32mI (28000) PWM_OUT: duty: 17547 [0m
+[0;32mI (28100) I2C_MASTER: Received ADC: 2221[0m
+[0;32mI (28100) PWM_OUT: PWM Pulse Width Output: 2221 us[0m
+[0;32mI (28100) PWM_OUT: duty: 17771 [0m
+[0;32mI (28200) I2C_MASTER: Received ADC: 2195[0m
+[0;32mI (28200) PWM_OUT: PWM Pulse Width Output: 2195 us[0m
+[0;32mI (28200) PWM_OUT: duty: 17563 [0m
+[0;32mI (28300) I2C_MASTER: Received ADC: 2195[0m
+[0;32mI (28300) PWM_OUT: PWM Pulse Width Output: 2195 us[0m
+[0;32mI (28300) PWM_OUT: duty: 17563 [0m
+[0;32mI (28400) I2C_MASTER: Received ADC: 2209[0m
+[0;32mI (28400) PWM_OUT: PWM Pulse Width Output: 2209 us[0m
+[0;32mI (28400) PWM_OUT: duty: 17675 [0m
+[0;32mI (28500) I2C_MASTER: Received ADC: 2195[0m
+[0;32mI (28500) PWM_OUT: PWM Pulse Width Output: 2195 us[0m
+[0;32mI (28500) PWM_OUT: duty: 17563 [0m
+[0;32mI (28600) I2C_MASTER: Received ADC: 2203[0m
+[0;32mI (28600) PWM_OUT: PWM Pulse Width Output: 2203 us[0m
+[0;32mI (28600) PWM_OUT: duty: 17627 [0m
+[0;32mI (28700) I2C_MASTER: Received ADC: 2193[0m
+[0;32mI (28700) PWM_OUT: PWM Pulse Width Output: 2193 us[0m
+[0;32mI (28700) PWM_OUT: duty: 17547 [0m
+[0;32mI (28800) I2C_MASTER: Received ADC: 2194[0m
+[0;32mI (28800) PWM_OUT: PWM Pulse Width Output: 2194 us[0m
+[0;32mI (28800) PWM_OUT: duty: 17555 [0m
+[0;32mI (28900) I2C_MASTER: Received ADC: 2176[0m
+[0;32mI (28900) PWM_OUT: PWM Pulse Width Output: 2176 us[0m
+[0;32mI (28900) PWM_OUT: duty: 17411 [0m
+[0;32mI (29000) I2C_MASTER: Received ADC: 2191[0m
+[0;32mI (29000) PWM_OUT: PWM Pulse Width Output: 2191 us[0m
+[0;32mI (29000) PWM_OUT: duty: 17531 [0m
+[0;32mI (29100) I2C_MASTER: Received ADC: 2187[0m
+[0;32mI (29100) PWM_OUT: PWM Pulse Width Output: 2187 us[0m
+[0;32mI (29100) PWM_OUT: duty: 17499 [0m
+[0;32mI (29200) I2C_MASTER: Received ADC: 2195[0m
+[0;32mI (29200) PWM_OUT: PWM Pulse Width Output: 2195 us[0m
+[0;32mI (29200) PWM_OUT: duty: 17563 [0m
+[0;32mI (29300) I2C_MASTER: Received ADC: 2193[0m
+[0;32mI (29300) PWM_OUT: PWM Pulse Width Output: 2193 us[0m
+[0;32mI (29300) PWM_OUT: duty: 17547 [0m
+[0;32mI (29400) I2C_MASTER: Received ADC: 2198[0m
+[0;32mI (29400) PWM_OUT: PWM Pulse Width Output: 2198 us[0m
+[0;32mI (29400) PWM_OUT: duty: 17587 [0m
+[0;32mI (29500) I2C_MASTER: Received ADC: 2190[0m
+[0;32mI (29500) PWM_OUT: PWM Pulse Width Output: 2190 us[0m
+[0;32mI (29500) PWM_OUT: duty: 17523 [0m
+[0;32mI (29600) I2C_MASTER: Received ADC: 2187[0m
+[0;32mI (29600) PWM_OUT: PWM Pulse Width Output: 2187 us[0m
+[0;32mI (29600) PWM_OUT: duty: 17499 [0m
+[0;32mI (29700) I2C_MASTER: Received ADC: 2192[0m
+[0;32mI (29700) PWM_OUT: PWM Pulse Width Output: 2192 us[0m
+[0;32mI (29700) PWM_OUT: duty: 17539 [0m
+[0;32mI (29800) I2C_MASTER: Received ADC: 2187[0m
+[0;32mI (29800) PWM_OUT: PWM Pulse Width Output: 2187 us[0m
+[0;32mI (29800) PWM_OUT: duty: 17499 [0m
+[0;32mI (29900) I2C_MASTER: Received ADC: 2197[0m
+[0;32mI (29900) PWM_OUT: PWM Pulse Width Output: 2197 us[0m
+[0;32mI (29900) PWM_OUT: duty: 17579 [0m
+[0;32mI (30000) I2C_MASTER: Received ADC: 2203[0m
+[0;32mI (30000) PWM_OUT: PWM Pulse Width Output: 2203 us[0m
+[0;32mI (30000) PWM_OUT: duty: 17627 [0m
+[0;32mI (30100) I2C_MASTER: Received ADC: 2198[0m
+[0;32mI (30100) PWM_OUT: PWM Pulse Width Output: 2198 us[0m
+[0;32mI (30100) PWM_OUT: duty: 17587 [0m
+[0;32mI (30200) I2C_MASTER: Received ADC: 2193[0m
+[0;32mI (30200) PWM_OUT: PWM Pulse Width Output: 2193 us[0m
+[0;32mI (30200) PWM_OUT: duty: 17547 [0m
+[0;32mI (30300) I2C_MASTER: Received ADC: 2202[0m
+[0;32mI (30300) PWM_OUT: PWM Pulse Width Output: 2202 us[0m
+[0;32mI (30300) PWM_OUT: duty: 17619 [0m
+[0;32mI (30400) I2C_MASTER: Received ADC: 2191[0m
+[0;32mI (30400) PWM_OUT: PWM Pulse Width Output: 2191 us[0m
+[0;32mI (30400) PWM_OUT: duty: 17531 [0m
+[0;32mI (30500) I2C_MASTER: Received ADC: 2211[0m
+[0;32mI (30500) PWM_OUT: PWM Pulse Width Output: 2211 us[0m
+[0;32mI (30500) PWM_OUT: duty: 17691 [0m
+[0;32mI (30600) I2C_MASTER: Received ADC: 2192[0m
+[0;32mI (30600) PWM_OUT: PWM Pulse Width Output: 2192 us[0m
+[0;32mI (30600) PWM_OUT: duty: 17539 [0m
+[0;32mI (30700) I2C_MASTER: Received ADC: 2193[0m
+[0;32mI (30700) PWM_OUT: PWM Pulse Width Output: 2193 us[0m
+[0;32mI (30700) PWM_OUT: duty: 17547 [0m
+[0;32mI (30800) I2C_MASTER: Received ADC: 2192[0m
+[0;32mI (30800) PWM_OUT: PWM Pulse Width Output: 2192 us[0m
+[0;32mI (30800) PWM_OUT: duty: 17539 [0m
+[0;32mI (30900) I2C_MASTER: Received ADC: 2185[0m
+[0;32mI (30900) PWM_OUT: PWM Pulse Width Output: 2185 us[0m
+[0;32mI (30900) PWM_OUT: duty: 17483 [0m
+[0;32mI (31000) I2C_MASTER: Received ADC: 2200[0m
+[0;32mI (31000) PWM_OUT: PWM Pulse Width Output: 2200 us[0m
+[0;32mI (31000) PWM_OUT: duty: 17603 [0m
+[0;32mI (31100) I2C_MASTER: Received ADC: 2197[0m
+[0;32mI (31100) PWM_OUT: PWM Pulse Width Output: 2197 us[0m
+[0;32mI (31100) PWM_OUT: duty: 17579 [0m

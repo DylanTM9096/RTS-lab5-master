@@ -18,8 +18,8 @@ end
 
 # Load bootloader symbols
 set confirm off
-    add-symbol-file /home/dylan/esp/esp_proj/Lab5/master2/build/bootloader/bootloader.elf
+    add-symbol-file /home/dylan/esp/esp_proj/Lab5/RTS-lab5-master/build/bootloader/bootloader.elf
 set confirm on
 
 # Load application symbols
-file /home/dylan/esp/esp_proj/Lab5/master2/build/master2.elf
+file /home/dylan/esp/esp_proj/Lab5/RTS-lab5-master/build/master2.elf

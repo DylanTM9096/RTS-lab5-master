@@ -14,7 +14,9 @@
 
 #define TAG_I2C "I2C_MASTER"
 
+
+void i2c_send_queue(QueueHandle_t queue1);
 void i2c_master_init(void);
-int i2c_receive_adc(void);
+void i2c_receive_adc(void *pvParameters);
 
 #endif

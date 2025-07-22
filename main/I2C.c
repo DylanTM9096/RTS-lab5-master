@@ -1,8 +1,14 @@
 #include "I2C.h"
 
 
-i2c_master_bus_handle_t bus_handle;
-i2c_master_dev_handle_t slave_dev;
+static i2c_master_bus_handle_t bus_handle;
+static i2c_master_dev_handle_t slave_dev;
+
+static QueueHandle_t i2c_output_queue = NULL; // Queue for sending i2c value
+
+void i2c_send_queue(QueueHandle_t queue1) {
+    i2c_output_queue = queue1;
+}
 
 void i2c_master_init(void){
     ESP_LOGI(TAG_I2C, "Initializing I2C master...");
@@ -25,16 +31,18 @@ void i2c_master_init(void){
     ESP_ERROR_CHECK(i2c_master_bus_add_device(bus_handle, &dev_config, &slave_dev));
 }
 
-int i2c_receive_adc(void) {
+void i2c_receive_adc(void *pvParameters) {
     uint8_t send[] = {0x01};
     uint8_t data[2];
-    if (i2c_master_transmit_receive(slave_dev, send, sizeof(send), data, sizeof(data), -1) == ESP_OK) {
-    //if (i2c_master_receive(slave_dev, data, sizeof(data), pdMS_TO_TICKS(100)) == ESP_OK) {
-        int val = (data[0] << 8) | data[1];
-        ESP_LOGI(TAG_I2C, "Received ADC: %d", val);
-        return val;
-    } else {
-        ESP_LOGE(TAG_I2C, "I2C receive failed");
-        return -1;
+    while(1){
+        ulTaskNotifyTake(pdTRUE, portMAX_DELAY);  // Wait for start fropm timer
+        if (i2c_master_transmit_receive(slave_dev, send, sizeof(send), data, sizeof(data), -1) == ESP_OK) {
+            int val = (data[0] << 8) | data[1];
+            ESP_LOGI(TAG_I2C, "Received ADC: %d", val);
+
+            if (val >= 0) {
+                xQueueSend(i2c_output_queue, &val, 0);
+            }
+        }
     }
 }

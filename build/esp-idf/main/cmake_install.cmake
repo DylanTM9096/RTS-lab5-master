@@ -1,4 +1,4 @@
-# Install script for directory: /home/dylan/esp/esp_proj/Lab5/master2/main
+# Install script for directory: /home/dylan/esp/esp_proj/Lab5/RTS-lab5-master/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
